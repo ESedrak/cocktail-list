@@ -1,8 +1,8 @@
 import React from "react";
 
-function GnT() {
+function Gnt() {
   return (
-    <div className="GnT">
+    <div className="Gnt">
       <div className="image">
         <img
           className="image__drink"
@@ -38,4 +38,4 @@ function GnT() {
   );
 }
 
-export default GnT;
+export default Gnt;

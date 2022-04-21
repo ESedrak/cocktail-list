@@ -3,7 +3,7 @@ import "./Cocktail.css";
 import French75 from "./French75";
 import Margarita from "./Margarita";
 import Sours from "./Sours";
-import GnT from "./GnT";
+import Gnt from "./Gnt";
 import ScreamingB from "./ScreamingB";
 
 function Cocktail() {
@@ -12,7 +12,7 @@ function Cocktail() {
       <French75 />
       <Sours />
       <Margarita />
-      <GnT />
+      <Gnt />
       <ScreamingB />
     </div>
   );
