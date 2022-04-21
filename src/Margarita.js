@@ -6,8 +6,8 @@ function Margarita() {
       <div className="image">
         <img
           className="image__drink"
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/023/002/original/Tommys_Margarita_Background_2x.png?1639738631"
-          alt="Tommy"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/032/374/original/Magharita.jpg?1650510966"
+          alt="Magharita"
         />
         <div className="image__overlay">
           <div className="image__title">

@@ -6,7 +6,7 @@ function Sours() {
       <div className="image">
         <img
           className="image__drink"
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/022/999/original/Whiskey_Sour_Served_Up.jpg?1639734669"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/032/375/original/Sours.jpg?1650511064"
           alt="Sour"
         />
         <div className="image__overlay">
