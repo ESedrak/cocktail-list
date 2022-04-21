@@ -1,0 +1,106 @@
+body {
+  background: linear-gradient(135deg, black, rgb(138, 126, 126), black);
+}
+h1,
+h2,
+p,
+ul,
+a {
+  text-align: center;
+  color: blanchedalmond;
+}
+
+h1 {
+  font-size: 30 px;
+  font-family: cursive;
+}
+h2 {
+  font-size: 30px;
+}
+ul {
+  padding: 0px;
+  list-style: none;
+  font-size: 15px;
+}
+
+li {
+  margin: 0 auto;
+}
+a {
+  color: blanchedalmond;
+  display: block;
+}
+
+button {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  border: 1px solid black;
+  font-size: 20px;
+  border-radius: 30px;
+  transition: all 200ms ease;
+  box-shadow: 1px 2px 4px black;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(135deg, grey, rgb(61, 56, 56), grey);
+  line-height: 20px;
+}
+
+button:hover {
+  background: white;
+  border: 1px solid white;
+  color: black;
+}
+
+.image {
+  position: relative;
+  width: 450px;
+  margin: 0 auto;
+}
+
+.image__drink {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.image__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  font-family: cursive;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+  text-align: center;
+}
+
+.image__overlay:hover {
+  opacity: 1;
+}
+
+.image__title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.image_description {
+  font-size: 1.25em;
+  margin-top: 0.25em;
+}
+
+.optional_topping {
+  font-size: 10px;
+  font-weight: lighter;
+}
+.process {
+  font-weight: lighter;
+  font-size: 13px;
+}
