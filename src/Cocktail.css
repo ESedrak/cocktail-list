@@ -71,11 +71,6 @@ button:hover {
   opacity: 1;
 }
 
-.image-title {
-  font-size: 2em;
-  font-weight: bold;
-}
-
 .image-description {
   font-size: 1.25em;
   margin-top: 0.25em;

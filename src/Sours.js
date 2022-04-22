@@ -10,9 +10,7 @@ function Sours() {
           alt="Sour"
         />
         <div className="image-overlay">
-          <div className="image-title">
-            <h2 className="drink-name">Sours</h2>
-          </div>
+          <h2 className="drink-name">Sours</h2>
           <ul className="image-description">
             <li>60mls of Whisky or Amaretto</li>
             <li>30mls of Freshly Squeezed Lemon Juice</li>

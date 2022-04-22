@@ -10,20 +10,16 @@ function ScreamingB() {
           alt="ScreamingB"
         />
         <div className="image-overlay">
-          <div className="image-title">
-            <h2 className="drink-name">Screaming Bitch</h2>
-          </div>
+          <h2 className="drink-name">Screaming Bitch</h2>
           <ul className="image-description">
             <li>45mls of Gin Shiraz</li>
             <li>30mls of Cointreau</li>
             <li>200mls of Tonic water</li>
             <li>15mls of Simple Syrup</li>
           </ul>
-          <p>
-            <span className="process">
-              Shake ingredients with ice, blend the drink until it explodes(and
-              it will), strain into a cup
-            </span>
+          <p className="process">
+            Shake ingredients with ice, blend the drink until it explodes(and it
+            will), strain into a cup
           </p>
         </div>
       </section>
