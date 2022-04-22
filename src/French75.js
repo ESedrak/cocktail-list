@@ -3,17 +3,17 @@ import React from "react";
 function French75() {
   return (
     <div className="French75">
-      <div className="image">
+      <section className="one-cocktail">
         <img
-          className="image__drink"
+          className="image-drink"
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/023/000/original/french-75-cocktail.jpg?1639738210"
           alt="French75"
         />
-        <div className="image__overlay">
-          <div className="image__title">
-            <h2>French 75</h2>
+        <div className="image-overlay">
+          <div className="image-title">
+            <h2 className="drink-name">French 75</h2>
           </div>
-          <ul className="image__description">
+          <ul className="image-description">
             <li>45mls of Gin or Brandy</li>
             <li>30mls of Cointreau</li>
             <li>30mls of Freshly Squeezed Lime Juice</li>
@@ -26,7 +26,7 @@ function French75() {
             </span>
           </p>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

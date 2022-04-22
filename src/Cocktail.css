@@ -1,26 +1,18 @@
-body {
-  background: linear-gradient(135deg, black, rgb(138, 126, 126), black);
-}
-h1,
-h2,
-p,
-ul,
-a {
-  text-align: center;
-  color: blanchedalmond;
-}
-
-h1 {
-  font-size: 30 px;
-  font-family: cursive;
-}
-h2 {
-  font-size: 30px;
-}
-ul {
+.Cocktail ul {
   padding: 0px;
   list-style: none;
   font-size: 15px;
+}
+
+.Cocktail {
+  text-align: center;
+  background: linear-gradient(135deg, black, rgb(138, 126, 126), black);
+  color: blanchedalmond;
+}
+
+.Cocktail .drink-name {
+  color: pink;
+  font-size: 30px;
 }
 
 li {
@@ -52,19 +44,20 @@ button:hover {
   color: black;
 }
 
-.image {
+.one-cocktail {
   position: relative;
-  width: 450px;
   margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
 
-.image__drink {
+.image-drink {
   display: block;
   width: 100%;
   text-align: center;
 }
 
-.image__overlay {
+.image-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -82,21 +75,21 @@ button:hover {
   text-align: center;
 }
 
-.image__overlay:hover {
+.image-overlay:hover {
   opacity: 1;
 }
 
-.image__title {
+.image-title {
   font-size: 2em;
   font-weight: bold;
 }
 
-.image_description {
+.image-description {
   font-size: 1.25em;
   margin-top: 0.25em;
 }
 
-.optional_topping {
+.optional-topping {
   font-size: 10px;
   font-weight: lighter;
 }
@@ -106,6 +99,4 @@ button:hover {
 }
 
 img {
-  max-width: 100%;
-  height: auto;
 }

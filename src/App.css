@@ -1,1 +1,7 @@
-
+.App {
+  text-align: center;
+  font-size: 30 px;
+  font-family: cursive;
+  background-color: black;
+  color: white;
+}

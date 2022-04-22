@@ -3,17 +3,17 @@ import React from "react";
 function Sours() {
   return (
     <div className="Sours">
-      <div className="image">
+      <section className="one-cocktail">
         <img
-          className="image__drink"
+          className="image-drink"
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/032/375/original/Sours.jpg?1650511064"
           alt="Sour"
         />
-        <div className="image__overlay">
-          <div className="image__title">
-            <h2>Sours</h2>
+        <div className="image-overlay">
+          <div className="image-title">
+            <h2 className="drink-name">Sours</h2>
           </div>
-          <ul className="image__description">
+          <ul className="image-description">
             <li>60mls of Whisky or Amaretto</li>
             <li>30mls of Freshly Squeezed Lemon Juice</li>
             <li>1 Egg White</li>
@@ -25,7 +25,7 @@ function Sours() {
             </span>
           </p>
           <p>
-            <span className="optional_topping">
+            <span className="optional-topping">
               <strong> Optional: </strong>
               <br />
               <em>If using Whisky:</em>
@@ -39,7 +39,7 @@ function Sours() {
             </span>
           </p>
         </div>
-      </div>
+      </section>
     </div>
   );
 }
