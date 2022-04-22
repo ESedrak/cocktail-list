@@ -10,25 +10,19 @@ function Margarita() {
           alt="Magharita"
         />
         <div className="image-overlay">
-          <div className="image-title">
-            <h2 className="drink-name">Tommy's Margarita</h2>
-          </div>
+          <h2 className="drink-name">Tommy's Margarita</h2>
           <ul className="image-description">
             <li>90mls of Tequila</li>
             <li>40mls of Freshly Squeezed Lime Juice</li>
             <li>15mls of Agave Syrup or 15mls Cointreau</li>
           </ul>
-          <p>
-            <span className="process">
-              Shake ingredients with ice and pour into a glass rimmed with salt
-            </span>
+          <p className="process">
+            Shake ingredients with ice and pour into a glass rimmed with salt
           </p>
-          <p>
-            <span className="optional-topping">
-              <strong> Optional: </strong>
-              <br />
-              Blend with ice to make a frozen Margarita
-            </span>
+          <p className="optional-topping">
+            <strong> Optional: </strong>
+            <br />
+            Blend with ice to make a frozen Margarita
           </p>
         </div>
       </section>
