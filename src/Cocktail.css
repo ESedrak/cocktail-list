@@ -15,14 +15,6 @@
   font-size: 30px;
 }
 
-li {
-  margin: 0 auto;
-}
-a {
-  color: blanchedalmond;
-  display: block;
-}
-
 button {
   display: block;
   text-align: center;
@@ -96,7 +88,4 @@ button:hover {
 .process {
   font-weight: lighter;
   font-size: 13px;
-}
-
-img {
 }

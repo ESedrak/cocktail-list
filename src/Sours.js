@@ -19,25 +19,22 @@ function Sours() {
             <li>1 Egg White</li>
             <li>15mls of Simple Syrup</li>
           </ul>
-          <p>
-            <span className="process">
-              Shake ingredients with ice and pour into a whisky glass
-            </span>
+          <p className="process">
+            Shake ingredients with ice and pour into a whisky glass
           </p>
-          <p>
-            <span className="optional-topping">
-              <strong> Optional: </strong>
-              <br />
+          <div className="optional-topping">
+            <strong> Optional: </strong>
+            <section>
               <em>If using Whisky:</em>
               <br />
               Float a Dry Red Wine on top to make a New York Sour
-              <br />
-              <br />
+            </section>
+            <section>
               <em>If using Amaretto:</em>
               <br />
               Add a glazé cherry for garnish
-            </span>
-          </p>
+            </section>
+          </div>
         </div>
       </section>
     </div>
