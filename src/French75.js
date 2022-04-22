@@ -10,20 +10,16 @@ function French75() {
           alt="French75"
         />
         <div className="image-overlay">
-          <div className="image-title">
-            <h2 className="drink-name">French 75</h2>
-          </div>
+          <h2 className="drink-name">French 75</h2>
           <ul className="image-description">
             <li>45mls of Gin or Brandy</li>
             <li>30mls of Cointreau</li>
             <li>30mls of Freshly Squeezed Lime Juice</li>
             <li>15mls of Simple Syrup</li>
           </ul>
-          <p>
-            <span className="process">
-              Shake ingredients with ice, strain into a champagne glass and top
-              up with Prosecco
-            </span>
+          <p className="process">
+            Shake ingredients with ice, strain into a champagne glass and top up
+            with Prosecco
           </p>
         </div>
       </section>
