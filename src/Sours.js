@@ -22,16 +22,17 @@ function Sours() {
           </p>
           <div className="optional-topping">
             <strong> Optional: </strong>
-            <section>
+            <div>
               <em>If using Whisky:</em>
               <br />
               Float a Dry Red Wine on top to make a New York Sour
-            </section>
-            <section>
+            </div>
+            <br />
+            <div>
               <em>If using Amaretto:</em>
               <br />
               Add a glazé cherry for garnish
-            </section>
+            </div>
           </div>
         </div>
       </section>
