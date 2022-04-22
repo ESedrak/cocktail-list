@@ -11,7 +11,7 @@ function Sours() {
         />
         <div className="image-overlay">
           <h2 className="drink-name">Sours</h2>
-          <ul className="image-description">
+          <ul className="ingredients">
             <li>60mls of Whisky or Amaretto</li>
             <li>30mls of Freshly Squeezed Lemon Juice</li>
             <li>1 Egg White</li>

@@ -71,11 +71,6 @@ button:hover {
   opacity: 1;
 }
 
-.image-description {
-  font-size: 1.25em;
-  margin-top: 0.25em;
-}
-
 .optional-topping {
   font-size: 10px;
   font-weight: lighter;

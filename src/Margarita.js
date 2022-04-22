@@ -11,7 +11,7 @@ function Margarita() {
         />
         <div className="image-overlay">
           <h2 className="drink-name">Tommy's Margarita</h2>
-          <ul className="image-description">
+          <ul className="ingredients">
             <li>90mls of Tequila</li>
             <li>40mls of Freshly Squeezed Lime Juice</li>
             <li>15mls of Agave Syrup or 15mls Cointreau</li>
