@@ -1,14 +1,11 @@
 import React from "react";
+import sourImg from "./images/Sours.jpg";
 
 function Sours() {
   return (
     <div className="Sours">
       <section className="one-cocktail">
-        <img
-          className="image-drink"
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/032/375/original/Sours.jpg?1650511064"
-          alt="Sour"
-        />
+        <img className="image-drink" src={sourImg} alt="Sour" />
         <div className="image-overlay">
           <h2 className="drink-name">Sours</h2>
           <ul className="ingredients">

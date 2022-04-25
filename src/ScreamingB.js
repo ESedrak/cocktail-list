@@ -1,14 +1,11 @@
 import React from "react";
+import screamBImg from "./images/ScreamingB.jpg";
 
 function ScreamingB() {
   return (
     <div className="ScreamingB">
       <section className="one-cocktail">
-        <img
-          className="image-drink"
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/032/373/original/ScreamingB.jpg?1650510876"
-          alt="ScreamingB"
-        />
+        <img className="image-drink" src={screamBImg} alt="ScreamingB" />
         <div className="image-overlay">
           <h2 className="drink-name">Screaming Bitch</h2>
           <ul className="image-description">
