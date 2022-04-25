@@ -1,14 +1,13 @@
 import React from "react";
+import Magharita from "./images/Margarita.jpg";
+import FrozenMarga from "./images/FrozenMarga.jpg";
 
 function Margarita() {
   return (
     <div className="Margarita">
       <section className="one-cocktail">
-        <img
-          className="image-drink"
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/032/374/original/Magharita.jpg?1650510966"
-          alt="Magharita"
-        />
+        <img className="image-drink" src={Magharita} alt="Magharita" />
+        <img className="image-drink" src={FrozenMarga} alt="FrozenMarga" />
         <div className="image-overlay">
           <h2 className="drink-name">Tommy's Margarita</h2>
           <ul className="ingredients">
