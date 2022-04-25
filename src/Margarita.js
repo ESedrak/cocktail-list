@@ -1,12 +1,10 @@
 import React from "react";
-import margaritaImg from "./images/Margarita.jpg";
 import frozenMarga from "./images/FrozenMarga.jpg";
 
 function Margarita() {
   return (
     <div className="Margarita">
       <section className="one-cocktail">
-        <img className="image-drink" src={margaritaImg} alt="Margarita" />
         <img className="image-drink" src={frozenMarga} alt="FrozenMarga" />
         <div className="image-overlay">
           <h2 className="drink-name">Tommy's Margarita</h2>

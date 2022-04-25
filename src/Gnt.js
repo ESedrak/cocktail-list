@@ -1,14 +1,11 @@
 import React from "react";
+import gntImage from "./images/GnT.png";
 
 function Gnt() {
   return (
     <div className="Gnt">
       <section className="one-cocktail">
-        <img
-          className="image-drink"
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/023/057/original/Gin__opt__aboutcom__coeus__resources__content_migration__liquor__2019__09__18090535__Gin-and-Tonic-720x720-recipe-c2e32c4cf53c4ed7a4de20af8e862a12.jpg?1639808717"
-          alt="GinTonic"
-        />
+        <img className="image-drink" src={gntImage} alt="Gin and Tonic" />
         <div className="image-overlay">
           <h2 className="drink-name">Gin and Tonic</h2>
           <ul className="ingredients">
