@@ -1,5 +1,5 @@
 import React from "react";
-import sourImg from "./images/SoursCropped.png";
+import sourImg from "./images/Sours.png";
 
 function Sours() {
   return (
