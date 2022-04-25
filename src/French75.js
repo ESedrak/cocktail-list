@@ -14,7 +14,7 @@ function French75() {
           <ul className="image-description">
             <li>45mls of Gin or Brandy</li>
             <li>30mls of Cointreau</li>
-            <li>30mls of Freshly Squeezed Lime Juice</li>
+            <li>30mls of Freshly Squeezed Lemon Juice</li>
             <li>15mls of Simple Syrup</li>
           </ul>
           <p className="process">
