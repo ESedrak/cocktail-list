@@ -5,6 +5,7 @@ import Margarita from "./Margarita";
 import Sours from "./Sours";
 import Gnt from "./Gnt";
 import ScreamingB from "./ScreamingB";
+import Genie from "./Genie";
 
 function Cocktail() {
   return (
@@ -14,6 +15,7 @@ function Cocktail() {
       <Margarita />
       <Gnt />
       <ScreamingB />
+      <Genie />
     </div>
   );
 }
