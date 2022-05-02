@@ -22,27 +22,6 @@
   font-size: 30px;
 }
 
-button {
-  display: block;
-  text-align: center;
-  margin: 20px auto;
-  border: 1px solid black;
-  font-size: 20px;
-  border-radius: 30px;
-  transition: all 200ms ease;
-  box-shadow: 1px 2px 4px black;
-  cursor: pointer;
-  color: rgb(255, 255, 255);
-  background: linear-gradient(135deg, grey, rgb(61, 56, 56), grey);
-  line-height: 20px;
-}
-
-button:hover {
-  background: white;
-  border: 1px solid white;
-  color: black;
-}
-
 .one-cocktail {
   position: relative;
   margin: 0 auto;
