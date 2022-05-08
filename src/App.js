@@ -1,6 +1,6 @@
 import "./App.css";
 import Cocktail from "./Cocktail";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function App() {
   const More = () => {
@@ -17,11 +17,11 @@ function App() {
         <hr />
       </header>
       <Cocktail />
-      <Switch>
+      <Routes>
         <Route path="/more">
           <More />
         </Route>
-      </Switch>
+      </Routes>
     </div>
   );
 }
