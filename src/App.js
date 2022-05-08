@@ -13,6 +13,7 @@ function App() {
           <Link to="/more">More</Link>
           <hr />
         </header>
+        {/* Using version 6 react router to create multiple pages for cocktails (My own perfected reatios + a list/api from the cocktaildb as a more extensive list) */}
         <Routes>
           <Route exact path="/" element={<Cocktail />} />
           <Route path="/more" element={<More />} />
