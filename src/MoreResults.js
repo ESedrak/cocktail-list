@@ -6,13 +6,13 @@ const MoreResults = (props) => {
   if (props.results) {
     return (
       <div className="MoreResults">
-        {props.results.map((cocktail, index) => {
+        {props.results.map((cocktail, idDrink) => {
           return (
-            <div key={index}>
+            <div key={idDrink}>
               <h2>{cocktail.strDrink}</h2>
               <img
                 src={cocktail.strDrinkThumb}
-                alt={cocktail.idDrink}
+                alt={cocktail.strCategory}
                 width="100px"
               ></img>
               <p>{cocktail.strIngredient1}</p>
@@ -25,6 +25,7 @@ const MoreResults = (props) => {
               <p>{cocktail.strMeasure4}</p>
               <p>{cocktail.strIngredient5}</p>
               <p>{cocktail.strMeasure5}</p>
+              <p>{cocktail.strInstructions}</p>
             </div>
           );
         })}
