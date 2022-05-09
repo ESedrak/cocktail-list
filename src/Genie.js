@@ -5,7 +5,7 @@ function Genie() {
   return (
     <div className="Genie">
       <section className="one-cocktail">
-        <img className="image-drink" src={BlueGenie} alt="French75" />
+        <img className="image-drink" src={BlueGenie} alt="Blue Gin Secret" />
         <div className="image-overlay">
           <h2 className="drink-name">Blue Genie</h2>
           <ul className="image-description">
