@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import Results from "./Results";
+import MoreResults from "./MoreResults";
 
 const More = () => {
   const [keyword, setKeyword] = useState(null);
@@ -37,7 +37,7 @@ const More = () => {
           </span>
         </button>
       </form>
-      <Results results={results} />
+      <MoreResults results={results} />
     </div>
   );
 };
