@@ -1,13 +1,20 @@
 import React, { useState } from "react";
+import axios from "axios";
+import Results from "./Results";
 
 const More = () => {
   const [keyword, setKeyword] = useState(null);
+  const [results, setResults] = useState(null);
+
+  const handleKeywordSearch = (response) => {
+    setResults(response.data.drinks);
+  };
 
   const handleSearch = (e) => {
     e.preventDefault();
     // Receiving information from the search bar into the URL below
-    const urlCocktail = `www.thecocktaildb.com/api/json/v1/1/search.php?s=${keyword}`;
-    console.log(urlCocktail);
+    const urlCocktail = `https:www.thecocktaildb.com/api/json/v1/1/search.php?s=${keyword}`;
+    axios.get(urlCocktail).then(handleKeywordSearch);
   };
 
   const cocktailSearch = (e) => {
@@ -25,9 +32,12 @@ const More = () => {
           onChange={cocktailSearch}
         ></input>
         <button type="button" onClick={handleSearch}>
-          🔍
+          <span role="img" aria-label="search">
+            🔍
+          </span>
         </button>
       </form>
+      <Results results={results} />
     </div>
   );
 };
