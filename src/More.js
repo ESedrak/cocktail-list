@@ -12,9 +12,12 @@ const More = () => {
 
   const handleSearch = (e) => {
     e.preventDefault();
-    // Receiving information from the search bar into the URL below
+    // Receiving keyword from the search bar to complete URL
     const urlCocktail = `https:www.thecocktaildb.com/api/json/v1/1/search.php?s=${keyword}`;
-    axios.get(urlCocktail).then(handleKeywordSearch);
+    // axios.get(urlCocktail).then(handleKeywordSearch);
+    fetch(urlCocktail)
+      .then((response) => response.json())
+      .then((data) => setResults(data.drinks));
   };
 
   const cocktailSearch = (e) => {

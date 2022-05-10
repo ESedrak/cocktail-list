@@ -4,7 +4,7 @@ import "./MoreResults.css";
 
 const MoreResults = (props) => {
   //  console.log(props.results) to see data passed through from component More
-  console.log(props.results);
+  // console.log(props.results);
   if (props.results) {
     return (
       <div className="MoreResults">
