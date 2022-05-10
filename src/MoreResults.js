@@ -9,9 +9,9 @@ const MoreResults = (props) => {
     return (
       <div className="MoreResults">
         <Container>
-          {props.results.map((cocktail, idDrink) => {
+          {props.results.map((cocktail, index) => {
             return (
-              <section key={idDrink}>
+              <section key={index}>
                 <h2>{cocktail.strDrink}</h2>
                 <img
                   src={cocktail.strDrinkThumb}

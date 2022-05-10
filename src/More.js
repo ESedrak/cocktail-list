@@ -13,7 +13,15 @@ const More = () => {
   const handleSearch = (e) => {
     e.preventDefault();
     // Receiving keyword from the search bar to complete URL
-    const urlCocktail = `https:www.thecocktaildb.com/api/json/v1/1/search.php?s=${keyword}`;
+    const requestInfo = {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        mode: "cors",
+      },
+    };
+    const urlCocktail =
+      "https:www.thecocktaildb.com/api/json/v1/1/search.php?s=gin";
     // axios.get(urlCocktail).then(handleKeywordSearch);
     fetch(urlCocktail)
       .then((response) => response.json())
