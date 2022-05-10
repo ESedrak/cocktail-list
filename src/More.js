@@ -6,9 +6,9 @@ const More = () => {
   const [keyword, setKeyword] = useState(null);
   const [results, setResults] = useState(null);
 
-  const handleKeywordSearch = (response) => {
-    setResults(response.data.drinks);
-  };
+  // const handleKeywordSearch = (response) => {
+  //   setResults(response.data.drinks);
+  // };
 
   const handleSearch = (e) => {
     e.preventDefault();
