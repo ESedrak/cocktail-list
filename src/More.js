@@ -21,7 +21,7 @@ const More = () => {
     //   },
     // };
     const urlCocktail =
-      "https:www.thecocktaildb.com/api/json/v1/1/search.php?s=gin&api_key=1";
+      "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=gin";
     // axios.get(urlCocktail).then(handleKeywordSearch);
     fetch(urlCocktail)
       .then((response) => response.json())
