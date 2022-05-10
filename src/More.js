@@ -28,7 +28,8 @@ const More = () => {
   return (
     <div className="More">
       <h2>
-        More(... in progress) - Special thanks to TheCocktailDB. Testing first
+        More(... in progress) - Special thanks to TheCocktailDB. Testing first.
+        Testing testing
       </h2>
       <form onSubmit={handleSearch}>
         <input
