@@ -4,7 +4,6 @@ import "./MoreResults.css";
 
 const MoreResults = (props) => {
   //  console.log(props.results) to see data passed through from component More
-  // console.log(props.results);
   if (props.results) {
     return (
       <div className="MoreResults">
@@ -18,6 +17,8 @@ const MoreResults = (props) => {
                   alt={cocktail.strCategory}
                   width="100px"
                 ></img>
+                {/* The API list shows up to 15 ingredients/measurements - however, haven't seen more than 7 (have allowed room for 9).
+                 if needed, can add more (but at the time it is unnecessary) */}
                 <Row>
                   <Col sm={4}>
                     <strong>{cocktail.strIngredient1}</strong>{" "}
