@@ -28,7 +28,7 @@ const More = () => {
       <form onSubmit={handleSearch}>
         <input
           type="search"
-          placeholder="Search for a drink"
+          placeholder="Search for a Drink or Spirit"
           onChange={cocktailSearch}
         ></input>
         <button type="button" onClick={handleSearch}>

@@ -20,36 +20,68 @@ const MoreResults = (props) => {
                 <Row>
                   <Col sm={4}>
                     <span>
-                      {cocktail.strIngredient1} {cocktail.strMeasure1}
+                      <strong>{cocktail.strIngredient1}</strong>{" "}
+                      <em>{cocktail.strMeasure1}</em>
                     </span>
                   </Col>
                   <Col sm={4}>
                     <span>
-                      {cocktail.strIngredient2} {cocktail.strMeasure2}
+                      <strong>{cocktail.strIngredient2}</strong>{" "}
+                      <em>{cocktail.strMeasure2}</em>
                     </span>
                   </Col>
                   <Col sm={4}>
                     <span>
-                      {cocktail.strIngredient3} {cocktail.strMeasure3}
+                      <strong>{cocktail.strIngredient2}</strong>{" "}
+                      <em>{cocktail.strMeasure2}</em>
                     </span>
                   </Col>
                   <Col sm={4}>
                     <span>
-                      {cocktail.strIngredient4} {cocktail.strMeasure4}
+                      <strong>{cocktail.strIngredient3}</strong>{" "}
+                      <em>{cocktail.strMeasure3}</em>
                     </span>
                   </Col>
                   <Col sm={4}>
                     <span>
-                      {cocktail.strIngredient5} {cocktail.strMeasure5}
+                      <strong>{cocktail.strIngredient4}</strong>{" "}
+                      <em>{cocktail.strMeasure4}</em>
                     </span>
                   </Col>
                   <Col sm={4}>
                     <span>
-                      {cocktail.strIngredient6} {cocktail.strMeasure6}
+                      <strong>{cocktail.strIngredient5}</strong>{" "}
+                      <em>{cocktail.strMeasure5}</em>
+                    </span>
+                  </Col>
+                  <Col sm={4}>
+                    <span>
+                      <strong>{cocktail.strIngredient6}</strong>{" "}
+                      <em>{cocktail.strMeasure6}</em>
+                    </span>
+                  </Col>
+                  <Col sm={4}>
+                    <span>
+                      <strong>{cocktail.strIngredient7}</strong>{" "}
+                      <em>{cocktail.strMeasure7}</em>
+                    </span>
+                  </Col>
+                  <Col sm={4}>
+                    <span>
+                      <strong>{cocktail.strIngredient8}</strong>{" "}
+                      <em>{cocktail.strMeasure8}</em>
+                    </span>
+                  </Col>
+                  <Col sm={4}>
+                    <span>
+                      <strong>{cocktail.strIngredient9}</strong>{" "}
+                      <em>{cocktail.strMeasure9}</em>
                     </span>
                   </Col>
                 </Row>
-                <p>{cocktail.strInstructions}</p>
+                <p className="MoreResultsIntructions">
+                  {cocktail.strInstructions}
+                </p>
               </div>
             );
           })}
