@@ -11,7 +11,6 @@ function App() {
         <header className="App-header">
           <h1>Bar of Liz</h1>
           <p>The perfected ratios of some of the best cocktails</p>
-          <p>This is a test</p>
           <Link to="/">Home </Link>
           <Link to="/more">More</Link>
           <hr />
