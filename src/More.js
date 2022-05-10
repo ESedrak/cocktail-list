@@ -37,7 +37,7 @@ const More = () => {
     <div className="More">
       <h2>
         More(... in progress) - Special thanks to TheCocktailDB. Testing first.
-        Testing testing
+        Testing testing. Testing Testing Testing.
       </h2>
       <form onSubmit={handleSearch}>
         <input
