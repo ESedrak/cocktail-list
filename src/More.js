@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import MoreResults from "./MoreResults";
 
 const More = () => {
-  // const [keyword, setKeyword] = useState(null);
+  const [keyword, setKeyword] = useState(null);
   const [results, setResults] = useState(null);
 
   // const handleKeywordSearch = (response) => {
@@ -20,8 +20,7 @@ const More = () => {
     //     mode: "cors",
     //   },
     // };
-    const urlCocktail =
-      "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=gin&api_key=1";
+    const urlCocktail = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${keyword}&api_key=1`;
     // axios.get(urlCocktail).then(handleKeywordSearch);
     fetch(urlCocktail)
       .then((response) => response.json())
@@ -29,7 +28,7 @@ const More = () => {
   };
 
   const cocktailSearch = (e) => {
-    // setKeyword(e.target.value);
+    setKeyword(e.target.value);
     //Value of the search bar
   };
 
