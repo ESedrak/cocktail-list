@@ -9,10 +9,9 @@ function App() {
     <Router>
       <div className="App">
         <header className="App-header">
-          <h1>Bar of Liz</h1>
-          <p>The perfected ratios of some of the best cocktails</p>
-          <Link to="/">Home </Link>
-          <Link to="/more">More</Link>
+          <h1>Cocktails</h1>
+          <Link to="/">Bar of Liz</Link>
+          <Link to="/more">Bar of CocktailDB</Link>
           <hr />
         </header>
         {/* Using version 6 react router to create multiple pages for cocktails (My own perfected reatios + a list/api from the cocktaildb as a more extensive list) */}

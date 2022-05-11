@@ -23,7 +23,7 @@ const More = () => {
 
   return (
     <div className="More">
-      <h2>More(... in progress) - Special thanks to TheCocktailDB.</h2>
+      <h2>Bar of TheCocktailDB.</h2>
       <form onSubmit={handleSearch}>
         <input
           type="search"

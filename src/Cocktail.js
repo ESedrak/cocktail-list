@@ -10,6 +10,8 @@ import Genie from "./Genie";
 function Cocktail() {
   return (
     <div className="Cocktail">
+      <h2>Bar of Liz</h2>
+      <p>The perfected ratios of some of the best cocktails</p>
       <French75 />
       <Sours />
       <Margarita />
