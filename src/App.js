@@ -22,7 +22,7 @@ function App() {
         <Routes>
           {/* Cocktail will show my own personal list while More will show an online API list*/}
           <Route exact path="/" element={<Cocktail />} />
-          <Route path="/more" element={<More />} />
+          <Route path="/more" element={<More defaultDrink="Margarita" />} />
         </Routes>
       </div>
     </Router>
