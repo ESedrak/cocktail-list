@@ -12,7 +12,7 @@
 .App-link-liz {
   border: 1px solid white;
   border-radius: 50px;
-  margin: 10px;
+  margin: 5px;
   text-decoration: none;
   padding: 5px;
   color: white;
@@ -21,8 +21,18 @@
 .App-link-db {
   border: 1px solid white;
   border-radius: 50px;
-  margin: 10px;
+  margin: 5px;
   text-decoration: none;
   padding: 5px;
   color: white;
+}
+
+.App-link-liz:hover {
+  background-color: white;
+  color: black;
+}
+
+.App-link-db:hover {
+  background-color: white;
+  color: black;
 }
