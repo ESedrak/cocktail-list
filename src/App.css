@@ -5,6 +5,24 @@
   color: white;
 }
 
-.App .App-header {
+.App-header {
   font-family: cursive;
+}
+
+.App-link-liz {
+  border: 1px solid white;
+  border-radius: 50px;
+  margin: 10px;
+  text-decoration: none;
+  padding: 5px;
+  color: white;
+}
+
+.App-link-db {
+  border: 1px solid white;
+  border-radius: 50px;
+  margin: 10px;
+  text-decoration: none;
+  padding: 5px;
+  color: white;
 }
