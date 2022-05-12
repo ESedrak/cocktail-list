@@ -19,7 +19,7 @@ const MoreResults = (props) => {
                 ></img>
                 {/* The API list has room for up to 15 ingredients/measurements - however, haven't seen more than 8 (have allowed room for 9).
                  if needed, can add more (but at the time it is unnecessary) */}
-                <Row>
+                <Row className="MoreResults-row">
                   <Col sm={4}>
                     <strong>{cocktail.strIngredient1}</strong>{" "}
                     <em>{cocktail.strMeasure1}</em>

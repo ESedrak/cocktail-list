@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import MoreResults from "./MoreResults";
+import "./More.css";
 
 const More = (props) => {
   const [keyword, setKeyword] = useState(props.defaultDrink); // keyword is set to default  "Margarita"

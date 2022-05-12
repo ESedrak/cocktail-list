@@ -5,12 +5,12 @@
 
 .MoreResults section {
   border: 2px solid white;
-  max-width: 450px;
+  max-width: 460px;
   margin: 20px auto;
   border-radius: 8px;
 }
 
-.MoreResults col-sm-4 {
-  margin: 10px;
-  background-color: yellow;
+.MoreResults-row {
+  margin: 0 auto;
+  padding: 2px;
 }
