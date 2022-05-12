@@ -42,8 +42,9 @@ const More = (props) => {
             type="search"
             placeholder="Search for a Drink or Spirit"
             onChange={cocktailSearch}
+            className="More-searchbar"
           ></input>
-          <button type="button" onClick={handleSearch}>
+          <button type="button" onClick={handleSearch} className="More-button">
             <span role="img" aria-label="search">
               🔍
             </span>
