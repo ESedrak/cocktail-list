@@ -1,8 +1,9 @@
 import "./App.css";
 import Cocktail from "./Cocktail";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import More from "./More";
+import MoreCocktail from "./MoreCocktail";
 import React from "react";
+import MoreRandom from "./MoreRandom";
 
 function App() {
   return (
@@ -16,13 +17,20 @@ function App() {
           <Link to="/more" className="App-link-db">
             Bar of CocktailDB
           </Link>
+          <Link to="/random" className="App-link-random">
+            Bar of Random
+          </Link>
           <hr />
         </header>
         {/* Using version 6 react router to create multiple pages for cocktails (My own perfected reatios + a list/api from the cocktaildb as a more extensive list) */}
         <Routes>
           {/* Cocktail will show my own personal list while More will show an online API list*/}
           <Route exact path="/" element={<Cocktail />} />
-          <Route path="/more" element={<More defaultDrink="Margarita" />} />
+          <Route
+            path="/more"
+            element={<MoreCocktail defaultDrink="Margarita" />}
+          />
+          <Route path="/random" element={<MoreRandom />} />
         </Routes>
       </div>
     </Router>
