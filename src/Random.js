@@ -45,9 +45,11 @@ const Random = () => {
 
   return (
     <div className="Random">
+      <h2>Unsure?</h2>
+      <h3>Let fate decide</h3>
       <form onChange={randomCocktail}>
         <button className="Random Button" onClick={randomCocktail}>
-          Random Cocktail! ...In progress
+          Random Cocktail!
         </button>
         <RandomData randomData={randomData} />
       </form>

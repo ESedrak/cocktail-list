@@ -1,14 +1,10 @@
-.More-searchbar {
+.MoreCocktail-searchbar {
   width: 230px;
   border-radius: 5px;
   padding: 2px;
 }
 
-.More-button {
+.MoreCocktail-button {
   border-radius: 5px;
   background-color: white;
-}
-
-.More-button:hover {
-  background-color: rgb(192, 192, 192);
 }
