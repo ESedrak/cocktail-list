@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import MoreResults from "./MoreResults";
 import "./MoreCocktail.css";
-import searchLogo from "./images/search.jpg";
+import searchIcon from "./images/search.jpg";
 
 const MoreCocktail = (props) => {
   const [keyword, setKeyword] = useState(props.defaultDrink); // keyword is set to default  "Margarita"
@@ -50,7 +50,7 @@ const MoreCocktail = (props) => {
             onClick={handleSearch}
             className="MoreCocktail-button"
           >
-            <img src={searchLogo} alt="search" width="20px"></img>
+            <img src={searchIcon} alt="search" width="20px"></img>
           </button>
         </form>
         <MoreResults results={results} />
