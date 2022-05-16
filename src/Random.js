@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import MoreRandomData from "./MoreRandomData";
+import RandomData from "./RandomData";
 
-const MoreRandom = () => {
+const Random = () => {
   const [randomData, setRandomData] = useState({});
 
   const handleRandomResponse = (response) => {
@@ -44,15 +44,15 @@ const MoreRandom = () => {
   };
 
   return (
-    <div className="MoreRandom">
+    <div className="Random">
       <form onChange={randomCocktail}>
-        <button className="MoreRandom Button" onClick={randomCocktail}>
+        <button className="Random Button" onClick={randomCocktail}>
           Random Cocktail! ...In progress
         </button>
-        <MoreRandomData randomData={randomData} />
+        <RandomData randomData={randomData} />
       </form>
     </div>
   );
 };
 
-export default MoreRandom;
+export default Random;

@@ -8,14 +8,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 // This structure of the App contains my own personal cocktail list (through Component Cocktail)
-// and an online cocktail list https://www.thecocktaildb.com/api.php (through Component More)
+// and an online cocktail list https://www.thecocktaildb.com/api.php (through Component More and Random)
 root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

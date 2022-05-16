@@ -3,7 +3,7 @@ import Cocktail from "./Cocktail";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import MoreCocktail from "./MoreCocktail";
 import React from "react";
-import MoreRandom from "./MoreRandom";
+import Random from "./Random";
 
 function App() {
   return (
@@ -30,7 +30,7 @@ function App() {
             path="/more"
             element={<MoreCocktail defaultDrink="Margarita" />}
           />
-          <Route path="/random" element={<MoreRandom />} />
+          <Route path="/random" element={<Random />} />
         </Routes>
       </div>
     </Router>

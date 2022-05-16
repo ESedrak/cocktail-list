@@ -1,10 +1,10 @@
 import React from "react";
 
-const MoreRandomData = (props) => {
+const RandomData = (props) => {
   // console.log(props.randomData) to get data from MoreRandom component
   console.log(props.randomData);
   return (
-    <div className="MoreRandomData">
+    <div className="RandomData">
       <h2>{props.randomData.name}</h2>
       <img
         src={props.randomData.image}
@@ -43,4 +43,4 @@ const MoreRandomData = (props) => {
   );
 };
 
-export default MoreRandomData;
+export default RandomData;
