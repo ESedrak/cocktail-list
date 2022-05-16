@@ -5,6 +5,7 @@
   border-radius: 2px;
   max-width: 100%;
 }
+
 .Cocktail ul {
   padding: 0px;
   list-style: none;
@@ -16,20 +17,20 @@
   border: 1px solid white;
 }
 
-.Cocktail .drink-name {
+.Cocktail-drink-name {
   color: pink;
   font-size: 30px;
+}
+
+.Cocktail-image-drink {
+  width: 100%;
+  height: auto;
 }
 
 .Cocktail-one {
   position: relative;
   margin: 0 auto;
   max-width: 100%;
-  height: auto;
-}
-
-.Cocktail-image-drink {
-  width: 100%;
   height: auto;
 }
 
