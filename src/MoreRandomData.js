@@ -1,7 +1,12 @@
 import React from "react";
 
 const MoreRandomData = (props) => {
-  return <h1>Random Data</h1>;
+  console.log(props.randomData);
+  return (
+    <div className="MoreRandomData">
+      <h1>{props.randomData.strDrink}</h1>;
+    </div>
+  );
 };
 
 export default MoreRandomData;
