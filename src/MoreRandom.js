@@ -9,7 +9,7 @@ const MoreRandom = () => {
       name: response.drinks[0].strDrink,
       tags: response.drinks[0].strTags,
       category: response.drinks[0].strCategory,
-      image: response.drinks[0].strImageSource,
+      image: response.drinks[0].strDrinkThumb,
       id: response.drinks[0].idDrink,
       instructions: response.drinks[0].strInstructions,
       ingredient1: response.drinks[0].strIngredient1,
