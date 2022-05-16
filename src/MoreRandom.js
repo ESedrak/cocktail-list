@@ -31,7 +31,6 @@ const MoreRandom = () => {
       measure8: response.drinks[0].strMeasure8,
       measure9: response.drinks[0].strMeasure9,
     });
-    console.log(response.drinks);
   };
 
   const randomCocktail = (e) => {
@@ -39,7 +38,6 @@ const MoreRandom = () => {
 
     const randomUrl = "https://www.thecocktaildb.com/api/json/v1/1/random.php";
 
-    // axios.get(randomUrl).then(handleRandomSearch);
     fetch(randomUrl)
       .then((response) => response.json())
       .then(handleRandomResponse);
