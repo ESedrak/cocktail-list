@@ -1,3 +1,7 @@
+.RandomData section {
+  max-width: 500px;
+}
+
 .RandomData-instructions {
-  margin: 0 100px 10px 100px;
+  margin: 10px 2px 0px 2px;
 }

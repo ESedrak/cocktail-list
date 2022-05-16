@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./MoreResults.css";
+import "./Cocktail.css";
 
 const MoreResults = (props) => {
   //  console.log(props.results) to see data passed through from component More
@@ -11,12 +12,13 @@ const MoreResults = (props) => {
           {props.results.map((cocktail, index) => {
             return (
               <section key={index}>
-                <h2>{cocktail.strDrink}</h2>
                 <img
                   src={cocktail.strDrinkThumb}
                   alt={cocktail.strCategory}
                   width="100px"
+                  className="Cocktail-image-drink"
                 ></img>
+                <h2>{cocktail.strDrink}</h2>
                 {/* The API list has room for up to 15 ingredients/measurements - however, haven't seen more than 8 (have allowed room for 9).
                  if needed, can add more (but at the time it is unnecessary) */}
                 <Row className="MoreResults-row">

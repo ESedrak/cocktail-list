@@ -1,7 +1,7 @@
 .Cocktail {
   text-align: center;
   background: linear-gradient(135deg, black, rgb(138, 126, 126), black);
-  color: blanchedalmond;
+  color: pink;
   border-radius: 2px;
   max-width: 100%;
 }

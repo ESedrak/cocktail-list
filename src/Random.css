@@ -1,7 +1,3 @@
-.Random {
-  margin: 0 auto;
-}
-
 .Random button {
   border-radius: 30px;
   background-color: white;
@@ -13,5 +9,4 @@
 
 .Random button:hover {
   transform: scale(1.2);
-  background-color: blanchedalmond;
 }
