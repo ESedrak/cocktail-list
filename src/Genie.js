@@ -4,7 +4,7 @@ import BlueGenie from "./images/BlueGenie.jpg";
 function Genie() {
   return (
     <div className="Genie">
-      <section className="one-cocktail">
+      <section className="Cocktail-one">
         <img className="image-drink" src={BlueGenie} alt="Blue Gin Secret" />
         <div className="image-overlay">
           <h2 className="drink-name">Blue Genie</h2>

@@ -4,20 +4,20 @@ import sourImg from "./images/Sours.png";
 function Sours() {
   return (
     <div className="Sours">
-      <section className="one-cocktail">
-        <img className="image-drink" src={sourImg} alt="Sour" />
-        <div className="image-overlay">
-          <h2 className="drink-name">Sours</h2>
-          <ul className="ingredients">
+      <section className="Cocktail-one">
+        <img className="Cocktail-image-drink" src={sourImg} alt="Sour" />
+        <div className="Cocktail-image-overlay">
+          <h2 className="Cocktail-drink-name">Sours</h2>
+          <ul className="Cocktail-ingredients">
             <li>60mls of Whisky or Amaretto</li>
             <li>30mls of Freshly Squeezed Lemon Juice</li>
             <li>1 Egg White</li>
             <li>15mls of Simple Syrup</li>
           </ul>
-          <p className="process">
+          <p className="Cocktail-process">
             Shake ingredients with ice and pour into a whisky glass
           </p>
-          <div className="optional-topping">
+          <div className="Cocktail-optional-topping">
             <strong> Optional: </strong>
             <div>
               <em>If using Whisky:</em>

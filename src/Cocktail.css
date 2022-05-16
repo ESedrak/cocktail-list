@@ -1,15 +1,14 @@
-.Cocktail ul {
-  padding: 0px;
-  list-style: none;
-  font-size: 15px;
-}
-
 .Cocktail {
   text-align: center;
   background: linear-gradient(135deg, black, rgb(138, 126, 126), black);
   color: blanchedalmond;
   border-radius: 2px;
   max-width: 100%;
+}
+.Cocktail ul {
+  padding: 0px;
+  list-style: none;
+  font-size: 15px;
 }
 
 .Cocktail section {
@@ -22,19 +21,19 @@
   font-size: 30px;
 }
 
-.one-cocktail {
+.Cocktail-one {
   position: relative;
   margin: 0 auto;
   max-width: 100%;
   height: auto;
 }
 
-.image-drink {
+.Cocktail-image-drink {
   width: 100%;
   height: auto;
 }
 
-.image-overlay {
+.Cocktail-image-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -52,15 +51,15 @@
   text-align: center;
 }
 
-.image-overlay:hover {
+.Cocktail-image-overlay:hover {
   opacity: 1;
 }
 
-.optional-topping {
+.Cocktail-optional-topping {
   font-size: 10px;
   font-weight: lighter;
 }
-.process {
+.Cocktail-process {
   font-weight: lighter;
   font-size: 13px;
 }
