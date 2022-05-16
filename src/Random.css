@@ -1,0 +1,13 @@
+.Random button {
+  border-radius: 30px;
+  background-color: white;
+  margin: 20px;
+  font-size: 30px;
+  padding: 10px;
+  transition: 2s;
+}
+
+.Random button:hover {
+  transform: scale(1.2);
+  background-color: blanchedalmond;
+}

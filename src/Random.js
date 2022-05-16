@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import RandomData from "./RandomData";
+import "./Random.css";
 
 const Random = () => {
   const [randomData, setRandomData] = useState({});
@@ -46,11 +47,8 @@ const Random = () => {
   return (
     <div className="Random">
       <h2>Unsure?</h2>
-      <h3>Let fate decide</h3>
       <form onChange={randomCocktail}>
-        <button className="Random Button" onClick={randomCocktail}>
-          Random Cocktail!
-        </button>
+        <button onClick={randomCocktail}>Random Cocktail</button>
         <RandomData randomData={randomData} />
       </form>
     </div>

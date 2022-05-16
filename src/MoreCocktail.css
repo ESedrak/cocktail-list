@@ -1,3 +1,7 @@
+.MoreCocktail {
+  background: linear-gradient(135deg, black, rgb(138, 126, 126), black);
+}
+
 .MoreCocktail-searchbar {
   width: 230px;
   border-radius: 5px;
