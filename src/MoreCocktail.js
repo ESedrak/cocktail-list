@@ -37,7 +37,7 @@ const MoreCocktail = (props) => {
   if (loaded) {
     return (
       <div className="MoreCocktail">
-        <h2>Bar of TheCocktailDB.</h2>
+        <h2 className="MoreCocktail-heading">Bar of TheCocktailDB.</h2>
         <form onSubmit={handleSearch}>
           <input
             type="search"

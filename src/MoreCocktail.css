@@ -2,10 +2,15 @@
   background: linear-gradient(135deg, black, rgb(138, 126, 126), black);
 }
 
+.MoreCocktail-heading {
+  color: pink;
+}
+
 .MoreCocktail-searchbar {
   width: 230px;
   border-radius: 5px;
   padding: 2px;
+  margin-bottom: 5px;
 }
 
 .MoreCocktail-button {
