@@ -58,7 +58,7 @@ const Random = () => {
   if (ready) {
     return (
       <div className="Random">
-        <h2>Unsure?</h2>
+        <h2 className="RandomHeading">Unsure?</h2>
         <form onChange={randomCocktail}>
           <button onClick={handleRandomCocktail}>Random Cocktail</button>
           <RandomData randomData={randomData} />

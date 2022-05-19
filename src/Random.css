@@ -1,3 +1,7 @@
+.Random section {
+  border: 1px solid white;
+}
+
 .Random button {
   border-radius: 30px;
   background-color: white;
@@ -9,4 +13,9 @@
 
 .Random button:hover {
   transform: scale(1.2);
+  background-color: pink;
+}
+
+.RandomHeading {
+  color: pink;
 }
