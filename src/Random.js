@@ -4,6 +4,7 @@ import "./Random.css";
 
 const Random = () => {
   const [randomData, setRandomData] = useState({});
+  const [ready, setReady] = useState(false);
 
   const handleRandomResponse = (response) => {
     setRandomData({
@@ -35,8 +36,6 @@ const Random = () => {
   };
 
   const randomCocktail = (e) => {
-    e.preventDefault();
-
     // URL below generates a random cocktail from the api list of  cocktaildb
     const randomUrl = "https://www.thecocktaildb.com/api/json/v1/1/random.php";
 
@@ -46,15 +45,30 @@ const Random = () => {
       .then(handleRandomResponse);
   };
 
-  return (
-    <div className="Random">
-      <h2>Unsure?</h2>
-      <form onChange={randomCocktail}>
-        <button onClick={randomCocktail}>Random Cocktail</button>
-        <RandomData randomData={randomData} />
-      </form>
-    </div>
-  );
+  const handleRandomCocktail = (e) => {
+    e.preventDefault();
+    randomCocktail();
+  };
+
+  const firstLoad = () => {
+    setReady(true);
+    randomCocktail();
+  };
+
+  if (ready) {
+    return (
+      <div className="Random">
+        <h2>Unsure?</h2>
+        <form onChange={randomCocktail}>
+          <button onClick={handleRandomCocktail}>Random Cocktail</button>
+          <RandomData randomData={randomData} />
+        </form>
+      </div>
+    );
+  } else {
+    firstLoad();
+    return "Loading Random Cockail";
+  }
 };
 
 export default Random;
