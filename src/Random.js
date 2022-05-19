@@ -3,8 +3,8 @@ import RandomData from "./RandomData";
 import "./Random.css";
 
 const Random = () => {
-  const [randomData, setRandomData] = useState({});
-  const [ready, setReady] = useState(false);
+  const [randomData, setRandomData] = useState({}); /*Require {}*/
+  const [ready, setReady] = useState(false); /* Keep track of first page */
 
   const handleRandomResponse = (response) => {
     setRandomData({
@@ -36,7 +36,7 @@ const Random = () => {
   };
 
   const randomCocktail = (e) => {
-    // URL below generates a random cocktail from the api list of  cocktaildb
+    // URL below generates a random cocktail from the api list of  cocktaildb (over 650 cocktails)
     const randomUrl = "https://www.thecocktaildb.com/api/json/v1/1/random.php";
 
     // Use fetch instead of axios - as issues arose when axios and netlify (hosting platfor) are being used together
@@ -58,7 +58,7 @@ const Random = () => {
   if (ready) {
     return (
       <div className="Random">
-        <h2 className="RandomHeading">Unsure?</h2>
+        <h2 className="Random-heading">Unsure?</h2>
         <form onChange={randomCocktail}>
           <button onClick={handleRandomCocktail}>Random Cocktail</button>
           <RandomData randomData={randomData} />
