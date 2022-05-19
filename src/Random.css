@@ -1,3 +1,7 @@
+.Random {
+  background: linear-gradient(135deg, black, rgb(138, 126, 126), black);
+}
+
 .Random button {
   border-radius: 30px;
   background-color: white;
@@ -5,11 +9,13 @@
   font-size: 30px;
   padding: 10px;
   transition: 2s;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .Random button:hover {
   transform: scale(1.2);
   background-color: pink;
+  box-shadow: 10px 20px 40px black;
 }
 
 .Random-heading {
