@@ -37,8 +37,10 @@ const Random = () => {
   const randomCocktail = (e) => {
     e.preventDefault();
 
+    // URL below generates a random cocktail from the api list of  cocktaildb
     const randomUrl = "https://www.thecocktaildb.com/api/json/v1/1/random.php";
 
+    // Use fetch instead of axios - as issues arose when axios and netlify (hosting platfor) are being used together
     fetch(randomUrl)
       .then((response) => response.json())
       .then(handleRandomResponse);
