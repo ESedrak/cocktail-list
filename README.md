@@ -2,7 +2,9 @@
 
 ## Hosted on Netlify https://zesty-alfajores-250e4e.netlify.app/
 
-### Has my own personal cocktail list with the perfected ratios (Liz's Bar) and API cocktail list (cocktailsdb Bar - However, I cannot personally verify the over 650 cocktails list that it provides)
+### Has my own personal cocktail list with the perfected ratios (Liz's Bar) and API cocktail list (cocktailsdb Bar - However, I cannot personally verify the over 650 cocktails list that it provides).
+
+### Also can navigate to Random Cocktail to randomly pick a cocktail to make
 
 Enjoy!
 
