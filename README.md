@@ -1,3 +1,13 @@
+#How to navigate
+
+## Hosted on Netlify https://zesty-alfajores-250e4e.netlify.app/
+
+### Has my own personal cocktail list with the perfected ratios (Liz's Bar) and has API cocktail list (cocktailsdb - However, I cannot personally verify the over 600 cocktails list that it provides)
+
+Enjoy!
+
+========================================================
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
