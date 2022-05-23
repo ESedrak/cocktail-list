@@ -12,7 +12,7 @@
   transition: 2s;
   background-color: black;
   color: pink;
-  border: 1px solid pink;
+  border: 2px solid pink;
 }
 
 .Random button:hover {
