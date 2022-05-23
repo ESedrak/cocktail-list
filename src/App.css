@@ -2,48 +2,48 @@
   text-align: center;
   font-size: 30 px;
   background-color: black;
-  color: white;
+  color: pink;
   font-family: "Sail", cursive;
 }
 
 .App-link-liz {
-  border: 1px solid white;
+  border: 1px solid pink;
   border-radius: 50px;
   margin: 5px;
   text-decoration: none;
   padding: 5px;
-  color: white;
-}
-
-.App-link-db {
-  border: 1px solid white;
-  border-radius: 50px;
-  margin: 5px;
-  text-decoration: none;
-  padding: 5px;
-  color: white;
-}
-
-.App-link-random {
-  border: 1px solid white;
-  border-radius: 50px;
-  margin: 5px;
-  text-decoration: none;
-  padding: 5px;
-  color: white;
+  color: pink;
 }
 
 .App-link-liz:hover {
-  background-color: white;
+  background-color: pink;
   color: black;
+}
+
+.App-link-db {
+  border: 1px solid pink;
+  border-radius: 50px;
+  margin: 5px;
+  text-decoration: none;
+  padding: 5px;
+  color: pink;
 }
 
 .App-link-db:hover {
-  background-color: white;
+  background-color: pink;
   color: black;
 }
 
+.App-link-random {
+  border: 1px solid pink;
+  border-radius: 50px;
+  margin: 5px;
+  text-decoration: none;
+  padding: 5px;
+  color: pink;
+}
+
 .App-link-random:hover {
-  background-color: white;
+  background-color: pink;
   color: black;
 }

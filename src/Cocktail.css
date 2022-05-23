@@ -1,6 +1,5 @@
 .Cocktail {
   text-align: center;
-  background: linear-gradient(135deg, black, rgb(138, 126, 126), black);
   color: pink;
   border-radius: 2px;
   max-width: 100%;
@@ -47,7 +46,7 @@
   align-items: center;
   justify-content: center;
   opacity: 0;
-  transition: opacity 0.25s;
+  transition: opacity 0.2s;
   text-align: center;
 }
 
@@ -56,10 +55,9 @@
 }
 
 .Cocktail-optional-topping {
-  font-size: 10px;
+  font-size: 15px;
   font-weight: lighter;
 }
 .Cocktail-process {
-  font-weight: lighter;
   font-size: 13px;
 }
