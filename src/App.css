@@ -6,6 +6,7 @@
   font-family: "Sail", cursive;
 }
 
+/* My cocktail's - Bar of Liz */
 .App-link-liz {
   border: 1px solid pink;
   border-radius: 50px;
@@ -13,6 +14,7 @@
   text-decoration: none;
   padding: 5px;
   color: pink;
+  font-size: 19px;
 }
 
 .App-link-liz:hover {
@@ -20,6 +22,7 @@
   color: black;
 }
 
+/* CocktailDb cocktails - Bar of CocktailDb */
 .App-link-db {
   border: 1px solid pink;
   border-radius: 50px;
@@ -27,6 +30,7 @@
   text-decoration: none;
   padding: 5px;
   color: pink;
+  font-size: 19px;
 }
 
 .App-link-db:hover {
@@ -34,6 +38,7 @@
   color: black;
 }
 
+/* Bar of random */
 .App-link-random {
   border: 1px solid pink;
   border-radius: 50px;
@@ -41,6 +46,7 @@
   text-decoration: none;
   padding: 5px;
   color: pink;
+  font-size: 19px;
 }
 
 .App-link-random:hover {
