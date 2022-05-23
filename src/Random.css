@@ -1,15 +1,18 @@
 .Random button {
   border-radius: 30px;
-  background-color: pink;
   margin: 20px;
   font-size: 30px;
   padding: 10px;
   transition: 2s;
+  background-color: black;
+  color: pink;
+  border: 1px solid pink;
 }
 
 .Random button:hover {
   transform: scale(1.2);
   background-color: pink;
+  color: black;
 }
 
 .Random-heading {
