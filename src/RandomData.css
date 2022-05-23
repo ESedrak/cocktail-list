@@ -1,8 +1,9 @@
+.RandomData-instructions {
+  margin: 10px 2px 0px 2px;
+}
+
+/* One cocktail */
 .RandomData section {
   max-width: 500px;
   border: 1px solid white;
-}
-
-.RandomData-instructions {
-  margin: 10px 2px 0px 2px;
 }
