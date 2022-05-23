@@ -12,12 +12,12 @@ function Cocktail() {
     <div className="Cocktail">
       <h2>Bar of Liz</h2>
       <p>The perfected ratios of some of the best cocktails</p>
-      <French75 />
-      <Sours />
       <Margarita />
+      <Sours />
       <Gnt />
       <ScreamingB />
       <Genie />
+      <French75 />
     </div>
   );
 }

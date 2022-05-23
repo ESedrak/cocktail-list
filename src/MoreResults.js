@@ -24,44 +24,34 @@ const MoreResults = (props) => {
                  if needed, can add more (but at the time it is unnecessary) */}
                   <Row className="MoreResults-row">
                     <Col sm={4}>
-                      <strong>{cocktail.strIngredient1}</strong>{" "}
-                      <em>{cocktail.strMeasure1}</em>
+                      {cocktail.strIngredient1} {cocktail.strMeasure1}
                     </Col>
                     <Col sm={4}>
-                      <strong>{cocktail.strIngredient2}</strong>{" "}
-                      <em>{cocktail.strMeasure2}</em>
+                      {cocktail.strIngredient2} {cocktail.strMeasure2}
                     </Col>
                     <Col sm={4}>
-                      <strong>{cocktail.strIngredient2}</strong>{" "}
-                      <em>{cocktail.strMeasure2}</em>
+                      {cocktail.strIngredient2} {cocktail.strMeasure2}
                     </Col>
                     <Col sm={4}>
-                      <strong>{cocktail.strIngredient3}</strong>{" "}
-                      <em>{cocktail.strMeasure3}</em>
+                      {cocktail.strIngredient3} {cocktail.strMeasure3}
                     </Col>
                     <Col sm={4}>
-                      <strong>{cocktail.strIngredient4}</strong>{" "}
-                      <em>{cocktail.strMeasure4}</em>
+                      {cocktail.strIngredient4} {cocktail.strMeasure4}
                     </Col>
                     <Col sm={4}>
-                      <strong>{cocktail.strIngredient5}</strong>{" "}
-                      <em>{cocktail.strMeasure5}</em>
+                      {cocktail.strIngredient5} {cocktail.strMeasure5}
                     </Col>
                     <Col sm={4}>
-                      <strong>{cocktail.strIngredient6}</strong>{" "}
-                      <em>{cocktail.strMeasure6}</em>
+                      {cocktail.strIngredient6} {cocktail.strMeasure6}
                     </Col>
                     <Col sm={4}>
-                      <strong>{cocktail.strIngredient7}</strong>{" "}
-                      <em>{cocktail.strMeasure7}</em>
+                      {cocktail.strIngredient7} {cocktail.strMeasure7}
                     </Col>
                     <Col sm={4}>
-                      <strong>{cocktail.strIngredient8}</strong>{" "}
-                      <em>{cocktail.strMeasure8}</em>
+                      {cocktail.strIngredient8} {cocktail.strMeasure8}
                     </Col>
                     <Col sm={4}>
-                      <strong>{cocktail.strIngredient9}</strong>
-                      <em>{cocktail.strMeasure9}</em>
+                      {cocktail.strIngredient9} {cocktail.strMeasure9}
                     </Col>
                   </Row>
                   <p className="instructions">{cocktail.strInstructions}</p>

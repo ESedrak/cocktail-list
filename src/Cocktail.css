@@ -9,7 +9,7 @@
 .Cocktail ul {
   padding: 0px;
   list-style: none;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .Cocktail section {
@@ -43,7 +43,6 @@
   background: rgba(0, 0, 0, 0.6);
   color: white;
   display: flex;
-  font-family: cursive;
   flex-direction: column;
   align-items: center;
   justify-content: center;
