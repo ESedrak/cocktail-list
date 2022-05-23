@@ -1,3 +1,9 @@
+/* Random Heading */
+.Random-heading {
+  color: pink;
+}
+
+/* Random Button */
 .Random button {
   border-radius: 30px;
   margin: 20px;
@@ -13,8 +19,4 @@
   transform: scale(1.2);
   background-color: pink;
   color: black;
-}
-
-.Random-heading {
-  color: pink;
 }
