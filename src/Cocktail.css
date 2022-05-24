@@ -35,17 +35,17 @@
 
 .Cocktail-one {
   height: auto;
+  font-family: "Macondo", cursive;
   margin: 0 auto;
   max-width: 100%;
   position: relative;
-  font-family: "Macondo", cursive;
 }
 
 .Cocktail-drink-name {
   color: pink;
+  font-family: "Sail", cursive;
   font-size: 25px;
   padding: 0;
-  font-family: "Sail", cursive;
 }
 
 .Cocktail-image-overlay {
