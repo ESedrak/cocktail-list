@@ -1,17 +1,16 @@
-.MoreResults-instructions {
-  margin-top: 10px;
-  padding: 10px;
-  font-size: 15px;
-}
-
 .MoreResults section {
-  max-width: 700px;
-  margin: 0 auto;
   height: auto;
+  margin: 0 auto;
+  max-width: 700px;
 }
 
 .MoreResults-ingredients {
-  margin: 0 auto;
-  padding: 2px;
   font-size: 14px;
+  margin: 0 auto;
+}
+
+.MoreResults-instructions {
+  font-size: 14px;
+  padding: 2px;
+  margin-top: 2px;
 }
