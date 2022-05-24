@@ -1,3 +1,4 @@
+/* Cocktails just for Bar of Liz */
 .Cocktail {
   text-align: center;
   color: pink;
@@ -16,44 +17,6 @@
   height: auto;
 }
 
-.Cocktail-drink-name {
-  color: pink;
-  font-size: 25px;
-}
-
-.Cocktail-image-drink {
-  width: 100%;
-  height: auto;
-}
-
-.Cocktail-one {
-  position: relative;
-  margin: 0 auto;
-  max-width: 100%;
-  height: auto;
-}
-
-.Cocktail-image-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.2s;
-  text-align: center;
-}
-
-.Cocktail-image-overlay:hover {
-  opacity: 1;
-}
-
 .Cocktail-optional-topping {
   font-size: 15px;
   font-weight: lighter;
@@ -61,4 +24,44 @@
 
 .Cocktail-process {
   font-size: 13px;
+}
+
+/* Properities for one cocktail which is used for all 3 cocktail bars to overlay the images */
+.Cocktail-drink-name {
+  color: pink;
+  font-size: 25px;
+  padding: 0;
+}
+
+.Cocktail-image-drink {
+  height: auto;
+  width: 100%;
+}
+
+.Cocktail-one {
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%;
+  position: relative;
+}
+
+.Cocktail-image-overlay {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.2s;
+  top: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.Cocktail-image-overlay:hover {
+  opacity: 1;
 }
