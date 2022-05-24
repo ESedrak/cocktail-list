@@ -7,23 +7,23 @@
 }
 
 .Cocktail ul {
-  font-size: 18px;
+  font-size: 13px;
   list-style: none;
   padding: 0px;
 }
 
 .Cocktail section {
   height: auto;
-  max-width: 700px;
+  max-width: 500px;
 }
 
 .Cocktail-optional-topping {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: lighter;
 }
 
 .Cocktail-process {
-  font-size: 13px;
+  font-size: 15px;
 }
 
 /* Properities for one cocktail which is used for all 3 cocktail bars to overlay the images */
