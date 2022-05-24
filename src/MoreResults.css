@@ -1,7 +1,7 @@
 .MoreResults section {
-  height: 500px;
+  height: auto;
   margin: 0 auto;
-  max-width: 500px;
+  max-width: 600px;
 }
 
 .MoreResults-ingredients {
