@@ -1,20 +1,20 @@
 /* Cocktails just for Bar of Liz */
 .Cocktail {
-  text-align: center;
-  color: pink;
   border-radius: 2px;
+  color: pink;
   max-width: 100%;
+  text-align: center;
 }
 
 .Cocktail ul {
-  padding: 0px;
-  list-style: none;
   font-size: 18px;
+  list-style: none;
+  padding: 0px;
 }
 
 .Cocktail section {
-  max-width: 700px;
   height: auto;
+  max-width: 700px;
 }
 
 .Cocktail-optional-topping {
