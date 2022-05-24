@@ -15,9 +15,9 @@ function Cocktail() {
       <Margarita />
       <Sours />
       <Gnt />
-      <ScreamingB />
       <Genie />
       <French75 />
+      <ScreamingB />
     </div>
   );
 }
