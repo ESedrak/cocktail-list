@@ -22,7 +22,7 @@ const MoreResults = (props) => {
                   <h2 className="Cocktail-drink-name">{cocktail.strDrink}</h2>
                   {/* The API list has room for up to 15 ingredients/measurements - however, haven't seen more than 8 (have allowed room for 9).
                  if needed, can add more (but at the time it is unnecessary) */}
-                  <Row className="MoreResults-row">
+                  <Row className="MoreResults-ingredients">
                     <Col sm={4}>
                       {cocktail.strIngredient1} {cocktail.strMeasure1}
                     </Col>
@@ -54,7 +54,9 @@ const MoreResults = (props) => {
                       {cocktail.strIngredient9} {cocktail.strMeasure9}
                     </Col>
                   </Row>
-                  <p className="instructions">{cocktail.strInstructions}</p>
+                  <p className="MoreResults-instructions">
+                    {cocktail.strInstructions}
+                  </p>
                 </div>
               </section>
             );
