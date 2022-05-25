@@ -11,7 +11,7 @@ const MoreCocktail = (props) => {
   const fetchCocktail = () => {
     // Goal of this function is to take care of the API: www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita
     const urlCocktail = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${keyword}&api_key=1`;
-    console.log("Avout to do a search for keyword");
+
     // Using fetch instead of axios - as issues have arisen when using axios with netlify(hosting server)
     fetch(urlCocktail)
       .then((response) => response.json())
