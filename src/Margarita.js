@@ -8,7 +8,7 @@ function Margarita() {
         <img
           className="Cocktail-image-drink"
           src={frozenMarga}
-          alt="FrozenMarga"
+          alt="Frozen Marga"
         />
         <div className="Cocktail-image-overlay">
           <h2 className="Cocktail-drink-name">Tommy's Margarita</h2>

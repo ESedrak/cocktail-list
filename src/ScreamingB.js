@@ -8,7 +8,7 @@ function ScreamingB() {
         <img
           className="Cocktail-image-drink"
           src={screamBImg}
-          alt="ScreamingB"
+          alt="Screaming B cocktail"
         />
         <div className="Cocktail-image-overlay">
           <h2 className="Cocktail-drink-name">Screaming Bitch</h2>

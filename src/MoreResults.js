@@ -15,7 +15,7 @@ const MoreResults = (props) => {
                 alt={cocktail.strCategory}
                 width="100px"
                 className="Cocktail-image-drink"
-              ></img>
+              />
               <div className="Cocktail-image-overlay">
                 <h2 className="Cocktail-drink-name">{cocktail.strDrink}</h2>
                 {/* The API list has room for up to 15 ingredients/measurements - however, haven't seen more than 8 (have allowed room for 9).

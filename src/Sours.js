@@ -5,7 +5,11 @@ function Sours() {
   return (
     <div className="Sours">
       <section className="Cocktail-one">
-        <img className="Cocktail-image-drink" src={sourImg} alt="Sour" />
+        <img
+          className="Cocktail-image-drink"
+          src={sourImg}
+          alt="Sour Cocktail"
+        />
         <div className="Cocktail-image-overlay">
           <h2 className="Cocktail-drink-name">Sours</h2>
           <ul className="Cocktail-ingredients">

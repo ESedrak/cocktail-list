@@ -9,9 +9,9 @@ const RandomData = (props) => {
       <section className="Cocktail-one">
         <img
           src={props.randomData.image}
-          alt={props.randomData.id}
+          alt={props.randomData.category}
           className="Cocktail-image-drink"
-        ></img>
+        />
         <div className="Cocktail-image-overlay">
           <h2 className="Cocktail-drink-name">{props.randomData.name}</h2>
           <div>

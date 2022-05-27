@@ -6,7 +6,6 @@ import Sours from "./Sours";
 import Gnt from "./Gnt";
 import ScreamingB from "./ScreamingB";
 import Genie from "./Genie";
-import useCocktailApi from "./hooks/useCocktailApi";
 
 function Cocktail() {
   return (
