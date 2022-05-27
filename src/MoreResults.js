@@ -12,7 +12,7 @@ const MoreResults = (props) => {
             <section key={index} className="Cocktail-one">
               <img
                 src={cocktail.strDrinkThumb}
-                alt={cocktail.strCategory}
+                alt={cocktail.strTags}
                 width="100px"
                 className="Cocktail-image-drink"
               />
