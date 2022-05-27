@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import MoreResults from "./MoreResults";
 import "./MoreCocktail.css";
-import searchIcon from "./images/search.jpg";
+import searchIcon from "../images/search.jpg";
 
 const MoreCocktail = (props) => {
   const [keyword, setKeyword] = useState(props.defaultDrink); // keyword is set to default  "Margarita"

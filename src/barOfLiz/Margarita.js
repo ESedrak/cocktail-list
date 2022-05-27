@@ -1,5 +1,5 @@
 import React from "react";
-import frozenMarga from "./images/FrozenMarga.jpg";
+import frozenMarga from "../images/FrozenMarga.jpg";
 
 function Margarita() {
   return (

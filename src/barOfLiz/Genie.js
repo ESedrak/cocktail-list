@@ -1,5 +1,5 @@
 import React from "react";
-import BlueGenie from "./images/BlueGenie.jpg";
+import BlueGenie from "../images/BlueGenie.jpg";
 
 function Genie() {
   return (

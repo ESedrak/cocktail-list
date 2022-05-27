@@ -1,5 +1,5 @@
 import React from "react";
-import gntImage from "./images/GnT.png";
+import gntImage from "../images/GnT.png";
 
 function Gnt() {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import "./MoreResults.css";
-import "./Cocktail.css";
+import "../barOfLiz/Cocktail.css";
 
 const MoreResults = (props) => {
   //  console.log(props.results) to see data passed through from component More

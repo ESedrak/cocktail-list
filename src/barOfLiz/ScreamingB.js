@@ -1,5 +1,5 @@
 import React from "react";
-import screamBImg from "./images/ScreamingB.jpg";
+import screamBImg from "../images/ScreamingB.jpg";
 
 function ScreamingB() {
   return (
