@@ -1,29 +1,18 @@
 /* Cocktails just for Bar of Liz */
-.Cocktail {
-  border-radius: 2px;
-  color: pink;
-  max-width: 100%;
-  text-align: center;
-}
 
 .Cocktail ul {
-  font-size: 15px;
+  font-size: 1em;
   list-style: none;
   padding: 0px;
 }
 
-.Cocktail section {
-  height: auto;
-  max-width: 600px;
-}
-
 .Cocktail-optional-topping {
-  font-size: 15px;
+  font-size: 0.75em;
   font-weight: lighter;
 }
 
 .Cocktail-process {
-  font-size: 17x;
+  font-size: 1em;
 }
 
 /* Properities for one cocktail which is used for all 3 cocktail bars to overlay the images */
@@ -36,7 +25,7 @@
 .Cocktail-one {
   height: auto;
   font-family: "Macondo", cursive;
-  margin: 2px auto;
+  margin: 0.1em auto;
   max-width: 100%;
   position: relative;
 }
@@ -44,7 +33,7 @@
 .Cocktail-drink-name {
   color: pink;
   font-family: "Sail", cursive;
-  font-size: 25px;
+  font-size: 1.5em;
   padding: 0;
 }
 
