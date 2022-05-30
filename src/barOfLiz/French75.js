@@ -1,14 +1,11 @@
 import React from "react";
+import frenchImg from "../images/french75.jpg";
 
 function French75() {
   return (
     <div className="French75">
       <section className="Cocktail-one">
-        <img
-          className="Cocktail-image-drink"
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/023/000/original/french-75-cocktail.jpg?1639738210"
-          alt="French75"
-        />
+        <img className="Cocktail-image-drink" src={frenchImg} alt="French 75" />
         <div className="Cocktail-image-overlay">
           <h2 className="Cocktail-drink-name">French 75</h2>
           <ul className="Cocktail-image-description">

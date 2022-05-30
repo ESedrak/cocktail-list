@@ -13,10 +13,10 @@ function Cocktail() {
       <h2>Bar of Liz</h2>
       <p>The perfected ratios of some of the best cocktails</p>
       <Margarita />
+      <French75 />
       <Sours />
       <Gnt />
       <Genie />
-      <French75 />
       <ScreamingB />
     </div>
   );
