@@ -1,9 +1,11 @@
+/* Instructions */
 .RandomData-instructions {
-  margin: 10px 2px 0px 2px;
+  margin: 0.5em;
+  font-size: 0.75em;
 }
 
-/* One cocktail */
-.RandomData section {
-  max-width: 600px;
-  height: auto;
+/* Ingredients  */
+
+.RandomData-ingredients {
+  font-size: 0.75em;
 }
