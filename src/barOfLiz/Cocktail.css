@@ -20,13 +20,14 @@
 .Cocktail-image-drink {
   height: auto;
   width: 100%;
+  max-width: 37.5em;
 }
 
 .Cocktail-one {
   height: auto;
   font-family: "Macondo", cursive;
   margin: 0.1em auto;
-  max-width: 100%;
+  max-width: 37.5em;
   position: relative;
 }
 
