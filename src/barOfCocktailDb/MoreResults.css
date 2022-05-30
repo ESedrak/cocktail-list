@@ -4,12 +4,12 @@
 }
 
 .MoreResults-ingredients {
-  font-size: 15px;
+  font-size: 0.75em;
   margin: 0 auto;
 }
 
 .MoreResults-instructions {
-  font-size: 17px;
-  padding: 2px;
-  margin-top: 5px;
+  font-size: 0.75em;
+  padding: 0.5em;
+  margin-top: 0.25em;
 }

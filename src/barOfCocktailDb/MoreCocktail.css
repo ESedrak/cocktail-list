@@ -3,13 +3,12 @@
 }
 
 .MoreCocktail-searchbar {
-  width: 230px;
-  border-radius: 5px;
-  padding: 2px;
-  margin-bottom: 5px;
+  width: 13em;
+  border-radius: 0.25em;
+  margin-bottom: 0.25em;
 }
 
 .MoreCocktail-button {
-  border-radius: 5px;
+  border-radius: 0.25em;
   background-color: white;
 }
