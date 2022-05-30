@@ -9,7 +9,7 @@
 /* My cocktail's - Bar of Liz */
 .App-link-liz {
   border: 0.1em solid pink;
-  border-radius: 50px;
+  border-radius: 3em;
   margin: 0.25em;
   text-decoration: none;
   padding: 0.25em;
@@ -25,7 +25,7 @@
 /* CocktailDb cocktails - Bar of CocktailDb */
 .App-link-db {
   border: 0.1em solid pink;
-  border-radius: 50px;
+  border-radius: 3em;
   margin: 0.25em;
   text-decoration: none;
   padding: 0.25em;
@@ -41,7 +41,7 @@
 /* Bar of random */
 .App-link-random {
   border: 0.1em solid pink;
-  border-radius: 50px;
+  border-radius: 3em;
   margin: 0.25em;
   text-decoration: none;
   padding: 0.25em;
