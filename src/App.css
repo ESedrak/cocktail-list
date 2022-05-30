@@ -6,6 +6,11 @@
   font-family: "Sail", cursive;
 }
 
+.App-nav {
+  display: inline-block;
+  max-width: 37.5em;
+}
+
 /* My cocktail's - Bar of Liz */
 .App-link-liz {
   border: 0.1em solid pink;

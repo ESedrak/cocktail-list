@@ -11,15 +11,17 @@ function App() {
       <div className="App">
         <header className="App-header">
           <h1>Cocktails</h1>
-          <Link to="/" className="App-link-liz">
-            Bar of Liz
-          </Link>
-          <Link to="/more" className="App-link-db">
-            Bar of CocktailDB
-          </Link>
-          <Link to="/random" className="App-link-random">
-            Bar of Random
-          </Link>
+          <nav className="App-nav">
+            <Link to="/" className="App-link-liz">
+              Bar of Liz
+            </Link>
+            <Link to="/more" className="App-link-db">
+              Bar of CocktailDB
+            </Link>
+            <Link to="/random" className="App-link-random">
+              Bar of Random
+            </Link>
+          </nav>
           <hr />
         </header>
         {/* Using version 6 react router to create multiple pages for cocktails (My own perfected reatios + a list/api from the cocktaildb as a more extensive list) */}
