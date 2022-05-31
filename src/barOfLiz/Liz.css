@@ -1,0 +1,12 @@
+/* Cocktails just for Bar of Liz */
+
+.Cocktail ul {
+  font-size: 1em;
+  list-style: none;
+  padding: 0px;
+}
+
+.Cocktail-optional-topping {
+  font-size: 0.75em;
+  font-weight: lighter;
+}
