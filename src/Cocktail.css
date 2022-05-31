@@ -1,7 +1,6 @@
 /* Properities for one cocktail which is used for all 3 cocktail bars to overlay the images is shown below */
 
 /* Group ingredients/instructions together, so if any overflow of text, it is taken care of */
-
 .Cocktail-process {
   overflow: auto;
   margin: 0 auto;
@@ -17,19 +16,19 @@
   font-size: 1em;
 }
 
-/* Cocktail image */
-.Cocktail-image-drink {
-  height: auto;
-  width: 100%;
-  max-width: 37.5em;
-}
-
 /* Cocktail header */
 .Cocktail-drink-name {
   color: pink;
   font-family: "Sail", cursive;
   font-size: 1.5em;
   padding: 0;
+}
+
+/* Cocktail image */
+.Cocktail-image-drink {
+  height: auto;
+  width: 100%;
+  max-width: 37.5em;
 }
 
 /* Cocktail overlay for one  */
