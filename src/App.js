@@ -1,5 +1,5 @@
 import "./App.css";
-import Cocktail from "./barOfLiz/Cocktail";
+import Liz from "./barOfLiz/Liz";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import MoreCocktail from "./barOfCocktailDb/MoreCocktail";
 import React from "react";
@@ -40,7 +40,7 @@ function App() {
         {/* Using version 6 react router to create multiple pages for cocktails (My own perfected reatios + a list/api from the cocktaildb as a more extensive list) */}
         <Routes>
           {/* Cocktail will show my own personal list while More will show an online API list*/}
-          <Route exact path="/" element={<Cocktail />} />
+          <Route exact path="/" element={<Liz />} />
           <Route
             path="/more"
             element={<MoreCocktail defaultDrink="Margarita" />}

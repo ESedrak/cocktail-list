@@ -7,7 +7,7 @@ import Gnt from "./Gnt";
 import ScreamingB from "./ScreamingB";
 import Genie from "./Genie";
 
-function Cocktail() {
+function Liz() {
   return (
     <div className="Cocktail">
       <h2>Bar of Liz</h2>
@@ -22,4 +22,4 @@ function Cocktail() {
   );
 }
 
-export default Cocktail;
+export default Liz;
