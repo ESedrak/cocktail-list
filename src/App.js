@@ -4,7 +4,9 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import MoreCocktail from "./barOfCocktailDb/MoreCocktail";
 import React from "react";
 import Random from "./barOfRandom/Random";
-import { Container, Row, Col } from "react-bootstrap";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 function App() {
   return (
