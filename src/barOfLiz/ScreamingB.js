@@ -1,14 +1,15 @@
 import React from "react";
+import screamImg from "../images/screamingBitch.jpg";
 
 function ScreamingB() {
   return (
     <div className="ScreamingB">
       <section className="Cocktail-one">
-        {/* <img
+        <img
           className="Cocktail-image-drink"
           src={screamImg}
           alt="Screaming B cocktail"
-        /> */}
+        />
         <div className="Cocktail-image-overlay">
           <h2 className="Cocktail-drink-name">Screaming Bitch</h2>
           <div className="Cocktail-process">
