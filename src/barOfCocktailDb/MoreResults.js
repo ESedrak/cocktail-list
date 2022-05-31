@@ -18,7 +18,7 @@ const MoreResults = (props) => {
               />
               <div className="Cocktail-image-overlay">
                 <h2 className="Cocktail-drink-name">{cocktail.strDrink}</h2>
-                {/* The API list has room for up to 15 ingredients/measurements - however, haven't seen more than 8 (have allowed room for 9).
+                {/* The API list has room for up to 15 ingredients/measurements - however, haven't seen more than 9 (have allowed room for 10).
                  if needed, can add more (but at the time it is unnecessary) */}
                 <div className="MoreResults-ingredients">
                   <div>
@@ -50,6 +50,9 @@ const MoreResults = (props) => {
                   </div>
                   <div>
                     {cocktail.strIngredient9} {cocktail.strMeasure9}
+                  </div>
+                  <div>
+                    {cocktail.strIngredient10} {cocktail.strMeasure10}
                   </div>
                 </div>
                 <p className="MoreResults-instructions">
