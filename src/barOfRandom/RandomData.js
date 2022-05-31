@@ -1,5 +1,5 @@
 import React from "react";
-import "../barOfLiz/Cocktail.css";
+import "../Cocktail.css";
 
 const RandomData = (props) => {
   // console.log(props.randomData) to get data from MoreRandom component

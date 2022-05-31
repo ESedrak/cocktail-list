@@ -1,6 +1,6 @@
 import React from "react";
 import "./Liz.css";
-import "./Cocktail.css";
+import "../Cocktail.css";
 import French75 from "./French75";
 import Margarita from "./Margarita";
 import Sours from "./Sours";

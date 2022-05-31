@@ -9,7 +9,7 @@ function French75() {
         <div className="Cocktail-image-overlay">
           <h2 className="Cocktail-drink-name">French 75</h2>
           <div className="Cocktail-process">
-            <ul className="Cocktail-image-description">
+            <ul className="Cocktail-ingredients">
               <li>45mls of Gin or Brandy</li>
               <li>30mls of Cointreau</li>
               <li>30mls of Freshly Squeezed Lemon Juice</li>
