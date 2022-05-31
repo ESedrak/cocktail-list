@@ -1,5 +1,5 @@
 import React from "react";
-import "./MoreResults.css";
+import "./CocktailDbResults";
 import "../Cocktail.css";
 
 const CocktailDbResults = (props) => {

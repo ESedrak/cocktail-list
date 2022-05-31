@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import CocktailDbResults from "./CocktailDbResults";
-import "./MoreCocktail.css";
+import "./CocktailDb.css";
 import searchIcon from "../images/search.jpg";
 
 const CocktailDb = (props) => {
@@ -50,7 +50,7 @@ const CocktailDb = (props) => {
             onClick={handleSearch}
             className="CocktailDb-button"
           >
-            <img src={searchIcon} alt="search" width="20px"></img>
+            <img src={searchIcon} alt="search" width="25em" />
           </button>
         </form>
         <CocktailDbResults results={results} />
