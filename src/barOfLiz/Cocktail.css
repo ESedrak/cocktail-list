@@ -11,11 +11,19 @@
   font-weight: lighter;
 }
 
+/* Properities for one cocktail which is used for all 3 cocktail bars to overlay the images is shown below */
+
+/* Group ingredients/instructions together, so if any overflow of text, it is taken care of */
+
 .Cocktail-process {
-  font-size: 1em;
+  overflow: auto;
+  margin: 0 auto;
 }
 
-/* Properities for one cocktail which is used for all 3 cocktail bars to overlay the images */
+.Cocktail-instructions {
+  font-size: 0.75em;
+  padding: 0.75em;
+}
 
 .Cocktail-image-drink {
   height: auto;

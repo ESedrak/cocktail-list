@@ -12,13 +12,15 @@ function Genie() {
         />
         <div className="Cocktail-image-overlay">
           <h2 className="Cocktail-drink-name">Blue Genie</h2>
-          <ul className="Cocktail-image-description">
-            <li> ???</li>
-            <li>???</li>
-            <li>???</li>
-            <li>60mls of Gin</li>
-          </ul>
-          <p className="Cocktail-process">A secret blue drink</p>
+          <div className="Cocktail-process">
+            <ul className="Cocktail-image-description">
+              <li> ???</li>
+              <li>???</li>
+              <li>???</li>
+              <li>60mls of Gin</li>
+            </ul>
+            <p className="Cocktail-instructions">A secret blue drink</p>
+          </div>
         </div>
       </section>
     </div>

@@ -12,21 +12,23 @@ function Gnt() {
         />
         <div className="Cocktail-image-overlay">
           <h2 className="Cocktail-drink-name">Gin and Tonic</h2>
-          <ul className="Cocktail-ingredients">
-            <li>60mls of Gin</li>
-            <li>30mls of Freshly Squeezed Lime Juice</li>
-            <li>15mls of Cointreau</li>
-            <li>15mls of Simple Syrup</li>
-            <li>200mls of Tonic Water</li>
-          </ul>
-          <p className="Cocktail-process">Shake ingredients with ice</p>
-          <p className="Cocktail-optional-topping">
-            <strong> Optional: </strong>
-            <br />
-            Cover an orange slice in sugar, flame it and then add it to the
-            drink
-            <br />
-          </p>
+          <div className="Cocktail-process">
+            <ul className="Cocktail-ingredients">
+              <li>60mls of Gin</li>
+              <li>30mls of Freshly Squeezed Lime Juice</li>
+              <li>15mls of Cointreau</li>
+              <li>15mls of Simple Syrup</li>
+              <li>200mls of Tonic Water</li>
+            </ul>
+            <p className="Cocktail-instructions">Shake ingredients with ice</p>
+            <p className="Cocktail-optional-topping">
+              <strong> Optional: </strong>
+              <br />
+              Cover an orange slice in sugar, flame it and then add it to the
+              drink
+              <br />
+            </p>
+          </div>
         </div>
       </section>
     </div>
