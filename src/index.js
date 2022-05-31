@@ -4,7 +4,6 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Container from "react-bootstrap/Container";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -12,9 +11,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 // and an online cocktail list https://www.thecocktaildb.com/api.php (through Component More and Random)
 root.render(
   <React.StrictMode>
-    <Container>
-      <App />
-    </Container>
+    <App />
   </React.StrictMode>
 );
 reportWebVitals();
