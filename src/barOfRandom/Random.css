@@ -6,7 +6,7 @@
 /* Random Button */
 .Random button {
   border-radius: 1em;
-  margin: 0.5em;
+  margin-bottom: 0.2em;
   font-size: 2em;
   transition: 2s;
   background-color: black;
