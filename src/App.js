@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import MoreCocktail from "./barOfCocktailDb/MoreCocktail";
 import React from "react";
 import Random from "./barOfRandom/Random";
+import { Row, Col } from "react-bootstrap";
 
 function App() {
   return (
@@ -12,15 +13,23 @@ function App() {
         <header className="App-header">
           <h1>Cocktails</h1>
           <nav className="App-nav">
-            <Link to="/" className="App-link-liz">
-              Bar of Liz
-            </Link>
-            <Link to="/more" className="App-link-db">
-              Bar of CocktailDB
-            </Link>
-            <Link to="/random" className="App-link-random">
-              Bar of Random
-            </Link>
+            <Row>
+              <Col sm={3}>
+                <Link to="/" className="App-link-liz">
+                  Bar of Liz
+                </Link>
+              </Col>
+              <Col sm={5}>
+                <Link to="/more" className="App-link-db">
+                  Bar of CocktailDB
+                </Link>
+              </Col>
+              <Col sm={4}>
+                <Link to="/random" className="App-link-random">
+                  Bar of Random
+                </Link>
+              </Col>
+            </Row>
           </nav>
           <hr />
         </header>

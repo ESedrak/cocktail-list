@@ -7,19 +7,20 @@
 }
 
 .App-nav {
-  display: inline-block;
-  max-width: 37.5em;
+  max-width: 25em;
+  margin: 0 auto;
 }
 
 /* My cocktail's - Bar of Liz */
 .App-link-liz {
   border: 0.1em solid pink;
   border-radius: 3em;
-  margin: 0.25em;
   text-decoration: none;
   padding: 0.25em;
   color: pink;
   font-size: 1em;
+  display: inline-block;
+  margin-bottom: 0.2em;
 }
 
 .App-link-liz:hover {
@@ -31,11 +32,12 @@
 .App-link-db {
   border: 0.1em solid pink;
   border-radius: 3em;
-  margin: 0.25em;
   text-decoration: none;
   padding: 0.25em;
   color: pink;
   font-size: 1em;
+  display: inline-block;
+  margin-bottom: 0.2em;
 }
 
 .App-link-db:hover {
@@ -47,11 +49,12 @@
 .App-link-random {
   border: 0.1em solid pink;
   border-radius: 3em;
-  margin: 0.25em;
   text-decoration: none;
   padding: 0.25em;
   color: pink;
   font-size: 1em;
+  display: inline-block;
+  margin-bottom: 0.2em;
 }
 
 .App-link-random:hover {
