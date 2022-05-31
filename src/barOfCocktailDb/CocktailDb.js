@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import MoreResults from "./MoreResults";
+import CocktailDbResults from "./CocktailDbResults";
 import "./MoreCocktail.css";
 import searchIcon from "../images/search.jpg";
 
-const MoreCocktail = (props) => {
+const CocktailDb = (props) => {
   const [keyword, setKeyword] = useState(props.defaultDrink); // keyword is set to default  "Margarita"
   const [results, setResults] = useState(null);
   const [loaded, setLoaded] = useState(false); // Keep track of the first time page is being loaded (set to false to render default "margarita")
@@ -36,24 +36,24 @@ const MoreCocktail = (props) => {
 
   if (loaded) {
     return (
-      <div className="MoreCocktail">
-        <h2 className="MoreCocktail-heading">Bar of TheCocktailDB.</h2>
+      <div className="CocktailDb">
+        <h2 className="CocktailDb-heading">Bar of TheCocktailDB.</h2>
         <form onSubmit={handleSearch}>
           <input
             type="search"
             placeholder="Search for a Drink or Spirit"
             onChange={cocktailSearch}
-            className="MoreCocktail-searchbar"
+            className="CocktailDb-searchbar"
           ></input>
           <button
             type="button"
             onClick={handleSearch}
-            className="MoreCocktail-button"
+            className="CocktailDb-button"
           >
             <img src={searchIcon} alt="search" width="20px"></img>
           </button>
         </form>
-        <MoreResults results={results} />
+        <CocktailDbResults results={results} />
       </div>
     );
   } else {
@@ -62,4 +62,4 @@ const MoreCocktail = (props) => {
   }
 };
 
-export default MoreCocktail;
+export default CocktailDb;

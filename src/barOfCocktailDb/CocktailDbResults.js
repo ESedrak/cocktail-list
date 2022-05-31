@@ -2,11 +2,11 @@ import React from "react";
 import "./MoreResults.css";
 import "../Cocktail.css";
 
-const MoreResults = (props) => {
+const CocktailDbResults = (props) => {
   //  console.log(props.results) to see data passed through from component More
   if (props.results) {
     return (
-      <div className="MoreResults">
+      <div className="CocktailDbResults">
         {props.results.map((cocktail, index) => {
           return (
             <section key={index} className="Cocktail-one">
@@ -71,4 +71,4 @@ const MoreResults = (props) => {
   }
 };
 
-export default MoreResults;
+export default CocktailDbResults;

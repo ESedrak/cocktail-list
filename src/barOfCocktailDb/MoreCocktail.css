@@ -1,14 +1,14 @@
-.MoreCocktail-heading {
+.CocktailDb-heading {
   color: pink;
 }
 
-.MoreCocktail-searchbar {
+.CocktailDb-searchbar {
   width: 13em;
   border-radius: 0.25em;
   margin-bottom: 0.25em;
 }
 
-.MoreCocktail-button {
+.CocktailDb-button {
   border-radius: 0.25em;
   background-color: white;
 }

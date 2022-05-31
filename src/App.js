@@ -1,7 +1,7 @@
 import "./App.css";
 import Liz from "./barOfLiz/Liz";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import MoreCocktail from "./barOfCocktailDb/MoreCocktail";
+import CocktailDb from "./barOfCocktailDb/CocktailDb";
 import React from "react";
 import Random from "./barOfRandom/Random";
 import Container from "react-bootstrap/Container";
@@ -43,7 +43,7 @@ function App() {
           <Route exact path="/" element={<Liz />} />
           <Route
             path="/more"
-            element={<MoreCocktail defaultDrink="Margarita" />}
+            element={<CocktailDb defaultDrink="Margarita" />}
           />
           <Route path="/random" element={<Random />} />
         </Routes>
