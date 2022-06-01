@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  font-size: 1.1em;
+  font-size: 1.2em;
   background-color: black;
   color: pink;
   font-family: "Sail", cursive;
@@ -9,6 +9,7 @@
 .App-nav {
   max-width: 600px;
   margin: 0 auto;
+  font-size: 0.75em;
 }
 
 /* My cocktail's - Bar of Liz */
@@ -18,7 +19,6 @@
   text-decoration: none;
   padding: 0.25em;
   color: pink;
-  font-size: 1em;
   display: inline-block;
   margin-bottom: 0.2em;
 }
@@ -35,7 +35,6 @@
   text-decoration: none;
   padding: 0.25em;
   color: pink;
-  font-size: 1em;
   display: inline-block;
   margin-bottom: 0.2em;
 }
@@ -52,7 +51,6 @@
   text-decoration: none;
   padding: 0.25em;
   color: pink;
-  font-size: 1em;
   display: inline-block;
   margin-bottom: 0.2em;
 }
