@@ -29,31 +29,31 @@ const CocktailDbResults = (props) => {
                       {cocktail.strIngredient2} {cocktail.strMeasure2}
                     </div>
                     <div>
-                      {cocktail.strIngredient2} {cocktail.strMeasure2}
+                      {cocktail.strIngredient3} {cocktail.strMeasure2}
                     </div>
                     <div>
-                      {cocktail.strIngredient3} {cocktail.strMeasure3}
+                      {cocktail.strIngredient4} {cocktail.strMeasure3}
                     </div>
                     <div>
-                      {cocktail.strIngredient4} {cocktail.strMeasure4}
+                      {cocktail.strIngredient5} {cocktail.strMeasure4}
                     </div>
                     <div>
-                      {cocktail.strIngredient5} {cocktail.strMeasure5}
+                      {cocktail.strIngredient6} {cocktail.strMeasure5}
                     </div>
                     <div>
-                      {cocktail.strIngredient6} {cocktail.strMeasure6}
+                      {cocktail.strIngredient7} {cocktail.strMeasure6}
                     </div>
                     <div>
-                      {cocktail.strIngredient7} {cocktail.strMeasure7}
+                      {cocktail.strIngredient8} {cocktail.strMeasure7}
                     </div>
                     <div>
-                      {cocktail.strIngredient8} {cocktail.strMeasure8}
+                      {cocktail.strIngredient9} {cocktail.strMeasure8}
                     </div>
                     <div>
-                      {cocktail.strIngredient9} {cocktail.strMeasure9}
+                      {cocktail.strIngredient10} {cocktail.strMeasure9}
                     </div>
                     <div>
-                      {cocktail.strIngredient10} {cocktail.strMeasure10}
+                      {cocktail.strIngredient11} {cocktail.strMeasure10}
                     </div>
                   </div>
                   <p className="Cocktail-instructions">

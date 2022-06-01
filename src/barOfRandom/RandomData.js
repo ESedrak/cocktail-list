@@ -3,51 +3,55 @@ import "../Cocktail.css";
 
 const RandomData = (props) => {
   // console.log(props.randomData) to get data from MoreRandom component
+  const randomResults = props.randomData;
   return (
     <div className="RandomData">
       <section className="Cocktail-one">
         <img
-          src={props.randomData.image}
-          alt={props.randomData.category}
+          src={randomResults.image}
+          alt={randomResults.category}
           className="Cocktail-image-drink"
         />
         <div className="Cocktail-image-overlay">
-          <h2 className="Cocktail-drink-name">{props.randomData.name}</h2>
+          <h2 className="Cocktail-drink-name">{randomResults.name}</h2>
           <div className="Cocktail-process">
             <div className="Cocktail-ingredients">
               <div>
-                {props.randomData.ingredient1} {props.randomData.measure1}
+                {randomResults.ingredient1} {randomResults.measure1}
               </div>
               <div>
-                {props.randomData.ingredient2} {props.randomData.measure2}
+                {randomResults.ingredient2} {randomResults.measure2}
               </div>
               <div>
-                {props.randomData.ingredient3} {props.randomData.measure3}
+                {randomResults.ingredient3} {randomResults.measure3}
               </div>
               <div>
-                {props.randomData.ingredient4} {props.randomData.measure4}
+                {randomResults.ingredient4} {randomResults.measure4}
               </div>
               <div>
-                {props.randomData.ingredient5} {props.randomData.measure5}
+                {randomResults.ingredient5} {randomResults.measure5}
               </div>
               <div>
-                {props.randomData.ingredient6} {props.randomData.measure6}
+                {randomResults.ingredient6} {randomResults.measure6}
               </div>
               <div>
-                {props.randomData.ingredient7} {props.randomData.measure7}
+                {randomResults.ingredient7} {randomResults.measure7}
               </div>
               <div>
-                {props.randomData.ingredient8} {props.randomData.measure8}
+                {randomResults.ingredient8} {randomResults.measure8}
               </div>
               <div>
-                {props.randomData.ingredient9} {props.randomData.measure9}
+                {randomResults.ingredient9} {randomResults.measure9}
               </div>
               <div>
-                {props.randomData.ingredient10} {props.randomData.measure10}
+                {randomResults.ingredient10} {randomResults.measure10}
+              </div>
+              <div>
+                {randomResults.ingredient11} {randomResults.measure11}
               </div>
             </div>
             <div className="Cocktail-instructions">
-              {props.randomData.instructions}
+              {randomResults.instructions}
             </div>
           </div>
         </div>

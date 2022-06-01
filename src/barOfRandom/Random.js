@@ -24,6 +24,8 @@ const Random = () => {
       ingredient7: drinks.strIngredient7,
       ingredient8: drinks.strIngredient8,
       ingredient9: drinks.strIngredient9,
+      ingredient10: drinks.strIngredient10,
+      ingredient11: drinks.strIngredient11,
       measure1: drinks.strMeasure1,
       measure2: drinks.strMeasure2,
       measure3: drinks.strMeasure3,
@@ -34,6 +36,7 @@ const Random = () => {
       measure8: drinks.strMeasure8,
       measure9: drinks.strMeasure9,
       measure10: drinks.strMeasure10,
+      measure11: drinks.strMeasure11,
     });
   };
 
