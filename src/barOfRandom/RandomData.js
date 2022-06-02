@@ -49,6 +49,9 @@ const RandomData = (props) => {
               <div>
                 {randomResults.ingredient11} {randomResults.measure11}
               </div>
+              <div>
+                {randomResults.ingredient12} {randomResults.measure12}
+              </div>
             </div>
             <div className="Cocktail-instructions">
               {randomResults.instructions}

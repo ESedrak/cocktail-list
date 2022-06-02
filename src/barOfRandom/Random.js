@@ -37,6 +37,7 @@ const Random = () => {
       measure9: drinks.strMeasure9,
       measure10: drinks.strMeasure10,
       measure11: drinks.strMeasure11,
+      measure12: drinks.strMeasure12,
     });
   };
 
