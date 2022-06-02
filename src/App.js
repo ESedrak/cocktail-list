@@ -17,17 +17,17 @@ function App() {
           <Container>
             <nav className="App-nav">
               <Row>
-                <Col>
+                <Col md={4} xs="auto">
                   <Link to="/" className="App-link-liz">
                     Bar Of Liz
                   </Link>
                 </Col>
-                <Col>
+                <Col md={4} xs="auto">
                   <Link to="/more" className="App-link-db">
                     Bar CocktailDB
                   </Link>
                 </Col>
-                <Col>
+                <Col md={4} xs="auto">
                   <Link to="/random" className="App-link-random">
                     Bar Random
                   </Link>
