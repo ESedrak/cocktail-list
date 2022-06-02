@@ -1,26 +1,25 @@
 .App {
   text-align: center;
-  font-size: 1.2em;
   background-color: black;
   color: pink;
   font-family: "Sail", cursive;
 }
 
 .App-nav {
-  max-width: 600px;
+  max-width: 35rem;
   margin: 0 auto;
-  font-size: 0.75em;
+  font-size: 0.9rem;
 }
 
 /* My cocktail's - Bar of Liz */
 .App-link-liz {
-  border: 0.1em solid pink;
-  border-radius: 3em;
+  border: 0.1rem solid pink;
+  border-radius: 3rem;
   text-decoration: none;
-  padding: 0.25em;
+  padding: 0.25rem;
   color: pink;
   display: inline-block;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.2rem;
 }
 
 .App-link-liz:hover {
@@ -30,13 +29,13 @@
 
 /* CocktailDb cocktails - Bar of CocktailDb */
 .App-link-db {
-  border: 0.1em solid pink;
-  border-radius: 3em;
+  border: 0.1rem solid pink;
+  border-radius: 3rem;
   text-decoration: none;
-  padding: 0.25em;
+  padding: 0.25rem;
   color: pink;
   display: inline-block;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.2rem;
 }
 
 .App-link-db:hover {
@@ -46,13 +45,13 @@
 
 /* Bar of random */
 .App-link-random {
-  border: 0.1em solid pink;
-  border-radius: 3em;
+  border: 0.1rem solid pink;
+  border-radius: 3rem;
   text-decoration: none;
-  padding: 0.25em;
+  padding: 0.25rem;
   color: pink;
   display: inline-block;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.2rem;
 }
 
 .App-link-random:hover {

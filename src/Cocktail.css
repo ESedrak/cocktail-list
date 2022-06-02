@@ -8,19 +8,19 @@
 
 /* Cocktail instructions/ingredients*/
 .Cocktail-instructions {
-  font-size: 0.75em;
-  padding: 0.75em;
+  font-size: 1rem;
+  padding: 0.75rem;
 }
 
 .Cocktail-ingredients {
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 /* Cocktail header */
 .Cocktail-drink-name {
   color: pink;
   font-family: "Sail", cursive;
-  font-size: 1.5em;
+  font-size: 2rem;
   padding: 0;
 }
 
@@ -28,15 +28,14 @@
 .Cocktail-image-drink {
   height: auto;
   width: 100%;
-  max-width: 37.5em;
 }
 
 /* Cocktail overlay for one  */
 .Cocktail-one {
   height: auto;
   font-family: "Macondo", cursive;
-  margin: 0.1em auto;
-  max-width: 27em;
+  margin: 0.1rem auto;
+  max-width: 35rem;
   position: relative;
 }
 

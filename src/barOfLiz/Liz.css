@@ -2,10 +2,10 @@
 
 .Cocktail ul {
   list-style: none;
-  padding: 0px;
+  padding: 0;
 }
 
 .Cocktail-optional-topping {
-  font-size: 0.75em;
+  font-size: 0.75rem;
   font-weight: lighter;
 }

@@ -5,13 +5,13 @@
 
 /* Random Button */
 .Random button {
-  border-radius: 1em;
-  margin-bottom: 0.2em;
-  font-size: 2em;
+  border-radius: 1rem;
+  margin-bottom: 0.2rem;
+  font-size: 2rem;
   transition: 2s;
   background-color: black;
   color: pink;
-  border: 0.1em solid pink;
+  border: 0.1rem solid pink;
 }
 
 .Random button:hover {

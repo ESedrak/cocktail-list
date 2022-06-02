@@ -3,12 +3,12 @@
 }
 
 .CocktailDb-searchbar {
-  width: 13em;
-  border-radius: 0.25em;
-  margin-bottom: 0.25em;
+  width: 13rem;
+  border-radius: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 .CocktailDb-button {
-  border-radius: 0.25em;
+  border-radius: 0.25rem;
   background-color: white;
 }
