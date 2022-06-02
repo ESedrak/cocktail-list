@@ -10,9 +10,11 @@ import Genie from "./Genie";
 
 function Liz() {
   return (
-    <div className="Cocktail">
-      <h2>Bar of Liz</h2>
-      <p>The perfected ratios of some of the best cocktails</p>
+    <div className="Liz">
+      <div className="Liz-header">
+        <h2>Bar of Liz</h2>
+        <p>The perfected ratios of some of the best cocktails</p>
+      </div>
       <Margarita />
       <French75 />
       <ScreamingB />
