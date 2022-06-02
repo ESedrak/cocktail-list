@@ -6,14 +6,14 @@
 }
 
 .App-nav {
-  max-width: 30rem;
+  max-width: 23rem;
   margin: 0 auto;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
 }
 
 /* My cocktail's - Bar of Liz */
 .App-link-liz {
-  border: 0.1rem solid pink;
+  border: 0.05rem solid pink;
   border-radius: 3rem;
   text-decoration: none;
   padding: 0.3rem;
@@ -29,7 +29,7 @@
 
 /* CocktailDb cocktails - Bar of CocktailDb */
 .App-link-db {
-  border: 0.1rem solid pink;
+  border: 0.05rem solid pink;
   border-radius: 3rem;
   text-decoration: none;
   padding: 0.25rem;
@@ -45,7 +45,7 @@
 
 /* Bar of random */
 .App-link-random {
-  border: 0.1rem solid pink;
+  border: 0.05rem solid pink;
   border-radius: 3rem;
   text-decoration: none;
   padding: 0.25rem;
