@@ -19,17 +19,17 @@ function App() {
               <Row>
                 <Col>
                   <Link to="/" className="App-link-liz">
-                    Bar of Liz
+                    Bar Of Liz
                   </Link>
                 </Col>
                 <Col>
                   <Link to="/more" className="App-link-db">
-                    Bar of CocktailDB
+                    Bar CocktailDB
                   </Link>
                 </Col>
                 <Col>
                   <Link to="/random" className="App-link-random">
-                    Bar of Random
+                    Bar Random
                   </Link>
                 </Col>
               </Row>

@@ -8,7 +8,7 @@
 .App-nav {
   max-width: 25rem;
   margin: 0 auto;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 /* My cocktail's - Bar of Liz */
@@ -16,7 +16,7 @@
   border: 0.1rem solid pink;
   border-radius: 3rem;
   text-decoration: none;
-  padding: 0.25rem;
+  padding: 0.3rem;
   color: pink;
   display: inline-block;
   margin-bottom: 0.2rem;
