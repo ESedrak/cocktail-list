@@ -13,7 +13,7 @@ function Gnt() {
         <div className="Cocktail-image-overlay">
           <h2 className="Cocktail-drink-name">Gin and Tonic</h2>
           <div className="Cocktail-process">
-            <ul className="Cocktail-ingredients">
+            <ul className="Cocktail-ingredients" role="presentation">
               <li>60mls of Gin</li>
               <li>30mls of Freshly Squeezed Lime Juice</li>
               <li>15mls of Cointreau</li>

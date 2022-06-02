@@ -1,14 +1,6 @@
-/* Cocktails just for Bar of Liz */
-
-/* list */
-
+/* header */
 .Liz-header {
   font-size: 1.1rem;
-}
-
-.Liz ul {
-  list-style: none;
-  padding: 0;
 }
 
 /* optional topping for a handful of cocktails */

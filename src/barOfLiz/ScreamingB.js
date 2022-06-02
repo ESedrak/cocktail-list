@@ -13,7 +13,7 @@ function ScreamingB() {
         <div className="Cocktail-image-overlay">
           <h2 className="Cocktail-drink-name">Screaming Bitch</h2>
           <div className="Cocktail-process">
-            <ul className="Cocktail-ingredients">
+            <ul className="Cocktail-ingredients" role="presentation">
               <li>45mls of Gin Shiraz</li>
               <li>30mls of Cointreau</li>
               <li>200mls of Tonic water</li>

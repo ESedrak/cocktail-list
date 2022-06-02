@@ -6,14 +6,17 @@
   margin: 0 auto;
 }
 
-/* Cocktail instructions/ingredients*/
+/* Cocktail list of ingredients */
+ul.Cocktail-ingredients {
+  font-size: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+/* Cocktail instructions*/
 .Cocktail-instructions {
   font-size: 1rem;
   padding: 0.75rem;
-}
-
-.Cocktail-ingredients {
-  font-size: 1rem;
 }
 
 /* Cocktail header */

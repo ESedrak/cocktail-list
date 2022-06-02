@@ -13,7 +13,7 @@ function Sours() {
         <div className="Cocktail-image-overlay">
           <h2 className="Cocktail-drink-name">Sours</h2>
           <div className="Cocktail-process">
-            <ul className="Cocktail-ingredients">
+            <ul className="Cocktail-ingredients" role="presentation">
               <li>60mls of Whisky or Amaretto</li>
               <li>30mls of Freshly Squeezed Lemon Juice</li>
               <li>1 Egg White</li>

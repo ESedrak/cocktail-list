@@ -1,5 +1,4 @@
 import React from "react";
-import "./CocktailDbResults";
 import "../Cocktail.css";
 
 const CocktailDbResults = (props) => {
@@ -21,44 +20,44 @@ const CocktailDbResults = (props) => {
                 {/* The API list has room for up to 15 ingredients/measurements - however, haven't seen more than 10 (have allowed room for 12).
                  if needed, can add more (but at the time it is unnecessary) */}
                 <div className="Cocktail-process">
-                  <div className="Cocktail-ingredients">
-                    <div>
+                  <ul className="Cocktail-ingredients" role="presentation">
+                    <li>
                       {cocktail.strIngredient1} {cocktail.strMeasure1}
-                    </div>
-                    <div>
+                    </li>
+                    <li>
                       {cocktail.strIngredient2} {cocktail.strMeasure2}
-                    </div>
-                    <div>
+                    </li>
+                    <li>
                       {cocktail.strIngredient3} {cocktail.strMeasure3}
-                    </div>
-                    <div>
+                    </li>
+                    <li>
                       {cocktail.strIngredient4} {cocktail.strMeasure4}
-                    </div>
-                    <div>
+                    </li>
+                    <li>
                       {cocktail.strIngredient5} {cocktail.strMeasure5}
-                    </div>
-                    <div>
+                    </li>
+                    <li>
                       {cocktail.strIngredient6} {cocktail.strMeasure6}
-                    </div>
-                    <div>
+                    </li>
+                    <li>
                       {cocktail.strIngredient7} {cocktail.strMeasure7}
-                    </div>
-                    <div>
+                    </li>
+                    <li>
                       {cocktail.strIngredient8} {cocktail.strMeasure8}
-                    </div>
-                    <div>
+                    </li>
+                    <li>
                       {cocktail.strIngredient9} {cocktail.strMeasure9}
-                    </div>
-                    <div>
+                    </li>
+                    <li>
                       {cocktail.strIngredient10} {cocktail.strMeasure10}
-                    </div>
-                    <div>
+                    </li>
+                    <li>
                       {cocktail.strIngredient11} {cocktail.strMeasure11}
-                    </div>
-                    <div>
+                    </li>
+                    <li>
                       {cocktail.strIngredient12} {cocktail.strMeasure12}
-                    </div>
-                  </div>
+                    </li>
+                  </ul>
                   <p className="Cocktail-instructions">
                     {cocktail.strInstructions}
                   </p>
