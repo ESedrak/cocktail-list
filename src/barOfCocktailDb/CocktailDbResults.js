@@ -11,7 +11,7 @@ const CocktailDbResults = (props) => {
             <section key={index} className="Cocktail-one">
               <img
                 src={cocktail.strDrinkThumb}
-                alt={cocktail.strDrink}
+                alt={cocktail.strTags}
                 width="100px"
                 className="Cocktail-image-drink"
               />

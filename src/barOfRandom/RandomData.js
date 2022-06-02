@@ -9,7 +9,7 @@ const RandomData = (props) => {
       <section className="Cocktail-one">
         <img
           src={randomResults.image}
-          alt={randomResults.name}
+          alt={randomResults.category}
           className="Cocktail-image-drink"
         />
         <div className="Cocktail-image-overlay">
