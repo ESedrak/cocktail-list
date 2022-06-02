@@ -17,12 +17,12 @@ function App() {
           <Container>
             <nav className="App-nav">
               <Row>
-                <Col sm={4}>
+                <Col sm={3}>
                   <Link to="/" className="App-link-liz">
                     Bar of Liz
                   </Link>
                 </Col>
-                <Col sm={4}>
+                <Col sm={5}>
                   <Link to="/more" className="App-link-db">
                     Bar of CocktailDB
                   </Link>
