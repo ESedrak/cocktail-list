@@ -1,6 +1,6 @@
-/* Properities for one cocktail which is used for all 3 cocktail bars to overlay the images is shown below */
+/* Properities for one cocktail which is used for all 3 cocktail bars for consistency */
 
-/* Group ingredients/instructions together, so if any overflow of text, it is taken care of */
+/* Group ingredients/instructions together, so if any overflow of text, scrollbar appears*/
 .Cocktail-process {
   overflow: auto;
   margin: 0 auto;
