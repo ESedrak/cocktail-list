@@ -5,9 +5,7 @@ import searchIcon from "../images/search.jpg";
 import useCocktailApi from "../hooks/useCocktailApi";
 
 const CocktailDb = (props) => {
-  // const [keyword, setKeyword] = useState(props.defaultDrink); // keyword is set to default  "Margarita"
-  // const [results, setResults] = useState(null);
-  // const [loaded, setLoaded] = useState(false); // Keep track of the first time page is being loaded (set to false to render default "margarita")
+  // use own Hooks (inside folder hooks)
   const { results, fetchCocktailApi, keyword, setKeyword } = useCocktailApi();
 
   const handleSearch = (e) => {
@@ -19,12 +17,6 @@ const CocktailDb = (props) => {
     //Value of the search bar
     setKeyword(e.target.value);
   };
-
-  // const initialLoad = () => {
-  //   // function purpose is to change state to true so loaded will be rendered
-  //   setLoaded(true);
-  //   fetchCocktailApi();
-  // };
 
   return (
     <div className="CocktailDb">
