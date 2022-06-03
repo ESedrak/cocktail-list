@@ -1,9 +1,10 @@
+import React from "react";
 import "./App.css";
 import Liz from "./barOfLiz/Liz";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import CocktailDb from "./barOfCocktailDb/CocktailDb";
-import React from "react";
 import Random from "./barOfRandom/Random";
+// import useCocktailApi from "./hooks/useCocktailApi";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -23,7 +24,7 @@ function App() {
                   </Link>
                 </Col>
                 <Col xs="auto">
-                  <Link to="/more" className="App-link-db">
+                  <Link to="/CocktailDb" className="App-link-db">
                     Bar CocktailDB
                   </Link>
                 </Col>
@@ -41,10 +42,7 @@ function App() {
         <Routes>
           {/* Cocktail will show my own personal list while More will show an online API list*/}
           <Route exact path="/" element={<Liz />} />
-          <Route
-            path="/more"
-            element={<CocktailDb defaultDrink="Margarita" />}
-          />
+          <Route path="/CocktailDb" element={<CocktailDb />} />
           <Route path="/random" element={<Random />} />
         </Routes>
       </div>
