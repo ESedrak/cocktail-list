@@ -4,14 +4,15 @@ export default function useRandomApi() {
   const [initialised, setInitialised] = useState(false);
   const [randomData, setRandomData] = useState({});
 
+  // Random cocktail generated on load
   useEffect(() => {
     if (!initialised) {
-      console.log(initialised);
       setInitialised(true);
       fetchRandomApi();
     }
   }, []);
 
+  // Grabbing the data that's needed from the API
   function handleRandomResponse(response) {
     const drinks = response.drinks[0];
     setRandomData({

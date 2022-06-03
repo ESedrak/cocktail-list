@@ -7,7 +7,6 @@ export default function useCocktailApi() {
 
   useEffect(() => {
     if (!initialised) {
-      console.log(initialised);
       setInialised(true);
       fetchCocktailApi("margarita");
     }

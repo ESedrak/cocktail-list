@@ -2,7 +2,8 @@ import React from "react";
 import "../Cocktail.css";
 
 const CocktailDbResults = (props) => {
-  //  console.log(props.results) to see data passed through from component More
+  //  console.log(props.results) to see data passed through from component CocktailDb
+  console.log(props.results);
   if (props.results) {
     return (
       <div className="CocktailDbResults">
