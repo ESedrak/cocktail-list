@@ -2,7 +2,7 @@ import React from "react";
 import "../Cocktail.css";
 
 const RandomData = (props) => {
-  // console.log(props.randomData) to get data from MoreRandom component
+  // console.log(props.randomData) to get data from Random component
   const randomResults = props.randomData;
   return (
     <div className="RandomData">
