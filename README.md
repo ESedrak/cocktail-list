@@ -5,9 +5,6 @@
 
 ### Also can navigate to Random Cocktail (for those who don't know what they want)
 
-Enjoy!
-
 ========================================================
 
-# Uses React with bootstrap
-
+Enjoy!
