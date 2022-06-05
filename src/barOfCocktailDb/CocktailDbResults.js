@@ -22,40 +22,40 @@ const CocktailDbResults = (props) => {
                 <div className="Cocktail-process">
                   <ul className="Cocktail-ingredients" role="presentation">
                     <li>
-                      {cocktail.strIngredient1} {cocktail.strMeasure1}
+                      {cocktail.strMeasure1} {cocktail.strIngredient1}
                     </li>
                     <li>
-                      {cocktail.strIngredient2} {cocktail.strMeasure2}
+                      {cocktail.strMeasure2} {cocktail.strIngredient2}
                     </li>
                     <li>
-                      {cocktail.strIngredient3} {cocktail.strMeasure3}
+                      {cocktail.strMeasure3} {cocktail.strIngredient3}
                     </li>
                     <li>
-                      {cocktail.strIngredient4} {cocktail.strMeasure4}
+                      {cocktail.strMeasure4} {cocktail.strIngredient4}
                     </li>
                     <li>
-                      {cocktail.strIngredient5} {cocktail.strMeasure5}
+                      {cocktail.strMeasure5} {cocktail.strIngredient5}
                     </li>
                     <li>
-                      {cocktail.strIngredient6} {cocktail.strMeasure6}
+                      {cocktail.strMeasure6} {cocktail.strIngredient6}
                     </li>
                     <li>
-                      {cocktail.strIngredient7} {cocktail.strMeasure7}
+                      {cocktail.strMeasure7} {cocktail.strIngredient7}
                     </li>
                     <li>
-                      {cocktail.strIngredient8} {cocktail.strMeasure8}
+                      {cocktail.strMeasure8} {cocktail.strIngredient8}
                     </li>
                     <li>
-                      {cocktail.strIngredient9} {cocktail.strMeasure9}
+                      {cocktail.strMeasure9} {cocktail.strIngredient9}
                     </li>
                     <li>
-                      {cocktail.strIngredient10} {cocktail.strMeasure10}
+                      {cocktail.strMeasure10} {cocktail.strIngredient10}
                     </li>
                     <li>
-                      {cocktail.strIngredient11} {cocktail.strMeasure11}
+                      {cocktail.strMeasure11} {cocktail.strIngredient11}
                     </li>
                     <li>
-                      {cocktail.strIngredient12} {cocktail.strMeasure12}
+                      {cocktail.strMeasure12} {cocktail.strIngredient12}
                     </li>
                   </ul>
                   <p className="Cocktail-instructions">
