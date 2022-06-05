@@ -5,6 +5,7 @@ export default function useCocktailApi() {
   const [results, setResults] = useState(null);
   const [keyword, setKeyword] = useState();
 
+  // For the first time page is loaded
   useEffect(() => {
     if (!initialised) {
       setInialised(true);
@@ -12,6 +13,7 @@ export default function useCocktailApi() {
     }
   }, [results]);
 
+  // documentation: https://www.thecocktaildb.com/api/json/v1/1/search.php?s="cocktail"&api_key=1
   function fetchCocktailApi(keyword) {
     const urlCocktail = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${keyword}&api_key=1`;
 
@@ -20,5 +22,10 @@ export default function useCocktailApi() {
       .then((data) => setResults(data.drinks));
   }
 
-  return { results, fetchCocktailApi, keyword, setKeyword };
+  return {
+    results,
+    fetchCocktailApi,
+    keyword,
+    setKeyword,
+  };
 }
