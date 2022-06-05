@@ -14,9 +14,10 @@ function Margarita() {
           <h2 className="Cocktail-drink-name">Tommy's Margarita</h2>
           <div className="Cocktail-process">
             <ul className="Cocktail-ingredients" role="presentation">
-              <li>90mls of Tequila</li>
-              <li>30mls of Freshly Squeezed Lime Juice</li>
-              <li>15mls of Agave Syrup and 15mls Cointreau</li>
+              <li>90mls Tequila</li>
+              <li>45mls Freshly Squeezed Lime Juice</li>
+              <li>15mls Cointreau</li>
+              <li>15mls Agave Syrup</li>
             </ul>
             <p className="Cocktail-instructions">
               Shake ingredients with ice and pour into a glass rimmed with salt

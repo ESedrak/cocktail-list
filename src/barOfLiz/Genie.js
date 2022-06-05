@@ -17,7 +17,7 @@ function Genie() {
               <li> ???</li>
               <li>???</li>
               <li>???</li>
-              <li>60mls of Gin</li>
+              <li>60mls Gin</li>
             </ul>
             <p className="Cocktail-instructions">A secret blue drink</p>
           </div>

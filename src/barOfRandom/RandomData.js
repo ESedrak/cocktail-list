@@ -17,40 +17,40 @@ const RandomData = (props) => {
           <div className="Cocktail-process">
             <ul className="Cocktail-ingredients" role="presentation">
               <li>
-                {randomResults.ingredient1} {randomResults.measure1}
+                {randomResults.measure1} {randomResults.ingredient1}
               </li>
               <li>
-                {randomResults.ingredient2} {randomResults.measure2}
+                {randomResults.measure2} {randomResults.ingredient2}
               </li>
               <li>
-                {randomResults.ingredient3} {randomResults.measure3}
+                {randomResults.measure3} {randomResults.ingredient3}
               </li>
               <li>
-                {randomResults.ingredient4} {randomResults.measure4}
+                {randomResults.measure4} {randomResults.ingredient4}
               </li>
               <li>
-                {randomResults.ingredient5} {randomResults.measure5}
+                {randomResults.measure5} {randomResults.ingredient5}
               </li>
               <li>
-                {randomResults.ingredient6} {randomResults.measure6}
+                {randomResults.measure6} {randomResults.ingredient6}
               </li>
               <li>
-                {randomResults.ingredient7} {randomResults.measure7}
+                {randomResults.measure7} {randomResults.ingredient7}
               </li>
               <li>
-                {randomResults.ingredient8} {randomResults.measure8}
+                {randomResults.measure8} {randomResults.ingredient8}
               </li>
               <li>
-                {randomResults.ingredient9} {randomResults.measure9}
+                {randomResults.measure9} {randomResults.ingredient9}
               </li>
               <li>
-                {randomResults.ingredient10} {randomResults.measure10}
+                {randomResults.measure10} {randomResults.ingredient10}
               </li>
               <li>
-                {randomResults.ingredient11} {randomResults.measure11}
+                {randomResults.measure11} {randomResults.ingredient11}
               </li>
               <li>
-                {randomResults.ingredient12} {randomResults.measure12}
+                {randomResults.measure12} {randomResults.ingredient12}
               </li>
             </ul>
             <div className="Cocktail-instructions">
