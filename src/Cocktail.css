@@ -22,7 +22,7 @@ ul.Cocktail-ingredients {
 /* Cocktail header */
 .Cocktail-drink-name {
   color: pink;
-  font-family: "Sail", cursive;
+  font-family: "Sail", cursive, serif;
   font-size: 2rem;
   padding: 0;
 }
@@ -36,7 +36,7 @@ ul.Cocktail-ingredients {
 /* Cocktail overlay for one  */
 .Cocktail-one {
   height: auto;
-  font-family: "Macondo", cursive;
+  font-family: "Macondo", sans-serif;
   margin: 0.1rem auto;
   max-width: 35rem;
   position: relative;
