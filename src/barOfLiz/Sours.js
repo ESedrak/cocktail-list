@@ -9,6 +9,8 @@ function Sours() {
           className="Cocktail-image-drink"
           src={sourImg}
           alt="Sour Cocktail"
+          width="560px"
+          height="560px"
         />
         <div className="Cocktail-image-overlay">
           <h2 className="Cocktail-drink-name">Sours</h2>

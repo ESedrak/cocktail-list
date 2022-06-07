@@ -14,6 +14,8 @@ const CocktailDbResults = (props) => {
                 src={cocktail.strDrinkThumb}
                 alt={cocktail.strCategory}
                 className="Cocktail-image-drink"
+                width="560px"
+                height="560px"
               />
               <div className="Cocktail-image-overlay">
                 <h2 className="Cocktail-drink-name">{cocktail.strDrink}</h2>

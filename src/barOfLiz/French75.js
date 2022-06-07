@@ -5,7 +5,13 @@ function French75() {
   return (
     <div className="French75">
       <section className="Cocktail-one">
-        <img className="Cocktail-image-drink" src={frenchImg} alt="French 75" />
+        <img
+          className="Cocktail-image-drink"
+          src={frenchImg}
+          alt="French 75"
+          width="560px"
+          height="560px"
+        />
         <div className="Cocktail-image-overlay">
           <h2 className="Cocktail-drink-name">French 75</h2>
           <div className="Cocktail-process">

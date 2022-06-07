@@ -9,6 +9,8 @@ function Genie() {
           className="Cocktail-image-drink"
           src={BlueGenie}
           alt="Blue Gin Secret"
+          width="560px"
+          height="560px"
         />
         <div className="Cocktail-image-overlay">
           <h2 className="Cocktail-drink-name">Blue Genie</h2>
