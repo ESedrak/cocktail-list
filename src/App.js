@@ -4,7 +4,6 @@ import Liz from "./barOfLiz/Liz";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import CocktailDb from "./barOfCocktailDb/CocktailDb";
 import Random from "./barOfRandom/Random";
-// import useCocktailApi from "./hooks/useCocktailApi";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
