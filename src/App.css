@@ -1,7 +1,7 @@
 .App {
   text-align: center;
-  background-color: black;
-  color: pink;
+  background-color: #000;
+  color: rgb(255, 209, 217);
   font-family: "Sail", cursive;
 }
 
@@ -14,50 +14,53 @@
 
 /* My cocktail's - Bar of Liz */
 .App-link-liz {
-  border: 0.05rem solid rgb(245, 202, 209);
+  border: 0.05rem solid rgb(255, 209, 217);
   border-radius: 3rem;
   text-decoration: none;
   padding: 0.3rem;
-  color: pink;
+  color: rgb(255, 209, 217);
   display: inline-block;
   margin-bottom: 0.2rem;
 }
 
 .App-link-liz:hover {
-  background-color: pink;
-  color: black;
+  background-color: rgb(255, 209, 217);
+  color: #000;
+  transform: translateY(-2px);
 }
 
 /* CocktailDb cocktails - Bar of CocktailDb */
 .App-link-db {
-  border: 0.05rem solid pink;
+  border: 0.05rem solid rgb(255, 209, 217);
   border-radius: 3rem;
   text-decoration: none;
   padding: 0.25rem;
-  color: pink;
+  color: rgb(255, 209, 217);
   display: inline-block;
   margin-bottom: 0.2rem;
 }
 
 .App-link-db:hover {
-  background-color: pink;
-  color: black;
+  background-color: rgb(255, 209, 217);
+  color: #000;
+  transform: translateY(-2px);
 }
 
 /* Bar of random */
 .App-link-random {
-  border: 0.05rem solid pink;
+  border: 0.05rem solid rgb(255, 209, 217);
   border-radius: 3rem;
   text-decoration: none;
   padding: 0.25rem;
-  color: pink;
+  color: rgb(255, 209, 217);
   display: inline-block;
   margin-bottom: 0.2rem;
 }
 
 .App-link-random:hover {
-  background-color: pink;
-  color: black;
+  background-color: rgb(255, 209, 217);
+  color: #000;
+  transform: translateY(-2px);
 }
 
 /* mobile media queries */
@@ -67,7 +70,7 @@
   }
 
   .App-nav {
-    padding-top: 10px;
+    padding-top: 1.2rem;
     font-size: 0.8rem;
   }
 }
