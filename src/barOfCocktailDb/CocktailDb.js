@@ -4,7 +4,7 @@ import "./CocktailDb.css";
 import searchIcon from "../images/search.jpg";
 import useCocktailApi from "../hooks/useCocktailApi";
 
-const CocktailDb = (props) => {
+const CocktailDb = () => {
   // use own Hooks (inside folder hooks)
   const { results, fetchCocktailApi, keyword, setKeyword } = useCocktailApi();
 
