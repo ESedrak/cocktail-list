@@ -11,8 +11,6 @@ const RandomData = (props) => {
           src={randomResults.image}
           alt={randomResults.category}
           className="Cocktail-image-drink"
-          width="560px"
-          height="560px"
         />
         <div className="Cocktail-image-overlay">
           <h2 className="Cocktail-drink-name">{randomResults.name}</h2>
