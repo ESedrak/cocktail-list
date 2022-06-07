@@ -19,9 +19,9 @@ ul.Cocktail-ingredients {
   padding: 0.75rem;
 }
 
-/* Cocktail header */
+/* Cocktail name */
 .Cocktail-drink-name {
-  color: pink;
+  color: rgb(255, 209, 217);
   font-family: "Sail", cursive;
   font-size: 2rem;
   padding: 0;
@@ -45,7 +45,7 @@ ul.Cocktail-ingredients {
 .Cocktail-image-overlay {
   align-items: center;
   background: rgba(0, 0, 0, 0.8);
-  color: white;
+  color: #fff;
   display: flex;
   flex-direction: column;
   height: 100%;
