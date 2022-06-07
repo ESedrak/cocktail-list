@@ -33,7 +33,7 @@ const CocktailDb = (props) => {
           onClick={handleSearch}
           className="CocktailDb-button"
         >
-          <img src={searchIcon} alt="search" width="25em" />
+          <img src={searchIcon} alt="search" width="25em" height="25em" />
         </button>
       </form>
       <CocktailDbResults results={results} />
