@@ -15,8 +15,8 @@ function Liz() {
         <h2>Bar of Liz</h2>
         <p>The perfected ratios of some of the best cocktails</p>
       </div>
-      <Margarita />
       <French75 />
+      <Margarita />
       <ScreamingB />
       <Sours />
       <Gnt />
