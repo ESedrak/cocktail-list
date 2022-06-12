@@ -9,7 +9,7 @@ export default function useCocktailApi() {
   useEffect(() => {
     if (!initialised) {
       setInialised(true);
-      fetchCocktailApi("long island iced tea");
+      fetchCocktailApi("french 75");
     }
   }, [results]);
 
