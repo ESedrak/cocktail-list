@@ -1,5 +1,5 @@
 .CocktailDb-heading {
-  color: pink;
+  color: rgb(255, 192, 203);
 }
 
 .CocktailDb-searchbar {
@@ -10,5 +10,11 @@
 
 .CocktailDb-button {
   border-radius: 0.25rem;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
+  width: 1.7rem;
+}
+
+/* searchIcon center */
+.svg-inline--fa {
+  vertical-align: middle;
 }

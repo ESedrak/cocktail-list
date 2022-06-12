@@ -2,7 +2,8 @@ import React from "react";
 import CocktailDbResults from "./CocktailDbResults";
 import "./CocktailDb.css";
 import useCocktailApi from "../hooks/useCocktailApi";
-import { faCoffee } from "@fortawesome/fontawesome-free-solid";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/fontawesome-free-solid";
 
 const CocktailDb = () => {
   // use own Hooks (inside folder hooks)
@@ -33,7 +34,7 @@ const CocktailDb = () => {
           onClick={handleSearch}
           className="CocktailDb-button"
         >
-          <FontAwesomeIcon icon={faCoffee} />
+          <FontAwesomeIcon icon={faSearch} />
         </button>
       </form>
       <CocktailDbResults results={results} />
