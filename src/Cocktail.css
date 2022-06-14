@@ -55,7 +55,6 @@ ul.Cocktail-ingredients {
   position: absolute;
   transition: opacity 0.2s;
   top: 0;
-  text-align: center;
   width: 100%;
 }
 
