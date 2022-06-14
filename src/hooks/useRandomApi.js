@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 export default function useRandomApi() {
   const [initialised, setInitialised] = useState(false);
-  const [randomData, setRandomData] = useState({});
+  const [randomData, setRandomData] = useState({ ready: false });
 
   // Random cocktail generated on load
   useEffect(() => {
@@ -16,6 +16,7 @@ export default function useRandomApi() {
   function handleRandomResponse(response) {
     const drinks = response.drinks[0];
     setRandomData({
+      ready: true,
       name: drinks.strDrink,
       tags: drinks.strTags,
       category: drinks.strCategory,
@@ -57,5 +58,5 @@ export default function useRandomApi() {
       .then((response) => response.json())
       .then(handleRandomResponse);
   }
-  return { randomData, fetchRandomApi, handleRandomResponse };
+  return { randomData, fetchRandomApi, initialised };
 }
