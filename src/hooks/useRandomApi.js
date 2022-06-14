@@ -58,5 +58,5 @@ export default function useRandomApi() {
       .then((response) => response.json())
       .then(handleRandomResponse);
   }
-  return { randomData, fetchRandomApi, initialised };
+  return { randomData, fetchRandomApi };
 }
