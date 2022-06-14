@@ -1,11 +1,10 @@
 import React from "react";
 import "../Cocktail.css";
-import Loader from "../loaderSpinner/Spinner";
 
 const RandomData = (props) => {
   // console.log(props.randomData) to get data from Random component
-
   const randomResults = props.randomData;
+
   return (
     <div className="RandomData">
       <section className="Cocktail-one">
@@ -13,8 +12,8 @@ const RandomData = (props) => {
           src={randomResults.image}
           alt={randomResults.category}
           className="Cocktail-image-drink"
-          width="500px"
-          height="500px"
+          width="560px"
+          height="560px"
         />
         <div className="Cocktail-image-overlay">
           <h2 className="Cocktail-drink-name">{randomResults.name}</h2>
