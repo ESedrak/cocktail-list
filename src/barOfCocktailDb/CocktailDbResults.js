@@ -1,5 +1,6 @@
 import React from "react";
 import "../Cocktail.css";
+import Loader from "../loaderSpinner/Spinner";
 
 const CocktailDbResults = (props) => {
   //  console.log(props.results) to see data passed through from component CocktailDb
@@ -70,7 +71,12 @@ const CocktailDbResults = (props) => {
       </div>
     );
   } else {
-    return null;
+    return (
+      <div>
+        <h4>Search again</h4>
+        <Loader />
+      </div>
+    );
   }
 };
 
