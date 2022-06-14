@@ -18,8 +18,6 @@ export default function useRandomApi() {
     setRandomData({
       ready: true,
       name: drinks.strDrink,
-      tags: drinks.strTags,
-      category: drinks.strCategory,
       image: drinks.strDrinkThumb,
       id: drinks.idDrink,
       instructions: drinks.strInstructions,
