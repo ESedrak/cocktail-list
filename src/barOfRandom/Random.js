@@ -2,7 +2,6 @@ import React from "react";
 import RandomData from "./RandomData";
 import "./Random.css";
 import useRandomApi from "../hooks/useRandomApi";
-import Loader from "../loaderSpinner/Spinner";
 
 const Random = () => {
   const { randomData, fetchRandomApi } = useRandomApi();
@@ -22,4 +21,5 @@ const Random = () => {
     </div>
   );
 };
+
 export default Random;
