@@ -7,8 +7,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-// This structure of the App contains my own personal cocktail list (through Component Cocktail)
-// and an online cocktail list https://www.thecocktaildb.com/api.php (through Component More and Random)
+// This structure of the App contains my own personal cocktail list (through Component Liz)
+// and an online cocktail list https://www.thecocktaildb.com/api.php (through Component  CocktailDb and Random)
 root.render(
   <React.StrictMode>
     <App />
