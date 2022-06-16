@@ -12,19 +12,14 @@ const Random = () => {
     fetchRandomApi();
   };
 
-  if (randomData.ready) {
-    return (
-      <div className="Random">
-        <h2 className="Random-heading">Unsure?</h2>
-        <form onChange={randomCocktail}>
-          <button onClick={randomCocktail}>Random Cocktail</button>
-          <RandomData randomData={randomData} />
-        </form>
-      </div>
-    );
-  } else {
-    return <Loader />;
-  }
+  return (
+    <div className="Random">
+      <h2 className="Random-heading">Unsure?</h2>
+      <form onChange={randomCocktail}>
+        <button onClick={randomCocktail}>Random Cocktail</button>
+        <RandomData randomData={randomData} />
+      </form>
+    </div>
+  );
 };
-
 export default Random;
