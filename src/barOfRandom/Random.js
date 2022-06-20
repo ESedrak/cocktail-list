@@ -13,7 +13,7 @@ const Random = () => {
 
   return (
     <div className="Random">
-      <h2 className="Random-heading">Unsure?</h2>
+      <h2 className="Random-heading">Bar Random</h2>
       <form onChange={randomCocktail}>
         <button onClick={randomCocktail}>Random Cocktail</button>
         <RandomData randomData={randomData} />
