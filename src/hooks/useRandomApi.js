@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 export default function useRandomApi() {
   const [initialised, setInitialised] = useState(false);
-  const [randomData, setRandomData] = useState({ ready: false }); // will only load data when setRandomData is set to true - otherwise loader spinner shows
+  const [randomData, setRandomData] = useState({});
 
   // Random cocktail generated on load
   useEffect(() => {
@@ -43,7 +43,6 @@ export default function useRandomApi() {
       measure10: drinks.strMeasure10,
       measure11: drinks.strMeasure11,
       measure12: drinks.strMeasure12,
-      ready: true,
     });
   }
 

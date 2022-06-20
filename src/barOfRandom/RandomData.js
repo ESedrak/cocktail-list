@@ -6,7 +6,7 @@ const RandomData = (props) => {
   // console.log(props.randomData) to get data from Random component
   const randomData = props.randomData;
 
-  if (randomData.ready) {
+  if (randomData.image) {
     return (
       <div className="RandomData">
         <section className="Cocktail-one">
