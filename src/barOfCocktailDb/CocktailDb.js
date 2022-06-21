@@ -5,7 +5,7 @@ import useCocktailApi from "../hooks/useCocktailApi";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/fontawesome-free-solid";
 
-const CocktailDb = () => {
+function CocktailDb() {
   // use own Hooks (inside folder hooks)
   const { results, fetchCocktailApi, keyword, setKeyword } = useCocktailApi();
 
@@ -40,6 +40,6 @@ const CocktailDb = () => {
       <CocktailDbResults results={results} />
     </div>
   );
-};
+}
 
 export default CocktailDb;

@@ -2,7 +2,7 @@ import React from "react";
 import "../Cocktail.css";
 import Loader from "../loaderSpinner/Spinner";
 
-const CocktailDbResults = (props) => {
+function CocktailDbResults(props) {
   //  console.log(props.results) to see data passed through from component CocktailDb
   if (props.results) {
     return (
@@ -78,6 +78,6 @@ const CocktailDbResults = (props) => {
       </div>
     );
   }
-};
+}
 
 export default CocktailDbResults;
