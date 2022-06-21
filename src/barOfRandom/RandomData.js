@@ -2,7 +2,7 @@ import React from "react";
 import "../Cocktail.css";
 import Loader from "../loaderSpinner/Spinner";
 
-const RandomData = (props) => {
+function RandomData(props) {
   // console.log(props.randomData) to get data from Random component
   const randomData = props.randomData;
 
@@ -73,6 +73,6 @@ const RandomData = (props) => {
       </div>
     );
   }
-};
+}
 
 export default RandomData;
