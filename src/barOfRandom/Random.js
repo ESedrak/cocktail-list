@@ -3,7 +3,7 @@ import RandomData from "./RandomData";
 import "./Random.css";
 import useRandomApi from "../hooks/useRandomApi";
 
-const Random = () => {
+function Random() {
   const { randomData, fetchRandomApi } = useRandomApi();
 
   const randomCocktail = (e) => {
@@ -20,6 +20,6 @@ const Random = () => {
       </form>
     </div>
   );
-};
+}
 
 export default Random;
