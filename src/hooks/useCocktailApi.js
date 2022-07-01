@@ -13,14 +13,24 @@ export default function useCocktailApi() {
     }
   }, [results]);
 
-  // documentation: https://www.thecocktaildb.com/api/json/v1/1/search.php?s="cocktail"&api_key=1
-  function fetchCocktailApi(keyword) {
+  // use async...await to return a promise
+  const fetchCocktailApi = async (keyword) => {
+    // documentation: https://www.thecocktaildb.com/api/json/v1/1/search.php?s="cocktail"&api_key=1
     const urlCocktail = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${keyword}&api_key=1`;
 
-    fetch(urlCocktail)
-      .then((response) => response.json())
-      .then((data) => setResults(data.drinks));
-  }
+    // use try...catch to check if request fails when making API call
+    try {
+      const response = await fetch(urlCocktail);
+      if (response.ok) {
+        const jsonResponse = await response.json();
+        // console.log(jsonResponse);
+        const data = setResults(jsonResponse.drinks);
+        return data;
+      }
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
 
   return {
     results,
