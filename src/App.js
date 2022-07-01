@@ -4,9 +4,6 @@ import Liz from "./barOfLiz/Liz";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import CocktailDb from "./barOfCocktailDb/CocktailDb";
 import Random from "./barOfRandom/Random";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 
 function App() {
   return (
@@ -14,27 +11,17 @@ function App() {
       <div className="App">
         <header className="App-header">
           <h1>Cocktails</h1>
-          <Container>
-            <nav className="App-nav">
-              <Row>
-                <Col xs="auto">
-                  <Link to="/" className="App-link-liz">
-                    Bar Of Liz
-                  </Link>
-                </Col>
-                <Col xs="auto">
-                  <Link to="/CocktailDb" className="App-link-db">
-                    Bar CocktailDB
-                  </Link>
-                </Col>
-                <Col xs="auto">
-                  <Link to="/random" className="App-link-random">
-                    Bar Random
-                  </Link>
-                </Col>
-              </Row>
-            </nav>
-          </Container>
+          <nav className="App-nav">
+            <Link to="/" className="App-link-liz">
+              Bar Of Liz
+            </Link>
+            <Link to="/CocktailDb" className="App-link-db">
+              Bar CocktailDB
+            </Link>
+            <Link to="/random" className="App-link-random">
+              Bar Random
+            </Link>
+          </nav>
           <hr />
         </header>
         {/* Using version 6 react router to create multiple pages for cocktails (My own perfected reatios + a list/api from the cocktaildb as a more extensive list) */}
