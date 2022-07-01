@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export default function useCocktailApi() {
+function useCocktailApi() {
   const [initialised, setInialised] = useState(false);
   const [results, setResults] = useState(null);
   const [keyword, setKeyword] = useState();
@@ -24,8 +24,7 @@ export default function useCocktailApi() {
       if (response.ok) {
         const jsonResponse = await response.json();
         // console.log(jsonResponse);
-        const data = setResults(jsonResponse.drinks);
-        return data;
+        return setResults(jsonResponse.drinks);
       }
     } catch (error) {
       console.log(error.message);
@@ -39,3 +38,5 @@ export default function useCocktailApi() {
     setKeyword,
   };
 }
+
+export default useCocktailApi;
