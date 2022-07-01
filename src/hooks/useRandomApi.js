@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export default function useRandomApi() {
+function useRandomApi() {
   const [initialised, setInitialised] = useState(false);
   const [randomData, setRandomData] = useState({});
 
@@ -46,14 +46,20 @@ export default function useRandomApi() {
     });
   }
 
-  function fetchRandomApi() {
+  const fetchRandomApi = () => {
     // URL below generates a random cocktail from the api list of  cocktaildb (over 650 cocktails)
     const randomUrl = "https://www.thecocktaildb.com/api/json/v1/1/random.php";
 
-    // Use fetch instead of axios - as issues arose when axios and netlify (hosting platfor) are being used together
+    // Use fetch instead of axios - as issues arose with axios + netlify
     fetch(randomUrl)
       .then((response) => response.json())
-      .then(handleRandomResponse);
-  }
+      .then(handleRandomResponse)
+      .catch((error) => {
+        console.log(`An Error Has Occured: ${error.message}`);
+      });
+  };
+
   return { randomData, fetchRandomApi };
 }
+
+export default useRandomApi;
