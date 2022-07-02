@@ -1,3 +1,9 @@
+
+/* Random Header */
+.Random-heading {
+  padding: 0.8rem;
+}
+
 /* Random Button */
 .Random button {
   border-radius: 2rem;
@@ -8,6 +14,7 @@
   color: rgb(255, 209, 217);
   border: 0.1rem solid rgb(255, 209, 217);
   padding: 0.5rem;
+  font-family: cursive, sans-serif;
 }
 
 .Random button:hover {

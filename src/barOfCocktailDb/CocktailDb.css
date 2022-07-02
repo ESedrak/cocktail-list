@@ -1,11 +1,13 @@
 .CocktailDb-heading {
   color: rgb(255, 192, 203);
+  padding: 0.8rem;
 }
 
 .CocktailDb-searchbar {
   width: 13rem;
   border-radius: 0.25rem;
   margin-bottom: 0.25rem;
+  height: 1.3rem;
 }
 
 .CocktailDb-button {
