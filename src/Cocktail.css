@@ -36,7 +36,7 @@ ul.Cocktail-ingredients {
 /* Cocktail overlay for one  */
 .Cocktail-one {
   height: auto;
-  font-family: "Macondo", cursive;
+  font-family: "Macondo", sans-serif;
   margin: 0.1rem auto;
   max-width: 35rem;
   position: relative;

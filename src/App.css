@@ -1,10 +1,10 @@
 .App {
-  background-color: #000;
   color: rgb(255, 209, 217);
   font-family: "Sail", "Macondo", cursive, arial;
   text-align: center;
 }
 
+/* Nav Link*/
 .App-nav {
   max-width: 25rem;
   margin: 0 auto;
@@ -12,14 +12,19 @@
   display: inline-block;
 }
 
+<<<<<<< HEAD
 /* My cocktail's - Bar of Liz */
 .App-link {
+=======
+.App-link{
+>>>>>>> f598f36aa1fce2e7ae71cf88eb8ed168b2195e76
   border: 0.05rem solid rgb(255, 209, 217);
   border-radius: 3rem;
   text-decoration: none;
   padding: 0.3rem;
   color: rgb(255, 209, 217);
   display: inline-block;
+<<<<<<< HEAD
   margin-bottom: 0.5rem;
 }
 
@@ -58,6 +63,13 @@
 }
 
 .App-link-random:hover {
+=======
+  margin: 0.5rem 0.2rem;
+
+}
+
+.App-link:hover {
+>>>>>>> f598f36aa1fce2e7ae71cf88eb8ed168b2195e76
   background-color: rgb(255, 209, 217);
   color: #000;
   transform: translateY(-2px);
