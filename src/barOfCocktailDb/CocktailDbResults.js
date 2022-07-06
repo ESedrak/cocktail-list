@@ -73,7 +73,8 @@ const CocktailDbResults = (props) => {
   } else {
     return (
       <div>
-        <h4>Search again</h4>
+        <h3>Search again</h3>
+        <br />
         <Loader />
       </div>
     );
