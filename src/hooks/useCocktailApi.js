@@ -24,7 +24,8 @@ function useCocktailApi() {
       if (response.ok) {
         const jsonResponse = await response.json();
         // console.log(jsonResponse);
-        return setResults(jsonResponse.drinks);
+        const data = setResults(jsonResponse.drinks);
+        return data;
       }
     } catch (error) {
       console.log(error.message);

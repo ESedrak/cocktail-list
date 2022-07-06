@@ -12,13 +12,13 @@ function App() {
         <header className="App-header">
           <h1>Cocktails</h1>
           <nav className="App-nav">
-            <Link to="/" className="App-link-liz">
+            <Link to="/" className="App-link">
               Bar Of Liz
             </Link>
-            <Link to="/CocktailDb" className="App-link-db">
+            <Link to="/CocktailDb" className="App-link">
               Bar CocktailDB
             </Link>
-            <Link to="/random" className="App-link-random">
+            <Link to="/random" className="App-link">
               Bar Random
             </Link>
           </nav>

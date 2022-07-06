@@ -1,7 +1,7 @@
 .App {
   background-color: #000;
   color: rgb(255, 209, 217);
-  font-family: "Sail", cursive;
+  font-family: "Sail", "Macondo", cursive, arial;
   text-align: center;
 }
 
@@ -13,14 +13,14 @@
 }
 
 /* My cocktail's - Bar of Liz */
-.App-link-liz {
+.App-link {
   border: 0.05rem solid rgb(255, 209, 217);
   border-radius: 3rem;
   text-decoration: none;
   padding: 0.3rem;
   color: rgb(255, 209, 217);
   display: inline-block;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.5rem;
 }
 
 .App-link-liz:hover {
@@ -40,7 +40,7 @@
   margin-bottom: 0.2rem;
 }
 
-.App-link-db:hover {
+.App-link:hover {
   background-color: rgb(255, 209, 217);
   color: #000;
   transform: translateY(-2px);
