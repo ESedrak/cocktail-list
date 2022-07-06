@@ -12,64 +12,17 @@
   display: inline-block;
 }
 
-<<<<<<< HEAD
-/* My cocktail's - Bar of Liz */
 .App-link {
-=======
-.App-link{
->>>>>>> f598f36aa1fce2e7ae71cf88eb8ed168b2195e76
   border: 0.05rem solid rgb(255, 209, 217);
   border-radius: 3rem;
   text-decoration: none;
   padding: 0.3rem;
   color: rgb(255, 209, 217);
   display: inline-block;
-<<<<<<< HEAD
-  margin-bottom: 0.5rem;
-}
-
-.App-link-liz:hover {
-  background-color: rgb(255, 209, 217);
-  color: #000;
-  transform: translateY(-2px);
-}
-
-/* CocktailDb cocktails - Bar of CocktailDb */
-.App-link-db {
-  border: 0.05rem solid rgb(255, 209, 217);
-  border-radius: 3rem;
-  text-decoration: none;
-  padding: 0.25rem;
-  color: rgb(255, 209, 217);
-  display: inline-block;
-  margin-bottom: 0.2rem;
-}
-
-.App-link:hover {
-  background-color: rgb(255, 209, 217);
-  color: #000;
-  transform: translateY(-2px);
-}
-
-/* Bar of random */
-.App-link-random {
-  border: 0.05rem solid rgb(255, 209, 217);
-  border-radius: 3rem;
-  text-decoration: none;
-  padding: 0.25rem;
-  color: rgb(255, 209, 217);
-  display: inline-block;
-  margin-bottom: 0.2rem;
-}
-
-.App-link-random:hover {
-=======
   margin: 0.5rem 0.2rem;
-
 }
 
 .App-link:hover {
->>>>>>> f598f36aa1fce2e7ae71cf88eb8ed168b2195e76
   background-color: rgb(255, 209, 217);
   color: #000;
   transform: translateY(-2px);

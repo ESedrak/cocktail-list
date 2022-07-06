@@ -7,7 +7,7 @@
   width: 13rem;
   border-radius: 0.25rem;
   margin-bottom: 0.25rem;
-  height: 1.3rem;
+  height: 1.5rem;
 }
 
 .CocktailDb-button {
@@ -19,4 +19,7 @@
 /* searchIcon center */
 .svg-inline--fa {
   vertical-align: middle;
+  padding: 0.15rem;
+  cursor: pointer;
+  height: 1rem;
 }
