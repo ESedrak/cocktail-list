@@ -2,13 +2,14 @@
   color: rgb(255, 209, 217);
   font-family: "Sail", "Macondo", cursive, arial;
   text-align: center;
+  font-size: 2rem;
 }
 
 /* Nav Link*/
 .App-nav {
   max-width: 25rem;
   margin: 0 auto;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   display: inline-block;
 }
 

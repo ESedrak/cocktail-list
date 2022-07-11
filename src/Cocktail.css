@@ -8,15 +8,15 @@
 
 /* Cocktail list of ingredients */
 ul.Cocktail-ingredients {
-  font-size: 1rem;
+  font-size: 1.5rem;
   list-style: none;
   padding: 0;
 }
 
 /* Cocktail instructions*/
 .Cocktail-instructions {
-  font-size: 1rem;
-  padding: 0.75rem;
+  font-size: 1.3rem;
+  padding: 1rem;
 }
 
 /* Cocktail name */
@@ -24,7 +24,7 @@ ul.Cocktail-ingredients {
   color: rgb(255, 209, 217);
   font-family: "Sail", cursive;
   font-size: 2rem;
-  padding: 0;
+  padding: 1rem;
 }
 
 /* Cocktail image */
