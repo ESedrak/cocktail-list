@@ -3,12 +3,15 @@ import { useState, useEffect } from "react";
 function useRandomApi() {
   const [initialised, setInitialised] = useState(false);
   const [randomData, setRandomData] = useState({});
+  const [isLoading, setIsLoading] = useState(false)
 
   // Random cocktail generated on load
   useEffect(() => {
     if (!initialised) {
+      setIsLoading(true)
       setInitialised(true);
       fetchRandomApi();
+      setIsLoading(false)
     }
   }, []);
 

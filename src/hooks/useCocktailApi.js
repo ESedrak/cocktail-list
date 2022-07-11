@@ -1,16 +1,27 @@
 import { useState, useEffect } from "react";
 
 function useCocktailApi() {
-  const [initialised, setInialised] = useState(false);
+  const [initialised, setInitalised] = useState(false);
   const [results, setResults] = useState(null);
   const [keyword, setKeyword] = useState();
+  const [isLoading, setIsLoading] = useState(true);
 
-  // For the first time page is loaded
+  // To have have a cocktail searched for the first time the page is loaded 
   useEffect(() => {
-    if (!initialised) {
-      setInialised(true);
-      fetchCocktailApi("french 75");
-    }
+    const initialCocktail = async()=>{
+        try {
+          if (!initialised){
+            setInitalised(true)
+            const defaultCocktail = await fetchCocktailApi("margarita");
+            setIsLoading(false);
+            return defaultCocktail
+          }
+        } catch(error) {
+          console.log(error)
+        }
+
+      }
+     initialCocktail()
   }, [results]);
 
   // use async...await to return a promise
@@ -25,6 +36,7 @@ function useCocktailApi() {
         const jsonResponse = await response.json();
         // console.log(jsonResponse);
         const data = setResults(jsonResponse.drinks);
+        setIsLoading(false)
         return data;
       }
     } catch (error) {
@@ -33,6 +45,7 @@ function useCocktailApi() {
   };
 
   return {
+    isLoading,
     results,
     fetchCocktailApi,
     keyword,
