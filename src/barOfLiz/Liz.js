@@ -5,7 +5,7 @@ import French75 from "./French75";
 import Margarita from "./Margarita";
 import Sours from "./Sours";
 import Gnt from "./Gnt";
-import ScreamingB from "./ScreamingB";
+import TheShowman from "./TheShowman";
 import Genie from "./Genie";
 
 function Liz() {
@@ -17,7 +17,7 @@ function Liz() {
       </div>
       <French75 />
       <Margarita />
-      <ScreamingB />
+      <TheShowman />
       <Sours />
       <Gnt />
       <Genie />

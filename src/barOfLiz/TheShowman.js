@@ -1,19 +1,19 @@
 import React from "react";
-import screamImg from "../images/screamingBitch.jpg";
+import showmanImg from "../images/theShowman.jpg";
 
-function ScreamingB() {
+function TheShowman() {
   return (
-    <div className="ScreamingB">
+    <div className="TheShowman">
       <section className="Cocktail-one">
         <img
           className="Cocktail-image-drink"
-          src={screamImg}
-          alt="Screaming B cocktail"
+          src={showmanImg}
+          alt="The showmnan cocktail"
           width="560px"
           height="560px"
         />
         <div className="Cocktail-image-overlay">
-          <h2 className="Cocktail-drink-name">Screaming Bitch</h2>
+          <h2 className="Cocktail-drink-name">The Showman</h2>
           <div className="Cocktail-process">
             <ul className="Cocktail-ingredients" role="presentation">
               <li>45mls Gin Shiraz</li>
@@ -32,4 +32,4 @@ function ScreamingB() {
   );
 }
 
-export default ScreamingB;
+export default TheShowman;
