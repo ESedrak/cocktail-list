@@ -17,7 +17,7 @@ function useRandomApi() {
 					return rndmCktl;
 				}
 			} catch (error) {
-				console.log(`${error.message}`);
+				console.log(`This is an error for the initialRandomCocktail: ${error.message}`);
 			}
 		} 
     initialRandomCocktail();
@@ -38,7 +38,7 @@ function useRandomApi() {
 				return data;
 			}
 		} catch (error) {
-			console.log(`This is an error: ${error.message}`);
+			console.log(`This is an error for the randomAPI: ${error.message}`);
 		}
 	};
 
