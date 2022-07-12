@@ -20,40 +20,40 @@ function RandomData(props) {
             <div className="Cocktail-process">
               <ul className="Cocktail-ingredients" role="presentation">
                 <li>
-                  {randomData.measure1} {randomData.ingredient1}
+                  {randomData.strMeasure1} {randomData.strIngredient1}
                 </li>
                 <li>
-                  {randomData.measure2} {randomData.ingredient2}
+                  {randomData.strMeasure2} {randomData.strIngredient2}
                 </li>
                 <li>
-                  {randomData.measure3} {randomData.ingredient3}
+                  {randomData.strMeasure3} {randomData.strIngredient3}
                 </li>
                 <li>
-                  {randomData.measure4} {randomData.ingredient4}
+                  {randomData.strMeasure4} {randomData.strIngredient4}
                 </li>
                 <li>
-                  {randomData.measure5} {randomData.ingredient5}
+                  {randomData.strMeasure5} {randomData.strIngredient5}
                 </li>
                 <li>
-                  {randomData.measure6} {randomData.ingredient6}
+                  {randomData.strMeasure6} {randomData.strIngredient6}
                 </li>
                 <li>
-                  {randomData.measure7} {randomData.ingredient7}
+                  {randomData.strMeasure7} {randomData.strIngredient7}
                 </li>
                 <li>
-                  {randomData.measure8} {randomData.ingredient8}
+                  {randomData.strMeasure8} {randomData.strIngredient8}
                 </li>
                 <li>
-                  {randomData.measure9} {randomData.ingredient9}
+                  {randomData.strMeasure9} {randomData.strIngredient9}
                 </li>
                 <li>
-                  {randomData.measure10} {randomData.ingredient10}
+                  {randomData.strMeasure10} {randomData.strIngredient10}
                 </li>
                 <li>
-                  {randomData.measure11} {randomData.ingredient11}
+                  {randomData.strMeasure11} {randomData.strIngredient11}
                 </li>
                 <li>
-                  {randomData.measure12} {randomData.ingredient12}
+                  {randomData.strMeasure12} {randomData.strIngredient12}
                 </li>
               </ul>
               <div className="Cocktail-instructions">
