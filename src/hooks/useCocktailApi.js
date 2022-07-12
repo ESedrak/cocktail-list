@@ -17,7 +17,7 @@ function useCocktailApi() {
             return defaultCocktail
           }
         } catch(error) {
-          console.log(error)
+          console.log(`This is for the defaultCocktailDB error: ${error.message}`)
         }
 
       }
@@ -40,7 +40,7 @@ function useCocktailApi() {
         return data;
       }
     } catch (error) {
-      console.log(error.message);
+      console.log(`This is an error for the cocktailDBAPI: ${error.message});
     }
   };
 
