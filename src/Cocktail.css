@@ -22,7 +22,7 @@ ul.Cocktail-ingredients {
 /* Cocktail name */
 .Cocktail-drink-name {
   color: rgb(255, 209, 217);
-  font-family: "Sail", cursive;
+  font-family: cursive;
   font-size: 2rem;
   padding: 1rem;
 }
