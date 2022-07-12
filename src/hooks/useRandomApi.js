@@ -1,68 +1,48 @@
 import { useState, useEffect } from "react";
 
 function useRandomApi() {
-  const [initialised, setInitialised] = useState(false);
-  const [randomData, setRandomData] = useState({});
-  const [isLoading, setIsLoading] = useState(false)
+	const [initialised, setInitialised] = useState(false);
+	const [randomData, setRandomData] = useState({});
+	const [isLoading, setIsLoading] = useState(true);
 
-  // Random cocktail generated on load
-  useEffect(() => {
-    if (!initialised) {
+	// Random cocktail generated on load
+	useEffect(() => {
+		const initialRandomCocktail = async () => {
+			try {
+				if (!initialised) {
+					setInitialised(true);
+					const rndmCktl = await fetchRandomApi();
+          console.log(rndmCktl)
+					setIsLoading(false);
+					return rndmCktl;
+				}
+			} catch (error) {
+				console.log(`${error.message}`);
+			}
+		} 
+    initialRandomCocktail();
+	}, []);
+
+	const fetchRandomApi = async () => {
+		// URL below generates a random cocktail from the api list of  cocktaildb (over 650 cocktails)
+		const randomUrl = "https://www.thecocktaildb.com/api/json/v1/1/random.php";
+
+		try {
       setIsLoading(true)
-      setInitialised(true);
-      fetchRandomApi();
-      setIsLoading(false)
-    }
-  }, []);
+			const response = await fetch(randomUrl);
+			if (response.ok) {
+				const jsonResponse = await response.json();
+				console.log(jsonResponse.drinks[0]);
+				const data = setRandomData(jsonResponse.drinks[0]);
+        setIsLoading(false);
+				return data;
+			}
+		} catch (error) {
+			console.log(`This is an error: ${error.message}`);
+		}
+	};
 
-  // Grabbing the data that's needed from the API
-  function handleRandomResponse(response) {
-    const drinks = response.drinks[0];
-    setRandomData({
-      name: drinks.strDrink,
-      image: drinks.strDrinkThumb,
-      id: drinks.idDrink,
-      instructions: drinks.strInstructions,
-      ingredient1: drinks.strIngredient1,
-      ingredient2: drinks.strIngredient2,
-      ingredient3: drinks.strIngredient3,
-      ingredient4: drinks.strIngredient4,
-      ingredient5: drinks.strIngredient5,
-      ingredient6: drinks.strIngredient6,
-      ingredient7: drinks.strIngredient7,
-      ingredient8: drinks.strIngredient8,
-      ingredient9: drinks.strIngredient9,
-      ingredient10: drinks.strIngredient10,
-      ingredient11: drinks.strIngredient11,
-      measure1: drinks.strMeasure1,
-      measure2: drinks.strMeasure2,
-      measure3: drinks.strMeasure3,
-      measure4: drinks.strMeasure4,
-      measure5: drinks.strMeasure5,
-      measure6: drinks.strMeasure6,
-      measure7: drinks.strMeasure7,
-      measure8: drinks.strMeasure8,
-      measure9: drinks.strMeasure9,
-      measure10: drinks.strMeasure10,
-      measure11: drinks.strMeasure11,
-      measure12: drinks.strMeasure12,
-    });
-  }
-
-  const fetchRandomApi = () => {
-    // URL below generates a random cocktail from the api list of  cocktaildb (over 650 cocktails)
-    const randomUrl = "https://www.thecocktaildb.com/api/json/v1/1/random.php";
-
-    // Use fetch instead of axios - as issues arose with axios + netlify
-    fetch(randomUrl)
-      .then((response) => response.json())
-      .then(handleRandomResponse)
-      .catch((error) => {
-        console.log(`An Error Has Occured: ${error.message}`);
-      });
-  };
-
-  return { randomData, fetchRandomApi };
+	return { isLoading, randomData, fetchRandomApi };
 }
 
 export default useRandomApi;

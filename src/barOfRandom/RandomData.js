@@ -1,24 +1,22 @@
 import React from "react";
 import "../Cocktail.css";
-import Loader from "../loaderSpinner/Spinner";
 
 function RandomData(props) {
   // console.log(props.randomData) to get data from Random component
   const randomData = props.randomData;
 
-  if (randomData.image) {
     return (
       <div className="RandomData">
         <section className="Cocktail-one">
           <img
-            src={randomData.image}
-            alt={randomData.name}
+            src={randomData.strDrinkThumb}
+            alt={randomData.strDrink}
             className="Cocktail-image-drink"
             width="560px"
             height="560px"
           />
           <div className="Cocktail-image-overlay">
-            <h2 className="Cocktail-drink-name">{randomData.name}</h2>
+            <h2 className="Cocktail-drink-name">{randomData.strDrink}</h2>
             <div className="Cocktail-process">
               <ul className="Cocktail-ingredients" role="presentation">
                 <li>
@@ -59,20 +57,14 @@ function RandomData(props) {
                 </li>
               </ul>
               <div className="Cocktail-instructions">
-                {randomData.instructions}
+                {randomData.strInstructions}
               </div>
             </div>
           </div>
         </section>
       </div>
     );
-  } else {
-    return (
-      <div>
-        <Loader />
-      </div>
-    );
-  }
-}
+  } 
+
 
 export default RandomData;
