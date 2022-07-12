@@ -40,7 +40,7 @@ function useCocktailApi() {
         return data;
       }
     } catch (error) {
-      console.log(`This is an error for the cocktailDBAPI: ${error.message});
+      console.log(`This is an error for the cocktailDBAPI: ${error.message}`);
     }
   };
 
