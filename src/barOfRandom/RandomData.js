@@ -40,7 +40,7 @@ function RandomData(props) {
 						<div className="Cocktail-process">
 							<ul className="Cocktail-ingredients" role="presentation">
 								{showRandomList.map((ingredients, index) => {
-									return <li key={index}>{ingredients}</li>;
+									return <li key={ingredients + index}>{ingredients}</li>;
 								})}
 							</ul>
 							<div className="Cocktail-instructions">

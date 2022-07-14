@@ -42,7 +42,9 @@ function CocktailDbResults(props) {
 								<div className="Cocktail-process">
 									<ul className="Cocktail-ingredients" role="presentation">
 										{listIngredients.map((oneIngredient, index) => {
-											return <li key={index}>{oneIngredient}</li>;
+											return (
+												<li key={oneIngredient + index}>{oneIngredient}</li>
+											);
 										})}
 									</ul>
 									<p className="Cocktail-instructions">

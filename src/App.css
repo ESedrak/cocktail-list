@@ -1,42 +1,42 @@
 .App {
-  color: rgb(255, 209, 217);
-  font-family: "Sail", "Macondo", cursive, arial;
-  text-align: center;
-  font-size: 2rem;
+	color: rgb(255, 209, 217);
+	font-family: "Sail", "Macondo", cursive, arial;
+	text-align: center;
+	font-size: 2rem;
 }
 
 /* Nav Link*/
 .App-nav {
-  max-width: 25rem;
-  margin: 0 auto;
-  font-size: 1.2rem;
-  display: inline-block;
+	max-width: 25rem;
+	margin: 0 auto;
+	font-size: 1.2rem;
+	display: inline-block;
 }
 
 .App-link {
-  border: 0.05rem solid rgb(255, 209, 217);
-  border-radius: 3rem;
-  text-decoration: none;
-  padding: 0.3rem;
-  color: rgb(255, 209, 217);
-  display: inline-block;
-  margin: 0.5rem 0.2rem;
+	border: 0.05rem solid rgb(255, 209, 217);
+	border-radius: 3rem;
+	text-decoration: none;
+	padding: 0.3rem;
+	color: rgb(255, 209, 217);
+	display: inline-block;
+	margin: 1rem 0.2rem;
 }
 
 .App-link:hover {
-  background-color: rgb(255, 209, 217);
-  color: #000;
-  transform: translateY(-2px);
+	background-color: rgb(255, 209, 217);
+	color: #000;
+	transform: translateY(-2px);
 }
 
 /* mobile media queries */
 @media only screen and (max-width: 480px) {
-  h1 {
-    display: none;
-  }
+	h1 {
+		display: none;
+	}
 
-  .App-nav {
-    padding-top: 1.2rem;
-    font-size: 1rem;
-  }
+	.App-nav {
+		padding-top: 1.2rem;
+		font-size: 1rem;
+	}
 }
