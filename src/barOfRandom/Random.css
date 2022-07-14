@@ -1,25 +1,24 @@
 /* Random Header */
 .Random-heading {
-  padding: 0.8rem;
-  font-size: 2rem;
+	font-size: 2rem;
 }
 
 /* Random Button */
 .Random button {
-  border-radius: 2rem;
-  margin-bottom: 0.5rem;
-  font-size: 1.5rem;
-  font-family: "Sail", "Macondo", cursive, arial;
-  transition: 2s;
-  background-color: black;
-  color: rgb(255, 209, 217);
-  border: 0.1rem solid rgb(255, 209, 217);
-  padding: 0.5rem;
-  cursor: pointer;
+	border-radius: 2rem;
+	margin-bottom: 1rem;
+	font-size: 1.5rem;
+	font-family: "Sail", "Macondo", cursive, arial;
+	transition: 2s;
+	background-color: black;
+	color: rgb(255, 209, 217);
+	border: 0.1rem solid rgb(255, 209, 217);
+	padding: 0.5rem;
+	cursor: pointer;
 }
 
 .Random button:hover {
-  transform: scale(1.2);
-  background-color: rgb(255, 209, 217);
-  color: #000;
+	transform: scale(1.2);
+	background-color: rgb(255, 209, 217);
+	color: #000;
 }

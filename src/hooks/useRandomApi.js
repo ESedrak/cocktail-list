@@ -12,15 +12,16 @@ function useRandomApi() {
 				if (!initialised) {
 					setInitialised(true);
 					const rndmCktl = await fetchRandomApi();
-          console.log(rndmCktl)
 					setIsLoading(false);
 					return rndmCktl;
 				}
 			} catch (error) {
-				console.log(`This is an error for the initialRandomCocktail: ${error.message}`);
+				console.log(
+					`This is an error for the initialRandomCocktail: ${error.message}`
+				);
 			}
-		} 
-    initialRandomCocktail();
+		};
+		initialRandomCocktail();
 	}, []);
 
 	const fetchRandomApi = async () => {
@@ -28,13 +29,13 @@ function useRandomApi() {
 		const randomUrl = "https://www.thecocktaildb.com/api/json/v1/1/random.php";
 
 		try {
-      setIsLoading(true)
+			setIsLoading(true);
 			const response = await fetch(randomUrl);
 			if (response.ok) {
 				const jsonResponse = await response.json();
-				console.log(jsonResponse.drinks[0]);
+				// console.log(jsonResponse.drinks[0]);
 				const data = setRandomData(jsonResponse.drinks[0]);
-        setIsLoading(false);
+				setIsLoading(false);
 				return data;
 			}
 		} catch (error) {

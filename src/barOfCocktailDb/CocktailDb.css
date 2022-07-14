@@ -1,27 +1,28 @@
 .CocktailDb-heading {
-  color: rgb(255, 192, 203);
-  padding: 0.8rem;
-  font-size: 2rem;
+	color: rgb(255, 192, 203);
+	padding: 0.8rem;
+	font-size: 2rem;
 }
 
 .CocktailDb-searchbar {
-  width: 14rem;
-  border-radius: 0.25rem;
-  margin-bottom: 0.25rem;
-  height: 1.8rem;
-  font-family: cursive, Arial, Helvetica, sans-serif;
+	width: 14rem;
+	border-radius: 0.25rem;
+	margin-bottom: 0.75rem;
+	height: 1.8rem;
+	font-family: cursive, Arial, Helvetica, sans-serif;
+	font-size: 0.9rem;
 }
 
 .CocktailDb-button {
-  border-radius: 0.25rem;
-  background-color: rgb(255, 255, 255);
-  width: 1.7rem;
+	border-radius: 0.25rem;
+	background-color: rgb(255, 255, 255);
+	width: 1.7rem;
 }
 
 /* searchIcon center */
 .svg-inline--fa {
-  vertical-align: middle;
-  padding: 0.15rem;
-  cursor: pointer;
-  height: 1.2rem;
+	vertical-align: middle;
+	padding: 0.2rem;
+	cursor: pointer;
+	height: 1.2rem;
 }
