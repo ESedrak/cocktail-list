@@ -51,12 +51,12 @@ function useCocktailApi() {
 	};
 
 	return {
-		errorMsg,
-		isLoading,
 		results,
 		fetchCocktailApi,
 		keyword,
 		setKeyword,
+		isLoading,
+		errorMsg,
 	};
 }
 

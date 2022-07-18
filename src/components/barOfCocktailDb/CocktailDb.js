@@ -8,12 +8,12 @@ import Loader from "../loaderSpinner/Spinner";
 function CocktailDb() {
 	// use own Hooks (inside folder hooks)
 	const {
-		errorMsg,
-		isLoading,
 		results,
 		fetchCocktailApi,
 		keyword,
 		setKeyword,
+		isLoading,
+		errorMsg,
 	} = useCocktailApi();
 
 	const handleSearch = (e) => {
