@@ -154,7 +154,7 @@ const cocktailDetails = [
 	},
 	{
 		image: wskSourImg,
-		drinkName: "Wisky Sour",
+		drinkName: "Whisky Sour",
 		ingredients: [
 			{
 				ingredient: "Whisky",
