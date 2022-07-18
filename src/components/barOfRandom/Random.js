@@ -4,7 +4,7 @@ import useRandomApi from "../../hooks/useRandomApi";
 import Loader from "../loaderSpinner/Spinner";
 
 function Random() {
-	const { errorMsg, isLoading, randomResults, fetchRandomApi } = useRandomApi();
+	const { randomResults, fetchRandomApi, errorMsg, isLoading } = useRandomApi();
 
 	const randomCocktail = (e) => {
 		e.preventDefault();

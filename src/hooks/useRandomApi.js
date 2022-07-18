@@ -47,7 +47,7 @@ function useRandomApi() {
 		}
 	};
 
-	return { errorMsg, isLoading, randomResults, fetchRandomApi };
+	return { randomResults, fetchRandomApi, errorMsg, isLoading };
 }
 
 export default useRandomApi;
