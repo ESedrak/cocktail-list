@@ -35,7 +35,7 @@ ul.Cocktail-ingredients {
 
 /* Cocktail overlay for one  */
 .Cocktail-one {
-	font-family: "Macondo", sans-serif;
+	font-family: "Macondo", sans-serif, Arial;
 	margin: 0.1rem auto;
 	max-width: 38rem;
 	position: relative;
@@ -70,5 +70,5 @@ ul.Cocktail-ingredients {
 /* Error messages for when a cocktail cannot be shown */
 .errorMsg {
 	font-size: 1.5rem;
-	font-family: "Macondo", sans-serif;
+	font-family: "Macondo", Arial, Helvetica, sans-serif;
 }
