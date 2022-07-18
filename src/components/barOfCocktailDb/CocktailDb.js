@@ -1,6 +1,6 @@
 import DisplayCocktailDbResults from "./DisplayCocktailDbResults";
 import "./cocktailDb.css";
-import useCocktailApi from "../hooks/useCocktailApi";
+import useCocktailApi from "../../hooks/useCocktailApi";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/fontawesome-free-solid";
 import Loader from "../loaderSpinner/Spinner";

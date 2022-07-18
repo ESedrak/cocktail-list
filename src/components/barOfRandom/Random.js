@@ -1,6 +1,6 @@
 import "./random.css";
 import DisplayRandomResults from "./DisplayRandomResults";
-import useRandomApi from "../hooks/useRandomApi";
+import useRandomApi from "../../hooks/useRandomApi";
 import Loader from "../loaderSpinner/Spinner";
 
 function Random() {

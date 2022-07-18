@@ -1,9 +1,9 @@
 import "./App.css";
 import "./cocktail.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import DisplayLizCocktails from "./barOfLiz/DisplayLizCocktails";
-import CocktailDb from "./barOfCocktailDb/CocktailDb";
-import Random from "./barOfRandom/Random";
+import DisplayLizCocktails from "./components/barOfLiz/DisplayLizCocktails";
+import CocktailDb from "./components/barOfCocktailDb/CocktailDb";
+import Random from "./components/barOfRandom/Random";
 
 function App() {
 	return (

@@ -1,11 +1,11 @@
-import frenchImg from "../images/french75.jpg";
-import tommyMarga from "../images/tommyMarga.jpg";
-import frozenMarga from "../images/frozenMarga.jpg";
-import showmanImg from "../images/theShowman.jpg";
-import gntImage from "../images/gNT.png";
-import wskSourImg from "../images/wskySour.png";
-import amSourImg from "../images/amSour.jpg";
-import blueGenie from "../images/blueGenie.jpg";
+import frenchImg from "../../images/french75.jpg";
+import tommyMarga from "../../images/tommyMarga.jpg";
+import frozenMarga from "../../images/frozenMarga.jpg";
+import showmanImg from "../../images/theShowman.jpg";
+import gntImage from "../../images/gNT.png";
+import wskSourImg from "../../images/wskySour.png";
+import amSourImg from "../../images/amSour.jpg";
+import blueGenie from "../../images/blueGenie.jpg";
 
 // This array is responsible for handling any internal cocktail data - currently just returns static object
 const cocktailDetails = [
