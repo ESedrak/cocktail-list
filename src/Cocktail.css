@@ -22,9 +22,10 @@ ul.Cocktail-ingredients {
 /* Cocktail name */
 .Cocktail-drink-name {
 	color: rgb(255, 209, 217);
-	font-family: cursive;
+	font-family: Sail, Macondo, cursive, arial;
 	font-size: 2rem;
 	padding: 1rem;
+	letter-spacing: 0.1rem;
 }
 
 /* Cocktail image */

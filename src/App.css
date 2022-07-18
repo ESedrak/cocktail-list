@@ -11,7 +11,7 @@
 
 /* Nav Link*/
 .App-nav {
-	max-width: 25rem;
+	max-width: 27rem;
 	margin: 0 auto;
 	font-size: 1.2rem;
 	display: inline-block;
@@ -26,6 +26,7 @@
 	color: rgb(255, 209, 217);
 	display: inline-block;
 	margin: 1.2rem 0.2rem;
+	letter-spacing: 0.05rem;
 }
 
 .App-link:hover {
