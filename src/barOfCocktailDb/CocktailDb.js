@@ -1,14 +1,20 @@
-import CocktailDbResults from "./CocktailDbResults";
-import "./CocktailDb.css";
+import DisplayCocktailDbResults from "./DisplayCocktailDbResults";
+import "./cocktailDb.css";
 import useCocktailApi from "../hooks/useCocktailApi";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/fontawesome-free-solid";
 import Loader from "../loaderSpinner/Spinner";
 
-const CocktailDb = () => {
+function CocktailDb() {
 	// use own Hooks (inside folder hooks)
-	const { isLoading, results, fetchCocktailApi, keyword, setKeyword } =
-		useCocktailApi();
+	const {
+		errorMsg,
+		isLoading,
+		results,
+		fetchCocktailApi,
+		keyword,
+		setKeyword,
+	} = useCocktailApi();
 
 	const handleSearch = (e) => {
 		e.preventDefault();
@@ -23,7 +29,7 @@ const CocktailDb = () => {
 	return (
 		<div className="CocktailDb">
 			<h2 className="CocktailDb-heading">Bar TheCocktailDB</h2>
-
+			<p className="CocktailDb-msg">Search over 650 cocktails</p>
 			{isLoading ? (
 				<Loader />
 			) : (
@@ -43,11 +49,11 @@ const CocktailDb = () => {
 							<FontAwesomeIcon icon={faSearch} />
 						</button>
 					</form>
-					<CocktailDbResults results={results} />
+					<DisplayCocktailDbResults dbResults={results} errorMsg={errorMsg} />
 				</div>
 			)}
 		</div>
 	);
-};
+}
 
 export default CocktailDb;

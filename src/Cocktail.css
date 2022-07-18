@@ -10,13 +10,13 @@
 ul.Cocktail-ingredients {
 	font-size: 1.5rem;
 	list-style: none;
-	padding: 1rem;
+	padding: 0;
 }
 
 /* Cocktail instructions*/
 .Cocktail-instructions {
 	font-size: 1.3rem;
-	padding: 1rem;
+	padding: 1.5rem;
 }
 
 /* Cocktail name */
@@ -35,11 +35,15 @@ ul.Cocktail-ingredients {
 
 /* Cocktail overlay for one  */
 .Cocktail-one {
-	height: auto;
 	font-family: "Macondo", sans-serif;
-	margin: 0 auto;
-	max-width: 35rem;
+	margin: 0.1rem auto;
+	max-width: 38rem;
 	position: relative;
+}
+
+.Cocktail-one img {
+	width: 600px;
+	height: 600px;
 }
 
 .Cocktail-image-overlay {
@@ -61,4 +65,10 @@ ul.Cocktail-ingredients {
 
 .Cocktail-image-overlay:hover {
 	opacity: 1;
+}
+
+/* Error messages for when a cocktail cannot be shown */
+.errorMsg {
+	font-size: 1.5rem;
+	font-family: "Macondo", sans-serif;
 }

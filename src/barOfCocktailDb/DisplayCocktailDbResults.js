@@ -1,6 +1,4 @@
-function CocktailDbResults(props) {
-	//  console.log(props.results) to see data passed through from component CocktailDb
-
+function DisplayCocktailDbResults({ dbResults, errorMsg }) {
 	const showIngredients = (cocktail) => {
 		// console.log(cocktail);
 		const allIngredients = [];
@@ -19,13 +17,14 @@ function CocktailDbResults(props) {
 				}
 			}
 		}
+		// console.log(allIngredients);
 		return allIngredients;
 	};
 
-	if (props.results) {
+	if (dbResults) {
 		return (
 			<div className="CocktailDbResults">
-				{props.results.map((cocktail) => {
+				{dbResults.map((cocktail) => {
 					const listIngredients = showIngredients(cocktail);
 					// console.log(listIngredients);
 					return (
@@ -34,11 +33,9 @@ function CocktailDbResults(props) {
 								src={cocktail.strDrinkThumb}
 								alt={cocktail.strDrink}
 								className="Cocktail-image-drink"
-								width="560px"
-								height="560px"
 							/>
 							<div className="Cocktail-image-overlay">
-								<h2 className="Cocktail-drink-name">{cocktail.strDrink}</h2>
+								<h3 className="Cocktail-drink-name">{cocktail.strDrink}</h3>
 								<div className="Cocktail-process">
 									<ul className="Cocktail-ingredients" role="presentation">
 										{listIngredients.map((oneIngredient, index) => {
@@ -58,13 +55,8 @@ function CocktailDbResults(props) {
 			</div>
 		);
 	} else {
-		return (
-			<div>
-				<p>No cocktails found</p>
-				<p>Please try again</p>
-			</div>
-		);
+		return <p className="errorMsg">{errorMsg || "No cocktails found"}</p>;
 	}
 }
 
-export default CocktailDbResults;
+export default DisplayCocktailDbResults;

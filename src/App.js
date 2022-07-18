@@ -1,7 +1,7 @@
-import React from "react";
 import "./App.css";
-import Liz from "./barOfLiz/Liz";
+import "./cocktail.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import DisplayLizCocktails from "./barOfLiz/DisplayLizCocktails";
 import CocktailDb from "./barOfCocktailDb/CocktailDb";
 import Random from "./barOfRandom/Random";
 
@@ -24,10 +24,10 @@ function App() {
 					</nav>
 					<hr />
 				</header>
-				{/* Using version 6 react router to create multiple pages for cocktails (My own perfected reatios + a list/api from the cocktaildb as a more extensive list) */}
+				{/* Using version 6 react router to create multiple pages for cocktails */}
 				<Routes>
-					{/* Route Liz will show my own personal list while CocktailDb will show an online API list*/}
-					<Route exact path="/" element={<Liz />} />
+					{/* Route DisplayLizCocktails will show my own personal list while CocktailDb/Random will show an online API list*/}
+					<Route exact path="/" element={<DisplayLizCocktails />} />
 					<Route path="/CocktailDb" element={<CocktailDb />} />
 					<Route path="/random" element={<Random />} />
 				</Routes>

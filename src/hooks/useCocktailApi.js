@@ -4,7 +4,8 @@ function useCocktailApi() {
 	const [initialised, setInitalised] = useState(false);
 	const [results, setResults] = useState(null);
 	const [keyword, setKeyword] = useState();
-	const [isLoading, setIsLoading] = useState(true);
+	const [isLoading, setIsLoading] = useState(false);
+	const [errorMsg, setErrorMsg] = useState();
 
 	// To have have a cocktail searched for the first time the page is loaded
 	useEffect(() => {
@@ -13,7 +14,6 @@ function useCocktailApi() {
 				if (!initialised) {
 					setInitalised(true);
 					const defaultCocktail = await fetchCocktailApi("margarita");
-					setIsLoading(false);
 					return defaultCocktail;
 				}
 			} catch (error) {
@@ -32,6 +32,7 @@ function useCocktailApi() {
 
 		// use try...catch to check if request fails when making API call
 		try {
+			setIsLoading(true);
 			const response = await fetch(urlCocktail);
 			if (response.ok) {
 				const jsonResponse = await response.json();
@@ -41,11 +42,16 @@ function useCocktailApi() {
 				return data;
 			}
 		} catch (error) {
+			setIsLoading(false);
 			console.log(`This is an error for the cocktailDBAPI: ${error.message}`);
+			setErrorMsg(
+				"Failed to connect to the cocktail experts! Check your internet and try again"
+			);
 		}
 	};
 
 	return {
+		errorMsg,
 		isLoading,
 		results,
 		fetchCocktailApi,
