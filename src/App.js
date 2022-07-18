@@ -1,5 +1,5 @@
 import "./App.css";
-import "./cocktail.css";
+import "./Cocktail.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import LizCocktails from "./components/barOfLiz/LizCocktails";
 import CocktailDb from "./components/barOfCocktailDb/CocktailDb";
