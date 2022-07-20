@@ -3,9 +3,9 @@ import { useState, useEffect } from "react";
 function useCocktailApi() {
 	const [initialised, setInitalised] = useState(false);
 	const [results, setResults] = useState(null);
-	const [keyword, setKeyword] = useState();
+	const [keyword, setKeyword] = useState("");
 	const [isLoading, setIsLoading] = useState(false);
-	const [errorMsg, setErrorMsg] = useState();
+	const [errorMsg, setErrorMsg] = useState("");
 
 	// To have have a cocktail searched for the first time the page is loaded
 	useEffect(() => {
@@ -23,7 +23,7 @@ function useCocktailApi() {
 			}
 		};
 		initialCocktail();
-	}, [results]);
+	}, []);
 
 	// use async...await to return a promise
 	const fetchCocktailApi = async (keyword) => {
