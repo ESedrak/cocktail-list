@@ -7,8 +7,8 @@ import wskSourImg from "../images/wskySour.png";
 import amSourImg from "../images/amSour.jpg";
 import blueGenie from "../images/blueGenie.jpg";
 
-// This array is responsible for handling any internal cocktail data - currently just returns static array
-const cocktailDetails = [
+// This array is responsible for handling any internal cocktail data - currently just a static array
+const lizCocktailDetails = [
 	{
 		image: frenchImg,
 		drinkName: "French 75",
@@ -229,4 +229,4 @@ const cocktailDetails = [
 	},
 ];
 
-export default cocktailDetails;
+export default lizCocktailDetails;
