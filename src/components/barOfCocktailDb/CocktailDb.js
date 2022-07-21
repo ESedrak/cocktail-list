@@ -16,12 +16,12 @@ function CocktailDb() {
 		errorMsg,
 	} = useCocktailApi();
 
-	const handleSearch = (e) => {
+	const handleSubmit = (e) => {
 		e.preventDefault();
 		fetchCocktailApi(keyword);
 	};
 
-	const cocktailSearch = (e) => {
+	const handleSearch = (e) => {
 		//Value of the search bar
 		setKeyword(e.target.value);
 	};
@@ -34,16 +34,16 @@ function CocktailDb() {
 				<Loader />
 			) : (
 				<div>
-					<form onSubmit={handleSearch}>
+					<form onSubmit={handleSubmit}>
 						<input
 							type="search"
 							placeholder="Search for a Drink or Spirit"
-							onChange={cocktailSearch}
+							onChange={handleSearch}
 							className="CocktailDb-searchbar"
 						></input>
 						<button
 							type="button"
-							onClick={handleSearch}
+							onClick={handleSubmit}
 							className="CocktailDb-button"
 						>
 							<FontAwesomeIcon icon={faSearch} />
