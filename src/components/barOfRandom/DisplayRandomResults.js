@@ -1,27 +1,7 @@
+import showIngredients from "../../library/showIngredients";
+
 function DisplayRandomResults({ randomResults, errorMsg }) {
-	// console.log(props.randomResults) to get data from Random component
-
-	// Each drink can have up to 15 ingredients/measurements + some ingredients does not have a measurement(e.g. salt)
-	const showRandomIngredients = (randomResults) => {
-		const allIngredients = [];
-		for (let i = 1; i <= 15; i++) {
-			const oneIngredient = randomResults[`strIngredient${i}`];
-			const oneMeasurement = randomResults[`strMeasure${i}`];
-			if (oneIngredient) {
-				if (oneMeasurement) {
-					allIngredients.push(
-						`${oneMeasurement.trim()} - ${oneIngredient.trim()}`
-					);
-				} else {
-					allIngredients.push(oneIngredient);
-				}
-			}
-		}
-		// console.log(allIngredients);
-		return allIngredients;
-	};
-
-	const showRandomList = showRandomIngredients(randomResults);
+	const showRandomList = showIngredients(randomResults);
 
 	if (randomResults.strDrink) {
 		return (
