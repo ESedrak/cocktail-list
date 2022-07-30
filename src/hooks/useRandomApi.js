@@ -4,7 +4,7 @@ function useRandomApi() {
 	const [initialised, setInitialised] = useState(false);
 	const [randomResults, setRandomResults] = useState([]);
 	const [isLoading, setIsLoading] = useState(false);
-	const [errorMsg, setErrorMsg] = useState();
+	const [errorMsg, setErrorMsg] = useState("");
 
 	// Random cocktail generated on load
 	useEffect(() => {
