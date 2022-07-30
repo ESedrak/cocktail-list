@@ -1,5 +1,5 @@
 import lizCocktailDetails from "../../library/lizCocktailDetails";
-import DisplayLizCocktails from "./DisplayLizCocktails";
+import DisplayLizCocktail from "../displayCocktails/DisplayLizCocktail";
 import "./lizCocktails.css";
 
 function LizCocktails() {
@@ -10,7 +10,7 @@ function LizCocktails() {
 				The perfected ratios of some of the best cocktails
 			</p>
 			{lizCocktailDetails.map((lizDrinks, index) => {
-				return <DisplayLizCocktails lizDrink={lizDrinks} key={index} />;
+				return <DisplayLizCocktail lizDrink={lizDrinks} key={index} />;
 			})}
 		</div>
 	);
