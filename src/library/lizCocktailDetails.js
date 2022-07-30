@@ -47,12 +47,12 @@ const lizCocktailDetails = [
 				unit: "mls",
 			},
 			{
-				ingredient: "Cointreau",
+				ingredient: "Freshly Squeezed Lime Juice",
 				amount: 45,
 				unit: "mls",
 			},
 			{
-				ingredient: "Freshly Squeezed Lime Juice",
+				ingredient: "Cointreau",
 				amount: 15,
 				unit: "mls",
 			},
@@ -75,12 +75,12 @@ const lizCocktailDetails = [
 				unit: "mls",
 			},
 			{
-				ingredient: "Cointreau",
+				ingredient: "Freshly Squeezed Lime Juice",
 				amount: 45,
 				unit: "mls",
 			},
 			{
-				ingredient: "Freshly Squeezed Lime Juice",
+				ingredient: "Cointreau",
 				amount: 15,
 				unit: "mls",
 			},
