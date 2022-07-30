@@ -1,7 +1,7 @@
 import "./random.css";
-import DisplayRandomResults from "./DisplayRandomResults";
 import useRandomApi from "../../hooks/useRandomApi";
 import Loader from "../loaderSpinner/Spinner";
+import DisplayCocktail from "../displayCocktails/DisplayCocktail";
 
 function Random() {
 	const { randomResults, fetchRandomApi, errorMsg, isLoading } = useRandomApi();
@@ -20,10 +20,7 @@ function Random() {
 			) : (
 				<form onChange={randomCocktail}>
 					<button onClick={randomCocktail}>Random Cocktail</button>
-					<DisplayRandomResults
-						randomResults={randomResults}
-						errorMsg={errorMsg}
-					/>
+					<DisplayCocktail results={randomResults} errorMsg={errorMsg} />
 				</form>
 			)}
 		</div>

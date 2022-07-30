@@ -1,4 +1,4 @@
-const showIngredients = (cocktail) => {
+const displayIngredients = (cocktail) => {
 	// console.log(cocktail);
 	const allIngredients = [];
 
@@ -20,4 +20,4 @@ const showIngredients = (cocktail) => {
 	return allIngredients;
 };
 
-export default showIngredients;
+export default displayIngredients;

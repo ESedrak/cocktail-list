@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 function useRandomApi() {
 	const [initialised, setInitialised] = useState(false);
-	const [randomResults, setRandomResults] = useState({});
+	const [randomResults, setRandomResults] = useState([]);
 	const [isLoading, setIsLoading] = useState(false);
 	const [errorMsg, setErrorMsg] = useState();
 
@@ -34,7 +34,7 @@ function useRandomApi() {
 			if (response.ok) {
 				const jsonResponse = await response.json();
 				// console.log(jsonResponse.drinks[0]);
-				const data = setRandomResults(jsonResponse.drinks[0]);
+				const data = setRandomResults(jsonResponse.drinks);
 				setIsLoading(false);
 				return data;
 			}

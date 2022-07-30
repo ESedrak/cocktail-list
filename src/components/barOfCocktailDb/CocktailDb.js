@@ -1,9 +1,9 @@
-import DisplayCocktailDbResults from "./DisplayCocktailDbResults";
 import "./cocktailDb.css";
 import useCocktailApi from "../../hooks/useCocktailApi";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/fontawesome-free-solid";
 import Loader from "../loaderSpinner/Spinner";
+import DisplayCocktail from "../displayCocktails/DisplayCocktail";
 
 function CocktailDb() {
 	// use own Hooks (inside folder hooks)
@@ -49,7 +49,7 @@ function CocktailDb() {
 							<FontAwesomeIcon icon={faSearch} />
 						</button>
 					</form>
-					<DisplayCocktailDbResults dbResults={results} errorMsg={errorMsg} />
+					<DisplayCocktail results={results} errorMsg={errorMsg} />
 				</div>
 			)}
 		</div>

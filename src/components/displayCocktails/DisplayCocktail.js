@@ -1,11 +1,13 @@
-import showIngredients from "../../library/showIngredients";
+import displayIngredients from "./displayIngredients";
 
-function DisplayCocktailDbResults({ dbResults, errorMsg }) {
-	if (dbResults) {
+function DisplayCocktail({ results, errorMsg }) {
+	// console.log(results.length);
+
+	if (results) {
 		return (
 			<div className="CocktailDbResults">
-				{dbResults.map((cocktail) => {
-					const listIngredients = showIngredients(cocktail);
+				{results.map((cocktail) => {
+					const listIngredients = displayIngredients(cocktail);
 					// console.log(listIngredients);
 					return (
 						<section key={cocktail.idDrink} className="Cocktail-one">
@@ -39,4 +41,4 @@ function DisplayCocktailDbResults({ dbResults, errorMsg }) {
 	}
 }
 
-export default DisplayCocktailDbResults;
+export default DisplayCocktail;
