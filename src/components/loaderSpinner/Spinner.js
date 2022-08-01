@@ -1,4 +1,4 @@
-import "./spinner.css";
+import "./Spinner.css";
 import { TailSpin } from "react-loader-spinner";
 
 function Spinner() {

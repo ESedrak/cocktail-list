@@ -1,6 +1,6 @@
 import lizCocktailDetails from "../../library/lizCocktailDetails";
 import DisplayLizCocktail from "../displayCocktails/DisplayLizCocktail";
-import "./lizCocktails.css";
+import "./LizCocktails.css";
 
 function LizCocktails() {
 	return (

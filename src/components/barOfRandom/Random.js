@@ -1,4 +1,4 @@
-import "./random.css";
+import "./Random.css";
 import useRandomApi from "../../hooks/useRandomApi";
 import Loader from "../loaderSpinner/Spinner";
 import DisplayCocktail from "../displayCocktails/DisplayCocktail";

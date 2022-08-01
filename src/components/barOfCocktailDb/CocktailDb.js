@@ -1,4 +1,4 @@
-import "./cocktailDb.css";
+import "./CocktailDb.css";
 import useCocktailApi from "../../hooks/useCocktailApi";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/fontawesome-free-solid";
