@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/fontawesome-free-solid";
 import Loader from "../loaderSpinner/Spinner";
 import DisplayCocktail from "../displayCocktails/DisplayCocktail";
+import Header from "../Header/Header";
+import headerDetails from "../../library/headerDetails";
 
 function CocktailDb() {
 	// use own Hooks (inside folder hooks)
@@ -28,8 +30,7 @@ function CocktailDb() {
 
 	return (
 		<div className="CocktailDb">
-			<h2 className="CocktailDb-heading">Bar TheCocktailDB</h2>
-			<p className="CocktailDb-msg">Search over 650 cocktails</p>
+			<Header header={headerDetails.barOf.cocktailDb} />
 			{isLoading ? (
 				<Loader />
 			) : (

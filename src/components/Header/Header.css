@@ -1,10 +1,9 @@
-/* header */
-.DisplayLizCocktails-header {
+.Header h2 {
 	font-size: 2.5rem;
 	padding: 1rem;
 }
 
-.DisplayLiz-msg {
+.Header p {
 	font-size: 1.5rem;
 	font-family: "Macondo", sans-serif;
 	padding: 0 1rem 1rem 1rem;
