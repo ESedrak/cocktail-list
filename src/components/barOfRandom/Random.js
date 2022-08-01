@@ -1,9 +1,9 @@
 import "./Random.css";
 import useRandomApi from "../../hooks/useRandomApi";
-import Loader from "../loaderSpinner/Spinner";
-import DisplayCocktail from "../displayCocktails/DisplayCocktail";
 import Header from "../Header/Header";
 import headerDetails from "../../library/headerDetails";
+import Loader from "../loaderSpinner/Spinner";
+import DisplayCocktail from "../displayCocktails/DisplayCocktail";
 
 function Random() {
 	const { randomResults, fetchRandomApi, errorMsg, isLoading } = useRandomApi();
