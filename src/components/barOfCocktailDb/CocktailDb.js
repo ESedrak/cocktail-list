@@ -41,7 +41,7 @@ function CocktailDb() {
 							placeholder="Search for a Drink or Spirit"
 							onChange={handleSearch}
 							className="CocktailDb-searchbar"
-						></input>
+						/>
 						<button
 							type="button"
 							onClick={handleSubmit}
