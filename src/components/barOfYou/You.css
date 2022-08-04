@@ -1,0 +1,18 @@
+.You-button {
+	border-radius: 2rem;
+	margin-bottom: 1rem;
+	font-size: 2rem;
+	font-family: "Sail", "Macondo", cursive, arial;
+	transition: 2s;
+	background-color: black;
+	color: rgb(255, 209, 217);
+	border: 0.1rem solid rgb(255, 209, 217);
+	padding: 0.5rem;
+	cursor: pointer;
+}
+
+.You-button:hover {
+	transform: scale(1.1);
+	background-color: rgb(255, 209, 217);
+	color: #000;
+}

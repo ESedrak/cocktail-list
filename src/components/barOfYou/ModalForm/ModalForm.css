@@ -1,0 +1,60 @@
+.ModalForm {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.ModalForm-header {
+	font-size: 2rem;
+}
+
+.ModalForm-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 50%;
+	background-color: rgb(255, 209, 217);
+	color: black;
+}
+
+.ModalForm-header,
+.ModalForm-footer {
+	padding: 1rem;
+}
+
+.ModalForm-body {
+	padding: 1rem;
+	border-top: 0.1rem solid black;
+	border-bottom: 0.1rem solid black;
+	display: flex;
+	flex-direction: column;
+	width: 25rem;
+}
+
+.ModalForm-ingredients {
+	width: 100%;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.ModalForm input {
+	border-radius: 0.1rem;
+	padding: 0.5rem;
+}
+
+.ModalForm button {
+	border-radius: 0.1rem;
+	color: rgb(255, 209, 217);
+	background-color: black;
+	border: 0.1rem solid rgb(255, 209, 217);
+	padding: 0.5rem;
+	border-radius: 0.1rem;
+}

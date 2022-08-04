@@ -12,6 +12,10 @@ const headerDetails = {
 			header: "Bar Random",
 			msg: "Feeling Lucky?",
 		},
+		you: {
+			header: "Bar of You",
+			msg: "Store your own cocktail list here!",
+		},
 	},
 };
 
