@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import LizCocktails from "./components/barOfLiz/LizCocktails";
 import CocktailDb from "./components/barOfCocktailDb/CocktailDb";
 import Random from "./components/barOfRandom/Random";
+import You from "./components/barOfYou/You";
 
 function App() {
 	return (
@@ -21,6 +22,9 @@ function App() {
 						<Link to="/random" className="App-link">
 							Bar Random
 						</Link>
+						<Link to="/You" className="App-link">
+							Bar Of You
+						</Link>
 					</nav>
 					<hr />
 				</header>
@@ -30,6 +34,7 @@ function App() {
 					<Route exact path="/" element={<LizCocktails />} />
 					<Route path="/CocktailDb" element={<CocktailDb />} />
 					<Route path="/random" element={<Random />} />
+					<Route path="/You" element={<You />} />
 				</Routes>
 			</div>
 		</Router>
