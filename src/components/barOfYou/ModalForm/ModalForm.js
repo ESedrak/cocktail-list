@@ -9,6 +9,8 @@ function ModalForm({ modalForm, onClose }) {
 		},
 	]);
 
+	console.log(ingredientList);
+
 	// console.log(ingredientList);
 
 	// To open/close modal form
@@ -27,38 +29,16 @@ function ModalForm({ modalForm, onClose }) {
 	};
 
 	const handleIngredientChange = (e, index) => {
-		// const { name, value } = e.target;
-		// console.log(e.target, index);
 		const inputTarget = e.target.id;
 		const valueTarget = e.target.value;
-		console.log(inputTarget);
-		console.log(valueTarget);
+		// console.log(inputTarget);
+		// console.log(valueTarget);
 
 		const list = [...ingredientList];
+		// console.log(list[index][inputTarget]);
 		list[index][inputTarget] = valueTarget;
 		setIngredientList(list);
-		// const ingredients = [...ingredientList.ingredient];
-		// ingredients[index][ingredient] = value;
-		// setIngredientList({
-		// 	...ingredientList,
-		// 	[inputTarget][index]: valueTarget,
-		// });
 	};
-
-	// // const { name, value } = e.target;
-	// 	// console.log(e.target, index);
-	// 	const inputTarget = e.target.id;
-	// 	const inputValue = e.target.value;
-	// 	console.log(inputTarget);
-	// 	console.log(inputValue);
-	// 	console.log(index);
-	// 	// let newIngredients = [...ingredientList];
-	// 	// // console.log(ingredient[index][inputTarget]);
-	// 	// newIngredients[index][ingredient] = value;
-	// 	// setIngredientList({
-	// 	// 	...ingredientList,
-	// 	// 	[inputTarget]: inputValue,
-	// 	// });
 
 	return (
 		<div className="ModalForm">
@@ -66,6 +46,7 @@ function ModalForm({ modalForm, onClose }) {
 				<h3 className="ModalForm-header">Add your cocktails!</h3>
 				<div className="ModalForm-body">
 					<input type="text" placeholder="Cocktail Name" />
+					{/* Show the input values that is given */}
 					{ingredientList.map((oneIngredient, index) => (
 						<div className="ModalForm-ingredients" key={index}>
 							<input
@@ -91,13 +72,24 @@ function ModalForm({ modalForm, onClose }) {
 								<button onClick={() => handleIngredientRemove(index)}>X</button>
 							)}
 
-							{/* Only allow up to 15 ingredients */}
+							{/* Only allow up to 10 ingredients */}
 							{ingredientList.length - 1 === index &&
 								ingredientList.length < 10 && (
 									<button onClick={handleIngredientAdd}>Add More</button>
 								)}
 						</div>
 					))}
+					{/* <div className="ModalForm-show-ingredients">
+						{ingredientList.map((showIngredient, index) => (
+							<ul key={index}>
+								{showIngredient && (
+									<li>
+										{showIngredient.ingredient} {showIngredient.amount}
+									</li>
+								)}
+							</ul>
+						))}
+					</div> */}
 					<input type="text-area" placeholder="Description"></input>
 				</div>
 				<div className="ModalForm-Footer">
@@ -118,44 +110,3 @@ function ModalForm({ modalForm, onClose }) {
 }
 
 export default ModalForm;
-
-{
-	/* <div className="Modal-Header">
-<h4 className="Modal-title">Add your cocktail</h4>
-</div>
-<form onSubmit={handleSubmit}>
-<div className="Modal-body">
-	<input
-		id="drinkName"
-		placeholder="Name of Drink"
-		onChange={handleChange}
-		value={addDrink.drinkName}
-	/>
-	<input
-		id="ingredient1"
-		placeholder="Ingredient 1"
-		onChange={handleChange}
-		value={addDrink.ingredient1}
-	/>
-	<input
-		id="measure1"
-		placeholder="Measurement 1"
-		onChange={handleChange}
-		type="number"
-		value={addDrink.measure1}
-	/>
-	<input
-		id="process"
-		placeholder="Process"
-		onChange={handleChange}
-		value={addDrink.process}
-	/>
-</div>
-<div className="Modal-footer">
-	<button>Add Cocktail</button>
-	<button type="button" className="Modal-button" onClick={onClose}>
-		Close
-	</button>
-</div>
-</form> */
-}
