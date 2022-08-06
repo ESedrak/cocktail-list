@@ -2,6 +2,11 @@ import "./ModalForm.css";
 import { useState } from "react";
 
 function ModalForm({ modalForm, onClose }) {
+	const [drinkInfo, setDrinkInfo] = useState({
+		drinkName: "",
+		process: "",
+	});
+
 	const [ingredientList, setIngredientList] = useState([
 		{
 			ingredient: "",
@@ -9,9 +14,7 @@ function ModalForm({ modalForm, onClose }) {
 		},
 	]);
 
-	console.log(ingredientList);
-
-	// console.log(ingredientList);
+	console.log(drinkInfo);
 
 	// To open/close modal form
 	if (!modalForm) {
@@ -40,12 +43,30 @@ function ModalForm({ modalForm, onClose }) {
 		setIngredientList(list);
 	};
 
+	const handleChange = (e) => {
+		const inputTarget = e.target.id;
+		const valueTarget = e.target.value;
+		console.log(inputTarget);
+		console.log(valueTarget);
+
+		setDrinkInfo({
+			...drinkInfo,
+			[inputTarget]: valueTarget,
+		});
+	};
+
 	return (
 		<div className="ModalForm">
 			<div className="ModalForm-content">
 				<h3 className="ModalForm-header">Add your cocktails!</h3>
 				<div className="ModalForm-body">
-					<input type="text" placeholder="Cocktail Name" />
+					<input
+						type="text"
+						placeholder="Cocktail Name"
+						value={drinkInfo.drinkName}
+						id="drinkName"
+						onChange={handleChange}
+					/>
 					{/* Show the input values that is given */}
 					{ingredientList.map((oneIngredient, index) => (
 						<div className="ModalForm-ingredients" key={index}>
@@ -90,7 +111,13 @@ function ModalForm({ modalForm, onClose }) {
 							</ul>
 						))}
 					</div> */}
-					<input type="text-area" placeholder="Description"></input>
+					<input
+						type="text-area"
+						placeholder="Description"
+						onChange={handleChange}
+						value={drinkInfo.process}
+						id="process"
+					></input>
 				</div>
 				<div className="ModalForm-Footer">
 					<div className="Modal-footer">
