@@ -1,7 +1,7 @@
 import "./ModalForm.css";
 import { useState } from "react";
 
-function ModalForm({ modalForm, onClose }) {
+function ModalForm({ modalForm, onClose, createCocktail }) {
 	const [drinkInfo, setDrinkInfo] = useState({
 		drinkName: "",
 		process: "",
@@ -14,7 +14,7 @@ function ModalForm({ modalForm, onClose }) {
 		},
 	]);
 
-	console.log(drinkInfo);
+	// console.log(drinkInfo);
 
 	// To open/close modal form
 	if (!modalForm) {
@@ -46,8 +46,8 @@ function ModalForm({ modalForm, onClose }) {
 	const handleChange = (e) => {
 		const inputTarget = e.target.id;
 		const valueTarget = e.target.value;
-		console.log(inputTarget);
-		console.log(valueTarget);
+		// console.log(inputTarget);
+		// console.log(valueTarget);
 
 		setDrinkInfo({
 			...drinkInfo,
@@ -55,52 +55,63 @@ function ModalForm({ modalForm, onClose }) {
 		});
 	};
 
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		createCocktail(drinkInfo, ingredientList);
+	};
+
 	return (
 		<div className="ModalForm">
 			<div className="ModalForm-content">
 				<h3 className="ModalForm-header">Add your cocktails!</h3>
-				<div className="ModalForm-body">
-					<input
-						type="text"
-						placeholder="Cocktail Name"
-						value={drinkInfo.drinkName}
-						id="drinkName"
-						onChange={handleChange}
-					/>
-					{/* Show the input values that is given */}
-					{ingredientList.map((oneIngredient, index) => (
-						<div className="ModalForm-ingredients" key={index}>
-							<input
-								name="ingredient"
-								className="ingredient"
-								key={index}
-								id="ingredient"
-								type="text"
-								placeholder="Ingredient Name"
-								value={oneIngredient.ingredient}
-								onChange={(e) => handleIngredientChange(e, index)}
-							/>
-							<input
-								type="text"
-								name="amount"
-								id="amount"
-								placeholder="Ingredient Amount"
-								value={oneIngredient.amount}
-								onChange={(e) => handleIngredientChange(e, index)}
-							/>
-							{/* If only 1 ingredient input field - remove the delete button */}
-							{ingredientList.length > 1 && (
-								<button onClick={() => handleIngredientRemove(index)}>X</button>
-							)}
-
-							{/* Only allow up to 10 ingredients */}
-							{ingredientList.length - 1 === index &&
-								ingredientList.length < 10 && (
-									<button onClick={handleIngredientAdd}>Add More</button>
+				<form onSubmit={handleSubmit}>
+					<div className="ModalForm-body">
+						<input
+							type="text"
+							placeholder="Cocktail Name"
+							value={drinkInfo.drinkName}
+							id="drinkName"
+							onChange={handleChange}
+							required
+						/>
+						{/* Show the input values that is given */}
+						{ingredientList.map((oneIngredient, index) => (
+							<div className="ModalForm-ingredients" key={index}>
+								<input
+									name="ingredient"
+									className="ingredient"
+									key={index}
+									id="ingredient"
+									type="text"
+									placeholder="Ingredient Name"
+									value={oneIngredient.ingredient}
+									onChange={(e) => handleIngredientChange(e, index)}
+									required
+								/>
+								<input
+									type="text"
+									name="amount"
+									id="amount"
+									placeholder="Ingredient Amount"
+									value={oneIngredient.amount}
+									onChange={(e) => handleIngredientChange(e, index)}
+									required
+								/>
+								{/* If only 1 ingredient input field - remove the delete button */}
+								{ingredientList.length > 1 && (
+									<button onClick={() => handleIngredientRemove(index)}>
+										X
+									</button>
 								)}
-						</div>
-					))}
-					{/* <div className="ModalForm-show-ingredients">
+
+								{/* Only allow up to 10 ingredients */}
+								{ingredientList.length - 1 === index &&
+									ingredientList.length < 10 && (
+										<button onClick={handleIngredientAdd}>Add More</button>
+									)}
+							</div>
+						))}
+						{/* <div className="ModalForm-show-ingredients">
 						{ingredientList.map((showIngredient, index) => (
 							<ul key={index}>
 								{showIngredient && (
@@ -111,26 +122,28 @@ function ModalForm({ modalForm, onClose }) {
 							</ul>
 						))}
 					</div> */}
-					<input
-						type="text-area"
-						placeholder="Description"
-						onChange={handleChange}
-						value={drinkInfo.process}
-						id="process"
-					></input>
-				</div>
-				<div className="ModalForm-Footer">
-					<div className="Modal-footer">
-						<button>Add Cocktail</button>
-						<button
-							onClick={onClose}
-							type="button"
-							className="ModalForm-button"
-						>
-							Close
-						</button>
+						<input
+							type="text-area"
+							placeholder="Description"
+							onChange={handleChange}
+							value={drinkInfo.process}
+							id="process"
+							required
+						/>
 					</div>
-				</div>
+					<div className="ModalForm-Footer">
+						<div className="Modal-footer">
+							<button type="submit">Add Cocktail</button>
+							<button
+								onClick={onClose}
+								type="button"
+								className="ModalForm-button"
+							>
+								Close
+							</button>
+						</div>
+					</div>
+				</form>
 			</div>
 		</div>
 	);
