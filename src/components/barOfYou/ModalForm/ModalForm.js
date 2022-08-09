@@ -2,11 +2,13 @@ import "./ModalForm.css";
 import { useState } from "react";
 
 function ModalForm({ modalForm, onClose, createCocktail }) {
+	// For handling cocktail information (minus ingredient list)
 	const [drinkInfo, setDrinkInfo] = useState({
 		drinkName: "",
 		process: "",
 	});
 
+	// For handling ingredients
 	const [ingredientList, setIngredientList] = useState([
 		{
 			ingredient: "",
@@ -14,15 +16,12 @@ function ModalForm({ modalForm, onClose, createCocktail }) {
 		},
 	]);
 
-	// console.log(ingredientList);
-
-	// console.log(drinkInfo);
-
 	// To open/close modal form
 	if (!modalForm) {
 		return null;
 	}
 
+	// For handling ingredients add/remove in modal form
 	const handleIngredientAdd = () => {
 		setIngredientList([...ingredientList, { ingredient: "", amount: "" }]);
 	};
@@ -38,13 +37,11 @@ function ModalForm({ modalForm, onClose, createCocktail }) {
 		const valueTarget = e.target.value;
 
 		const list = [...ingredientList];
-		// console.log(index);
-		// console.log(valueTarget);
-		// console.log(list[index][inputTarget]);
 		list[index][inputTarget] = valueTarget;
 		setIngredientList(list);
 	};
 
+	// For handling all of the other cocktail data (i.e. drinkName and process)
 	const handleChange = (e) => {
 		const inputTarget = e.target.id;
 		const valueTarget = e.target.value;
@@ -55,6 +52,7 @@ function ModalForm({ modalForm, onClose, createCocktail }) {
 		});
 	};
 
+	// On Submit
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		createCocktail(drinkInfo, ingredientList);
@@ -65,6 +63,7 @@ function ModalForm({ modalForm, onClose, createCocktail }) {
 			drinkName: "",
 			process: "",
 		});
+
 		setIngredientList([
 			{
 				ingredient: "",
@@ -87,7 +86,7 @@ function ModalForm({ modalForm, onClose, createCocktail }) {
 							onChange={handleChange}
 							required
 						/>
-						{/* Show the input values that is given */}
+						{/*Ingredient List (connects the add/remove abilities for each ingredient/amount)*/}
 						{ingredientList.map((oneIngredient, index) => (
 							<div className="ModalForm-ingredients" key={index}>
 								<input
@@ -124,17 +123,6 @@ function ModalForm({ modalForm, onClose, createCocktail }) {
 									)}
 							</div>
 						))}
-						{/* <div className="ModalForm-show-ingredients">
-						{ingredientList.map((showIngredient, index) => (
-							<ul key={index}>
-								{showIngredient && (
-									<li>
-										{showIngredient.ingredient} {showIngredient.amount}
-									</li>
-								)}
-							</ul>
-						))}
-					</div> */}
 						<input
 							type="text-area"
 							placeholder="Description"
