@@ -86,6 +86,7 @@ function ModalForm({ modalForm, onClose, createCocktail }) {
 							onChange={handleChange}
 							required
 						/>
+						<br />
 						{/*Ingredient List (connects the add/remove abilities for each ingredient/amount)*/}
 						{ingredientList.map((oneIngredient, index) => (
 							<div className="ModalForm-ingredients" key={index}>
@@ -123,6 +124,7 @@ function ModalForm({ modalForm, onClose, createCocktail }) {
 									)}
 							</div>
 						))}
+						<br />
 						<input
 							type="text-area"
 							placeholder="Description"

@@ -46,8 +46,9 @@
 }
 
 .ModalForm input {
-	border-radius: 0.1rem;
+	border-radius: 0.3rem;
 	padding: 0.5rem;
+	margin-bottom: 0.1rem;
 }
 
 .ModalForm button {
@@ -56,5 +57,6 @@
 	background-color: black;
 	border: 0.1rem solid rgb(255, 209, 217);
 	padding: 0.5rem;
-	border-radius: 0.1rem;
+	border-radius: 0.3rem;
+	margin-bottom: 0.1rem;
 }

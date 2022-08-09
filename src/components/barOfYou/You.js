@@ -15,6 +15,7 @@ function You() {
 		setCocktailInfo([...cocktailInfo, drinkInfo]);
 		setAddIngredient([...addIngredient, addIngredients]);
 	};
+
 	return (
 		<div className="You">
 			<Header header={headerDetails.barOf.you} />
