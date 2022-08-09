@@ -52,12 +52,14 @@ function ModalForm({ modalForm, onClose, createCocktail }) {
 		});
 	};
 
-	// On Submit
+	// On Submit, pass cocktail info to function createCocktail (passed as a prop from You.js), automatically close modal form and reset values
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		createCocktail(drinkInfo, ingredientList);
-		console.log(ingredientList);
+		resetValues();
+	};
 
+	const resetValues = () => {
 		onClose();
 		setDrinkInfo({
 			drinkName: "",
