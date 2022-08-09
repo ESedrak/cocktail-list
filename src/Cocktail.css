@@ -42,13 +42,6 @@ ul.Cocktail-ingredients {
 	position: relative;
 }
 
-/* Cocktail only for bar of You (position: relative was overlapping some content) */
-.Cocktail-you-one {
-	font-family: "Macondo", sans-serif, Arial;
-	margin: 0.1rem auto;
-	max-width: 38rem;
-}
-
 .Cocktail-one img {
 	max-width: 600px;
 	max-height: 600px;

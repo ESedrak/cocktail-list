@@ -18,3 +18,41 @@
 	background-color: rgb(255, 209, 217);
 	color: #000;
 }
+
+/* Display Cocktail only for bar of You  */
+.DisplayYourCocktail {
+	font-family: "Macondo", sans-serif, Arial;
+	margin: 0.1rem auto;
+	max-width: 37.5rem;
+	height: 37.5rem;
+	width: 100%;
+}
+
+.DisplayOneCocktail {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: black;
+	height: 100%;
+	width: 100%;
+	border: 2px solid rgb(255, 209, 217);
+	align-content: center;
+	margin-bottom: 0.2rem;
+}
+
+.DisplayYourCocktail button {
+	border-radius: 0.1rem;
+	color: rgb(255, 209, 217);
+	background-color: black;
+	border: 0.1rem solid rgb(255, 209, 217);
+	padding: 0.5rem;
+	border-radius: 0.3rem;
+	margin-bottom: 0.1rem;
+	cursor: pointer;
+}
+
+.DisplayYourCocktail button:hover {
+	transform: scale(1.1);
+	background-color: rgb(255, 209, 217);
+	color: #000;
+}
