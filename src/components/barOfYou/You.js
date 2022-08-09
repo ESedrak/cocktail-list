@@ -6,12 +6,13 @@ import { useState } from "react";
 import "./You.css";
 
 function You() {
-	// Modal Form only pops up when clicked - otherwise set to false
+	// Modal Form only pops up when Add Cocktail button clicked - otherwise set to false
 	const [modalForm, setModalForm] = useState(false);
 	const [addIngredient, setAddIngredient] = useState([]);
 	const [cocktailInfo, setCocktailInfo] = useState([]);
 
 	const createCocktail = (drinkInfo, addIngredients) => {
+		console.log(drinkInfo);
 		setCocktailInfo([...cocktailInfo, drinkInfo]);
 		setAddIngredient([...addIngredient, addIngredients]);
 	};
