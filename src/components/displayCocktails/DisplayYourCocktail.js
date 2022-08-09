@@ -5,7 +5,7 @@ function DisplayYourCocktail({ cocktailInfo, allIngredients, deleteCocktail }) {
 		<section className="DisplayYourCocktail">
 			<hr />
 			{cocktailInfo.map((details, index) => (
-				<div className="DisplayOneCocktail">
+				<div key={`${details} - ${index}`} className="DisplayOneCocktail">
 					<div key={index}>
 						<h3 className="Cocktail-drink-name">{details.drinkName}</h3>
 						<div className="Cocktail-process">
