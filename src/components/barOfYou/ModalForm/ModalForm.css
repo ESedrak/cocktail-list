@@ -1,3 +1,4 @@
+/* Modal Form Pop up */
 .ModalForm {
 	position: fixed;
 	left: 0;
@@ -11,10 +12,6 @@
 	flex-direction: column;
 }
 
-.ModalForm-header {
-	font-size: 2rem;
-}
-
 .ModalForm-content {
 	display: flex;
 	align-items: center;
@@ -25,11 +22,17 @@
 	color: black;
 }
 
+/* Header/footer */
+.ModalForm-header {
+	font-size: 2rem;
+}
+
 .ModalForm-header,
 .ModalForm-footer {
 	padding: 1rem;
 }
 
+/* Body/Input Content */
 .ModalForm-body {
 	padding: 1rem;
 	border-top: 0.1rem solid black;
@@ -51,6 +54,7 @@
 	margin-bottom: 0.1rem;
 }
 
+/* For all Buttons on the Modal Form */
 .ModalForm button {
 	border-radius: 0.1rem;
 	color: rgb(255, 209, 217);
@@ -59,4 +63,5 @@
 	padding: 0.5rem;
 	border-radius: 0.3rem;
 	margin-bottom: 0.1rem;
+	cursor: pointer;
 }

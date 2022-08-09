@@ -134,17 +134,16 @@ function ModalForm({ modalForm, onClose, createCocktail }) {
 							required
 						/>
 					</div>
-					<div className="ModalForm-Footer">
-						<div className="Modal-footer">
-							<button type="submit">Add Cocktail</button>
-							<button
-								onClick={onClose}
-								type="button"
-								className="ModalForm-button"
-							>
-								Close
-							</button>
-						</div>
+
+					<div className="ModalForm-footer">
+						<button type="submit">Add Cocktail</button>
+						<button
+							onClick={onClose}
+							type="button"
+							className="ModalForm-button"
+						>
+							Close
+						</button>
 					</div>
 				</form>
 			</div>
