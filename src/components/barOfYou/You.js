@@ -1,7 +1,7 @@
 import Header from "../Header/Header";
 import headerDetails from "../../library/headerDetails";
 import ModalForm from "./ModalForm/ModalForm";
-import DisplayYourCocktail from "./ModalForm/DisplayYourCocktail";
+import DisplayYourCocktail from "../displayCocktails/DisplayYourCocktail";
 import { useState } from "react";
 import "./You.css";
 
@@ -17,7 +17,7 @@ function You() {
 		setAllIngredients([...allIngredients, addIngredients]);
 	};
 
-	// Deletes cocktails (for both cocktailInfo and ingredients)
+	// Deletes cocktails (remove data from both cocktailInfo and ingredients)
 	const deleteCocktail = (index) => {
 		let newCocktailsInfo = [...cocktailInfo];
 		let newIngredients = [...allIngredients];

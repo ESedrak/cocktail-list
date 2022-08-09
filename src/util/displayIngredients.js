@@ -1,3 +1,5 @@
+// This function is purely for the API list of CocktailDB and Random (As the API list has ingredients/measurements from 1-15)
+// This function is responsible for looping through 15 times
 const displayIngredients = (cocktail) => {
 	// console.log(cocktail);
 	const allIngredients = [];

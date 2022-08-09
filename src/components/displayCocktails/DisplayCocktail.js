@@ -1,4 +1,4 @@
-import displayIngredients from "./displayIngredients";
+import displayIngredients from "../../util/displayIngredients";
 
 function DisplayCocktail({ results, errorMsg }) {
 	// console.log(results.length);

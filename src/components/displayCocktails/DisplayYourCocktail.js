@@ -1,4 +1,4 @@
-import "../../../Cocktail.css";
+import "../barOfYou/You.css";
 
 function DisplayYourCocktail({ cocktailInfo, allIngredients, deleteCocktail }) {
 	return (
