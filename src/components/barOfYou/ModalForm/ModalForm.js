@@ -14,6 +14,8 @@ function ModalForm({ modalForm, onClose, createCocktail }) {
 		},
 	]);
 
+	// console.log(ingredientList);
+
 	// console.log(drinkInfo);
 
 	// To open/close modal form
@@ -34,10 +36,10 @@ function ModalForm({ modalForm, onClose, createCocktail }) {
 	const handleIngredientChange = (e, index) => {
 		const inputTarget = e.target.id;
 		const valueTarget = e.target.value;
-		// console.log(inputTarget);
-		// console.log(valueTarget);
 
 		const list = [...ingredientList];
+		// console.log(index);
+		// console.log(valueTarget);
 		// console.log(list[index][inputTarget]);
 		list[index][inputTarget] = valueTarget;
 		setIngredientList(list);
@@ -46,8 +48,6 @@ function ModalForm({ modalForm, onClose, createCocktail }) {
 	const handleChange = (e) => {
 		const inputTarget = e.target.id;
 		const valueTarget = e.target.value;
-		// console.log(inputTarget);
-		// console.log(valueTarget);
 
 		setDrinkInfo({
 			...drinkInfo,
@@ -58,6 +58,19 @@ function ModalForm({ modalForm, onClose, createCocktail }) {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		createCocktail(drinkInfo, ingredientList);
+		console.log(ingredientList);
+
+		onClose();
+		setDrinkInfo({
+			drinkName: "",
+			process: "",
+		});
+		setIngredientList([
+			{
+				ingredient: "",
+				amount: "",
+			},
+		]);
 	};
 
 	return (

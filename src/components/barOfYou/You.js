@@ -14,7 +14,6 @@ function You() {
 	const createCocktail = (drinkInfo, addIngredients) => {
 		setCocktailInfo([...cocktailInfo, drinkInfo]);
 		setAddIngredient([...addIngredient, addIngredients]);
-		console.log(drinkInfo, addIngredients);
 	};
 	return (
 		<div className="You">
