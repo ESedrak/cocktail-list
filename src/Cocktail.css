@@ -1,4 +1,4 @@
-/* Properities for one cocktail which is used for all 3 cocktail bars for consistency */
+/* Properities for one cocktail which is used for all 4 cocktail bars for consistency */
 
 /* Group ingredients/instructions together, so if any overflow of text, scrollbar appears*/
 .Cocktail-process {
@@ -42,6 +42,7 @@ ul.Cocktail-ingredients {
 	position: relative;
 }
 
+/* Cocktail only for bar of You (position: relative was overlapping some content) */
 .Cocktail-you-one {
 	font-family: "Macondo", sans-serif, Arial;
 	margin: 0.1rem auto;
