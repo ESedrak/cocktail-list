@@ -29,6 +29,7 @@ function ModalForm({ modalForm, onClose, createCocktail }) {
 	const handleIngredientRemove = (index) => {
 		const removeIngredient = [...ingredientList];
 		removeIngredient.splice(index, 1);
+		console.log(removeIngredient);
 		setIngredientList(removeIngredient);
 	};
 

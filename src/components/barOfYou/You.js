@@ -8,13 +8,25 @@ import "./You.css";
 function You() {
 	// Modal Form only pops up when Add Cocktail button clicked - otherwise set to false
 	const [modalForm, setModalForm] = useState(false);
-	const [addIngredient, setAddIngredient] = useState([]);
+	const [allIngredients, setAllIngredients] = useState([]);
 	const [cocktailInfo, setCocktailInfo] = useState([]);
 
+	// createCocktail receives the cocktail data when modal form submited
 	const createCocktail = (drinkInfo, addIngredients) => {
-		console.log(drinkInfo);
 		setCocktailInfo([...cocktailInfo, drinkInfo]);
-		setAddIngredient([...addIngredient, addIngredients]);
+		setAllIngredients([...allIngredients, addIngredients]);
+	};
+
+	// Deletes cocktails (for both cocktailInfo and ingredients)
+	const deleteCocktail = (index) => {
+		let newCocktailsInfo = [...cocktailInfo];
+		let newIngredients = [...allIngredients];
+
+		newCocktailsInfo.splice(index, 1);
+		setCocktailInfo(newCocktailsInfo);
+
+		newIngredients.splice(index, 1);
+		setAllIngredients(newIngredients);
 	};
 
 	return (
@@ -30,7 +42,8 @@ function You() {
 			/>
 			<DisplayYourCocktail
 				cocktailInfo={cocktailInfo}
-				addIngredient={addIngredient}
+				allIngredients={allIngredients}
+				deleteCocktail={deleteCocktail}
 			/>
 		</div>
 	);
