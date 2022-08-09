@@ -10,8 +10,8 @@ function DisplayYourCocktail({ cocktailInfo, addIngredient }) {
 					<div className="Cocktail-process">
 						<ul className="Cocktail-ingredients" role="presentation">
 							{addIngredient.length > 0 &&
-								addIngredient[index].map((showIngredient) => (
-									<li>
+								addIngredient[index].map((showIngredient, index) => (
+									<li key={`${showIngredient} ${index}`}>
 										{showIngredient.amount} {showIngredient.ingredient}
 									</li>
 								))}
