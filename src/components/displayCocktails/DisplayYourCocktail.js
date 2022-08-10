@@ -3,10 +3,9 @@ import "../barOfYou/You.css";
 function DisplayYourCocktail({ cocktailInfo, allIngredients, deleteCocktail }) {
 	return (
 		<section className="DisplayYourCocktail">
-			<hr />
 			{cocktailInfo.map((details, index) => (
 				<div key={`${details} - ${index}`} className="DisplayOneCocktail">
-					<div key={index}>
+					<div>
 						<h3 className="Cocktail-drink-name">{details.drinkName}</h3>
 						<div className="Cocktail-process">
 							<ul className="Cocktail-ingredients" role="presentation">
