@@ -92,7 +92,7 @@ function ModalForm({ modalForm, onClose, createCocktail }) {
 						<br />
 						{/*Ingredient List (connects the add/remove abilities for each ingredient/amount)*/}
 						{ingredientList.map((oneIngredient, index) => (
-							<div className="ModalForm-ingredients" key={index}>
+							<span className="ModalForm-ingredients" key={index}>
 								<input
 									name="ingredient"
 									className="ingredient"
@@ -121,11 +121,13 @@ function ModalForm({ modalForm, onClose, createCocktail }) {
 								)}
 
 								{/* Only allow up to 10 ingredients */}
-								{ingredientList.length - 1 === index &&
-									ingredientList.length < 10 && (
-										<button onClick={handleIngredientAdd}>Add More</button>
-									)}
-							</div>
+								<div>
+									{ingredientList.length - 1 === index &&
+										ingredientList.length < 10 && (
+											<button onClick={handleIngredientAdd}>Add More</button>
+										)}
+								</div>
+							</span>
 						))}
 						<br />
 						<input

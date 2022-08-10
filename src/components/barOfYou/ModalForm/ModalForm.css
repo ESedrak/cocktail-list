@@ -1,3 +1,10 @@
+/* Set default input/text-areas to 100% */
+input,
+textarea {
+	width: 100%;
+	display: block;
+}
+
 /* Modal Form Pop up */
 .ModalForm {
 	position: fixed;
@@ -52,6 +59,12 @@
 	border-radius: 0.3rem;
 	padding: 0.5rem;
 	margin-bottom: 0.1rem;
+	max-width: 25rem;
+}
+
+.ModalForm-ingredients input {
+	max-width: 40%;
+	display: inline-block;
 }
 
 /* For all Buttons on the Modal Form */
@@ -64,4 +77,52 @@
 	border-radius: 0.3rem;
 	margin-bottom: 0.1rem;
 	cursor: pointer;
+}
+
+/* mobile media queries */
+@media only screen and (min-width: 480px) and (max-width: 790px) {
+	.ModalForm-content {
+		width: 80%;
+	}
+
+	.ModalForm input {
+		margin: 0 auto;
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.ModalForm-content {
+		width: 90%;
+	}
+
+	.ModalForm input {
+		margin: 0 auto;
+		width: 70%;
+	}
+
+	.ModalForm-ingredients input {
+		width: 35%;
+	}
+}
+@media only screen and (max-width: 330px) {
+	h3 {
+		display: none;
+	}
+
+	.ModalForm input {
+		height: 15px;
+		width: 60%;
+	}
+
+	.ModalForm-ingredients input {
+		width: 250px;
+		max-width: 30%;
+		margin-bottom: 0.3rem;
+		font-size: x-small;
+	}
+
+	.ModalForm button {
+		padding: 0.1rem;
+	}
 }
