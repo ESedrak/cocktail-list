@@ -2,26 +2,19 @@ import Header from "../Header/Header";
 import headerDetails from "../../library/headerDetails";
 import ModalForm from "./ModalForm/ModalForm";
 import DisplayYourCocktail from "../displayCocktails/DisplayYourCocktail";
-import { useEffect, useState } from "react";
+import useYou from "../../hooks/useYou";
 import "./You.css";
 
 function You() {
-	// Local storage for each cocktail info and cocktail ingredients
-	const cacheCocktails = localStorage.getItem("stored-cocktails");
-	const cacheIngredients = localStorage.getItem("stored-ingredients");
-	const starterCocktail = cacheCocktails ? JSON.parse(cacheCocktails) : [];
-	const starterIngredients = cacheIngredients
-		? JSON.parse(cacheIngredients)
-		: [];
-	// Modal Form only pops up when Add Cocktail button clicked - otherwise set to false
-	const [modalForm, setModalForm] = useState(false);
-	const [cocktailInfo, setCocktailInfo] = useState(starterCocktail);
-	const [allIngredients, setAllIngredients] = useState(starterIngredients);
-
-	useEffect(() => {
-		localStorage.setItem("stored-cocktails", JSON.stringify(cocktailInfo));
-		localStorage.setItem("stored-ingredients", JSON.stringify(allIngredients));
-	}, [cocktailInfo]);
+	// Hooks from folder hooks/useYou
+	const {
+		modalForm,
+		setModalForm,
+		cocktailInfo,
+		setCocktailInfo,
+		allIngredients,
+		setAllIngredients,
+	} = useYou();
 
 	// createCocktail receives the cocktail data when modal form submited
 	const createCocktail = (drinkInfo, addIngredients) => {
