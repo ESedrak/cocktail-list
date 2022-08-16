@@ -1,25 +1,14 @@
 import "./ModalForm.css";
-import { useState } from "react";
+import useModalForm from "../../../hooks/useModalForm";
 
 function ModalForm({ modalForm, onClose, createCocktail }) {
-	// For handling cocktail information (minus ingredient list)
-	const [drinkInfo, setDrinkInfo] = useState({
-		drinkName: "",
-		process: "",
-	});
-
-	// For handling ingredients
-	const [ingredientList, setIngredientList] = useState([
-		{
-			ingredient: "",
-			amount: "",
-		},
-	]);
-
 	// To open/close modal form
 	if (!modalForm) {
 		return null;
 	}
+	// Hooks from folder
+	const { drinkInfo, setDrinkInfo, ingredientList, setIngredientList } =
+		useModalForm();
 
 	// For handling ingredients add/remove in modal form
 	const handleIngredientAdd = () => {
