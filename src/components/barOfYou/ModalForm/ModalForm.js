@@ -6,7 +6,7 @@ function ModalForm({ modalForm, onClose, createCocktail }) {
 	if (!modalForm) {
 		return null;
 	}
-	// Hooks from folder
+	// Hooks from folder hooks/useModalForm
 	const { drinkInfo, setDrinkInfo, ingredientList, setIngredientList } =
 		useModalForm();
 
