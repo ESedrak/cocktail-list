@@ -1,7 +1,11 @@
+import headerDetails from "../../library/headerDetails";
+import Header from "../Header/Header";
+
 function Signup() {
+	console.log(headerDetails);
 	return (
-		<div>
-			<h3>Hello from signup</h3>
+		<div className="Signup">
+			<Header header={headerDetails.account.signup} />
 		</div>
 	);
 }

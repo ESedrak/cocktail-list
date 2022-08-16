@@ -5,12 +5,20 @@ import LizCocktails from "./components/barOfLiz/LizCocktails";
 import CocktailDb from "./components/barOfCocktailDb/CocktailDb";
 import Random from "./components/barOfRandom/Random";
 import You from "./components/barOfYou/You";
+import Signin from "./components/account/Signin";
+import Signup from "./components/account/Signup";
 
 function App() {
 	return (
 		<Router>
 			<div className="App">
 				<header className="App-header">
+					<Link to="/Signin" className="App-acc">
+						Signin
+					</Link>
+					<Link to="/Account" className="App-acc">
+						Account
+					</Link>
 					<h1>Cocktails</h1>
 					<nav className="App-nav">
 						<Link to="/" className="App-link">
@@ -35,6 +43,8 @@ function App() {
 					<Route path="/CocktailDb" element={<CocktailDb />} />
 					<Route path="/random" element={<Random />} />
 					<Route path="/You" element={<You />} />
+					<Route path="/Signin" element={<Signin />} />
+					<Route path="/Signup" element={<Signup />} />
 				</Routes>
 			</div>
 		</Router>
