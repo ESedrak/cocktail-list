@@ -7,6 +7,16 @@ function Signin() {
 		<div className="Signin">
 			<Header header={headerDetails.account.signin} />
 			<Link to="/Signup">Sign up</Link>
+			<form>
+				<div>
+					<label>Email Address</label>
+					<input type="email" />
+				</div>
+				<div>
+					<label>Password</label>
+					<input type="password" />
+				</div>
+			</form>
 		</div>
 	);
 }
