@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 function useRandomApi() {
 	const [initialised, setInitialised] = useState(false);
-	const [randomResults, setRandomResults] = useState([]);
+	const [randomResults, setRandomResults] = useState(null);
 	const [isLoading, setIsLoading] = useState(false);
 	const [errorMsg, setErrorMsg] = useState("");
 
