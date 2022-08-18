@@ -32,7 +32,7 @@ function ModalForm({ modalForm, onClose, createCocktail }) {
 	};
 
 	// For handling all of the other cocktail data (i.e. drinkName and process)
-	const handleChange = (e) => {
+	const handleDrinkChange = (e) => {
 		const inputTarget = e.target.id;
 		const valueTarget = e.target.value;
 
@@ -75,7 +75,7 @@ function ModalForm({ modalForm, onClose, createCocktail }) {
 							placeholder="Cocktail Name"
 							value={drinkInfo.drinkName}
 							id="drinkName"
-							onChange={handleChange}
+							onChange={handleDrinkChange}
 							required
 						/>
 						<br />
@@ -122,7 +122,7 @@ function ModalForm({ modalForm, onClose, createCocktail }) {
 						<input
 							type="text-area"
 							placeholder="Description"
-							onChange={handleChange}
+							onChange={handleDrinkChange}
 							value={drinkInfo.process}
 							id="process"
 							required
