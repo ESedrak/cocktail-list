@@ -20,11 +20,9 @@ function DisplayCocktail({ results, errorMsg }) {
 									<h3 className="Cocktail-drink-name">{cocktail.strDrink}</h3>
 									<div className="Cocktail-process">
 										<ul className="Cocktail-ingredients" role="presentation">
-											{listIngredients.map((oneIngredient, index) => {
-												return (
-													<li key={oneIngredient + index}>{oneIngredient}</li>
-												);
-											})}
+											{listIngredients.map((oneIngredient, index) => (
+												<li key={oneIngredient + index}>{oneIngredient}</li>
+											))}
 										</ul>
 										<p className="Cocktail-instructions">
 											{cocktail.strInstructions}
