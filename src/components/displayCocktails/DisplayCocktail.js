@@ -4,7 +4,7 @@ function DisplayCocktail({ results, errorMsg }) {
 	// console.log(results.length);
 	return (
 		<div>
-			{results != null ? (
+			{results ? (
 				<div className="DisplayCocktail">
 					{results.map((cocktail) => {
 						const listIngredients = displayIngredients(cocktail);
