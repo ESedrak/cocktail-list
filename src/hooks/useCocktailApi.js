@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 function useCocktailApi() {
-	const [results, setResults] = useState(null);
+	const [results, setResults] = useState([]);
 	const [keyword, setKeyword] = useState("");
 	const [isLoading, setIsLoading] = useState(false);
 	const [errorMsg, setErrorMsg] = useState("");

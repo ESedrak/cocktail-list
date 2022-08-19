@@ -1,10 +1,9 @@
 import displayIngredients from "../../util/displayIngredients";
 
 function DisplayCocktail({ results, errorMsg }) {
-	// console.log(results.length);
 	return (
 		<div>
-			{results ? (
+			{results.length ? (
 				<div className="DisplayCocktail">
 					{results.map((cocktail) => {
 						const listIngredients = displayIngredients(cocktail);
