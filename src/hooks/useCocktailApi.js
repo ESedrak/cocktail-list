@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 
 function useCocktailApi() {
-	const [initialised, setInitalised] = useState(false);
 	const [results, setResults] = useState(null);
 	const [keyword, setKeyword] = useState("");
 	const [isLoading, setIsLoading] = useState(false);
@@ -11,11 +10,8 @@ function useCocktailApi() {
 	useEffect(() => {
 		const initialCocktail = async () => {
 			try {
-				if (!initialised) {
-					setInitalised(true);
-					const defaultCocktail = await fetchCocktailApi("margarita");
-					return defaultCocktail;
-				}
+				const defaultCocktail = await fetchCocktailApi("margarita");
+				return defaultCocktail;
 			} catch (error) {
 				console.log(
 					`This is for the defaultCocktailDB error: ${error.message}`

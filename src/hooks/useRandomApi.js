@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 
 function useRandomApi() {
-	const [initialised, setInitialised] = useState(false);
 	const [randomResults, setRandomResults] = useState(null);
 	const [isLoading, setIsLoading] = useState(false);
 	const [errorMsg, setErrorMsg] = useState("");
@@ -10,11 +9,8 @@ function useRandomApi() {
 	useEffect(() => {
 		const initialRandomCocktail = async () => {
 			try {
-				if (!initialised) {
-					setInitialised(true);
-					const rndmCktl = await fetchRandomApi();
-					return rndmCktl;
-				}
+				const rndmCktl = await fetchRandomApi();
+				return rndmCktl;
 			} catch (error) {
 				console.log(
 					`This is an error for the initialRandomCocktail: ${error.message}`
