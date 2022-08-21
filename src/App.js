@@ -7,6 +7,7 @@ import Random from "./components/barOfRandom/Random";
 import You from "./components/barOfYou/You";
 import Signin from "./components/account/Signin";
 import Signup from "./components/account/Signup";
+import { AuthContextProvider } from "./context/AuthContext";
 
 function App() {
 	return (
@@ -37,15 +38,17 @@ function App() {
 					<hr />
 				</header>
 				{/* Using version 6 react router to create multiple pages for cocktails */}
-				<Routes>
-					{/* Route LizCocktails will show my own personal list while CocktailDb/Random will show an online API list*/}
-					<Route exact path="/" element={<LizCocktails />} />
-					<Route path="/CocktailDb" element={<CocktailDb />} />
-					<Route path="/random" element={<Random />} />
-					<Route path="/You" element={<You />} />
-					<Route path="/Signin" element={<Signin />} />
-					<Route path="/Signup" element={<Signup />} />
-				</Routes>
+				<AuthContextProvider>
+					<Routes>
+						{/* Route LizCocktails will show my own personal list while CocktailDb/Random will show an online API list*/}
+						<Route exact path="/" element={<LizCocktails />} />
+						<Route path="/CocktailDb" element={<CocktailDb />} />
+						<Route path="/random" element={<Random />} />
+						<Route path="/You" element={<You />} />
+						<Route path="/Signin" element={<Signin />} />
+						<Route path="/Signup" element={<Signup />} />
+					</Routes>
+				</AuthContextProvider>
 			</div>
 		</Router>
 	);

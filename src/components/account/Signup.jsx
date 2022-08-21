@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "../../context/AuthContext";
 import headerDetails from "../../library/headerDetails";
 import Header from "../Header/Header";
 
@@ -7,6 +8,13 @@ function Signup() {
 	const emailRef = useRef();
 	const passwordRef = useRef();
 	const passwordConfirmRef = useRef();
+	const { signup } = useAuth();
+
+	function handleSubmit(e) {
+		e.preventDefault();
+
+		signup(emailRef.current.value, passwordRef.current.value);
+	}
 
 	return (
 		<div className="Signup">

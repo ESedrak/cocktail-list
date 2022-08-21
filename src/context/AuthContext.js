@@ -7,10 +7,6 @@ import { auth } from "../firebase";
 
 const UserContext = createContext();
 
-export function useAuth() {
-	return useContext(UserContext);
-}
-
 export function AuthContextProvider({ children }) {
 	const [currentUser, setCurrentUser] = useState({});
 
@@ -23,10 +19,13 @@ export function AuthContextProvider({ children }) {
 			setCurrentUser(currentUser);
 		});
 
-		return unsubscribe;
+		return () => {
+			unsubscribe();
+		};
 	}, []);
 
 	const value = {
+		signup,
 		currentUser,
 	};
 
@@ -36,3 +35,7 @@ export function AuthContextProvider({ children }) {
 		</>
 	);
 }
+
+export const useAuth = () => {
+	return useContext(UserContext);
+};
