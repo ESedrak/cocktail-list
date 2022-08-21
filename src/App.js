@@ -47,6 +47,7 @@ function App() {
 						<Route path="/You" element={<You />} />
 						<Route path="/Signin" element={<Signin />} />
 						<Route path="/Signup" element={<Signup />} />
+						<Route path="/Dashboard" element={<Dashboard />} />
 					</Routes>
 				</AuthContextProvider>
 			</div>
