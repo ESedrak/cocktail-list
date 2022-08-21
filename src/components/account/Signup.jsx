@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 import headerDetails from "../../library/headerDetails";
@@ -9,18 +9,36 @@ function Signup() {
 	const passwordRef = useRef();
 	const passwordConfirmRef = useRef();
 	const { signup } = useAuth();
+	const [error, setError] = useState("");
+	const [loading, setLoading] = useState();
 
-	function handleSubmit(e) {
+	async function handleSubmit(e) {
 		e.preventDefault();
 
 		signup(emailRef.current.value, passwordRef.current.value);
+
+		if (passwordRef.current.value !== passwordConfirmRef.current.value) {
+			return setError("Passwords do not match!");
+		}
+
+		try {
+			setError("");
+			setLoading(true);
+			await signup(emailRef.current.value, passwordRef.current.value);
+		} catch (error) {
+			console.log(error.message);
+			setError(error.message);
+		}
+
+		setLoading(false);
 	}
 
 	return (
 		<div className="Signup">
 			<Header header={headerDetails.account.signup} />
 			<Link to="./Signin"> Sign in</Link>
-			<form>
+			{error && <p>{error}</p>}
+			<form onSubmit={handleSubmit}>
 				<div>
 					<label>Email Address</label>
 					<input type="email" ref={emailRef} />
@@ -33,7 +51,7 @@ function Signup() {
 					<label>Confirm Password</label>
 					<input type="password" ref={passwordConfirmRef} />
 				</div>
-				<button>Sign up!</button>
+				<button disabled={loading}>Sign up!</button>
 			</form>
 		</div>
 	);
