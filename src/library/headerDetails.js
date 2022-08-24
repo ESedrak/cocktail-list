@@ -26,6 +26,9 @@ const headerDetails = {
 			header: "Sign up!",
 			msg: "Already have an account?",
 		},
+		updateProfile: {
+			header: "Update Profile!",
+		},
 	},
 };
 

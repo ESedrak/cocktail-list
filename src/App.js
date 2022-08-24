@@ -1,25 +1,17 @@
 import "./App.css";
 import "./Cocktail.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import LizCocktails from "./components/barOfLiz/LizCocktails";
-import CocktailDb from "./components/barOfCocktailDb/CocktailDb";
-import Random from "./components/barOfRandom/Random";
-import You from "./components/barOfYou/You";
-import Signin from "./components/account/Signin";
-import Signup from "./components/account/Signup";
-import Dashboard from "./components/account/Dashboard";
-import { AuthContextProvider } from "./context/AuthContext";
-import PrivateRoute from "./components/account/PrivateRoute";
+import MyRoutes from "./router/MyRoutes";
 
 function App() {
 	return (
-		<Router>
-			<div className="App">
+		<div className="App">
+			<Router>
 				<header className="App-header">
-					<Link to="/Signin" className="App-acc">
+					<Link to="/signin" className="App-acc">
 						Signin
 					</Link>
-					<Link to="/Dashboard" className="App-acc">
+					<Link to="/dashboard" className="App-acc">
 						Dashboard
 					</Link>
 					<h1>Cocktails</h1>
@@ -40,28 +32,9 @@ function App() {
 					<hr />
 				</header>
 				{/* Using version 6 react router to create multiple pages for cocktails */}
-				<AuthContextProvider>
-					<Routes>
-						{/* Route LizCocktails will show my own personal list while CocktailDb/Random will show an online API list*/}
-						<Route exact path="/" element={<LizCocktails />} />
-						<Route path="/CocktailDb" element={<CocktailDb />} />
-						<Route path="/random" element={<Random />} />
-						<Route path="/You" element={<You />} />
-						<Route
-							path="/Dashboard"
-							element={
-								<PrivateRoute>
-									<Dashboard />
-								</PrivateRoute>
-							}
-						/>
-						<Route path="/Signin" element={<Signin />} />
-						<Route path="/Signup" element={<Signup />} />
-						<Route path="forgot-password" element={<ForgotPassword />} />
-					</Routes>
-				</AuthContextProvider>
-			</div>
-		</Router>
+				<MyRoutes />
+			</Router>
+		</div>
 	);
 }
 
