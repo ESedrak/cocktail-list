@@ -25,9 +25,7 @@ function Dashboard() {
 			{error && <p>{error}</p>}
 			Email: {currentUser.email}
 			<Link to="/update-profile">Update Profile</Link>
-			<button onClick={handleLogout} className="border px-6 py-2 my-4">
-				Logout
-			</button>
+			<button onClick={handleLogout}>Logout</button>
 		</div>
 	);
 }
