@@ -7,7 +7,9 @@ import Random from "./components/barOfRandom/Random";
 import You from "./components/barOfYou/You";
 import Signin from "./components/account/Signin";
 import Signup from "./components/account/Signup";
+import Dashboard from "./components/account/Dashboard";
 import { AuthContextProvider } from "./context/AuthContext";
+import PrivateRoute from "./components/account/PrivateRoute";
 
 function App() {
 	return (
@@ -17,8 +19,8 @@ function App() {
 					<Link to="/Signin" className="App-acc">
 						Signin
 					</Link>
-					<Link to="/Account" className="App-acc">
-						Account
+					<Link to="/Dashboard" className="App-acc">
+						Dashboard
 					</Link>
 					<h1>Cocktails</h1>
 					<nav className="App-nav">
@@ -45,9 +47,17 @@ function App() {
 						<Route path="/CocktailDb" element={<CocktailDb />} />
 						<Route path="/random" element={<Random />} />
 						<Route path="/You" element={<You />} />
+						<Route
+							path="/Dashboard"
+							element={
+								<PrivateRoute>
+									<Dashboard />
+								</PrivateRoute>
+							}
+						/>
 						<Route path="/Signin" element={<Signin />} />
 						<Route path="/Signup" element={<Signup />} />
-						<Route path="/Dashboard" element={<Dashboard />} />
+						<Route path="forgot-password" element={<ForgotPassword />} />
 					</Routes>
 				</AuthContextProvider>
 			</div>

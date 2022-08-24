@@ -12,6 +12,8 @@ function Signup() {
 	const [error, setError] = useState("");
 	const [loading, setLoading] = useState();
 
+	const navigate = useNavigate();
+
 	async function handleSubmit(e) {
 		e.preventDefault();
 
@@ -25,9 +27,10 @@ function Signup() {
 			setError("");
 			setLoading(true);
 			await signup(emailRef.current.value, passwordRef.current.value);
+			navigate("/Dashboard");
 		} catch (error) {
-			console.log(error.message);
-			setError(error.message);
+			console.log(error);
+			setError("Failed to create an account");
 		}
 
 		setLoading(false);
@@ -36,7 +39,7 @@ function Signup() {
 	return (
 		<div className="Signup">
 			<Header header={headerDetails.account.signup} />
-			<Link to="./Signin"> Sign in</Link>
+			<Link to="../Signin">Signup</Link>
 			{error && <p>{error}</p>}
 			<form onSubmit={handleSubmit}>
 				<div>
