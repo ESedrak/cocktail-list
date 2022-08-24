@@ -50,7 +50,6 @@ function UpdateProfile() {
 	return (
 		<div className="UpdateProfile">
 			<Header header={headerDetails.account.updateProfile} />
-			<Link to="../signup">Signup</Link>
 			{error && <p>{error}</p>}
 			<form onSubmit={handleSubmit}>
 				<div>
