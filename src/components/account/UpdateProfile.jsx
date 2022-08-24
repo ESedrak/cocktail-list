@@ -7,25 +7,33 @@ import headerDetails from "../../library/headerDetails";
 function UpdateProfile() {
 	const emailRef = useRef();
 	const passwordRef = useRef();
-	const { currentUser } = useAuth();
+	const passwordConfirmRef = useRef();
+	const { signup } = useAuth();
 	const [error, setError] = useState("");
 	const [loading, setLoading] = useState();
 
 	const navigate = useNavigate();
 
 	async function handleSubmit(e) {
-		// e.preventDefault();
-		// signin(emailRef.current.value, passwordRef.current.value);
-		// try {
-		// 	setError("");
-		// 	setLoading(true);
-		// 	await signin(emailRef.current.value, passwordRef.current.value);
-		// 	navigate("/Dashboard");
-		// } catch (error) {
-		// 	console.log(error.message);
-		// 	setError("Failed to log in");
-		// }
-		// setLoading(false);
+		e.preventDefault();
+
+		signup(emailRef.current.value, passwordRef.current.value);
+
+		if (passwordRef.current.value !== passwordConfirmRef.current.value) {
+			return setError("Passwords do not match!");
+		}
+
+		try {
+			setError("");
+			setLoading(true);
+			// await signup(emailRef.current.value, passwordRef.current.value);
+			navigate("/dashboard");
+		} catch (error) {
+			console.log(error);
+			setError("Failed to create an account");
+		}
+
+		setLoading(false);
 	}
 
 	return (
@@ -40,12 +48,20 @@ function UpdateProfile() {
 				</div>
 				<div>
 					<label>Password</label>
-					<input type="password" />
+					<input type="password" placeholder="Leave blank to keep the same" />
 				</div>
-				<button>Sign in!</button>
+				<div>
+					<label>Confirm Password</label>
+					<input
+						type="password"
+						ref={passwordConfirmRef}
+						placeholder="Leave blank to keep the same"
+					/>
+				</div>
+				<button>Update</button>
 			</form>
 			<div>
-				<Link to="/forgot-password">Forgot Password?</Link>
+				<Link to="/dashboard">Cancel</Link>
 			</div>
 		</div>
 	);

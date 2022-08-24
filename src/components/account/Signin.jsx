@@ -39,12 +39,13 @@ function Signin() {
 			<form onSubmit={handleSubmit}>
 				<div>
 					<label>Email Address</label>
-					<input type="email" ref={emailRef} />
+					<input type="email" ref={emailRef} required />
 				</div>
 				<div>
 					<label>Password</label>
-					<input type="password" ref={passwordRef} />
+					<input type="password" ref={passwordRef} required />
 				</div>
+
 				<button>Sign in!</button>
 			</form>
 			<div>

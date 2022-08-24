@@ -44,15 +44,15 @@ function Signup() {
 			<form onSubmit={handleSubmit}>
 				<div>
 					<label>Email Address</label>
-					<input type="email" ref={emailRef} />
+					<input type="email" ref={emailRef} required />
 				</div>
 				<div>
 					<label>Password</label>
-					<input type="password" ref={passwordRef} />
+					<input type="password" ref={passwordRef} required />
 				</div>
 				<div>
 					<label>Confirm Password</label>
-					<input type="password" ref={passwordConfirmRef} />
+					<input type="password" ref={passwordConfirmRef} required />
 				</div>
 				<button disabled={loading}>Sign up!</button>
 			</form>
