@@ -27,7 +27,7 @@ function Signup() {
 			setError("");
 			setLoading(true);
 			await signup(emailRef.current.value, passwordRef.current.value);
-			navigate("/Dashboard");
+			navigate("/dashboard");
 		} catch (error) {
 			console.log(error);
 			setError("Failed to create an account");
@@ -39,7 +39,7 @@ function Signup() {
 	return (
 		<div className="Signup">
 			<Header header={headerDetails.account.signup} />
-			<Link to="../Signin">Signup</Link>
+			<Link to="../signin">Signup</Link>
 			{error && <p>{error}</p>}
 			<form onSubmit={handleSubmit}>
 				<div>

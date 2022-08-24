@@ -22,7 +22,7 @@ function Signin() {
 			setError("");
 			setLoading(true);
 			await signin(emailRef.current.value, passwordRef.current.value);
-			navigate("/Dashboard");
+			navigate("/dashboard");
 		} catch (error) {
 			console.log(error.message);
 			setError("Failed to log in");
@@ -34,7 +34,7 @@ function Signin() {
 	return (
 		<div className="Signup">
 			<Header header={headerDetails.account.signin} />
-			<Link to="../Signup">Signup</Link>
+			<Link to="../signup">Signup</Link>
 			{error && <p>{error}</p>}
 			<form onSubmit={handleSubmit}>
 				<div>
