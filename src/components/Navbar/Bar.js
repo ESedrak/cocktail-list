@@ -1,18 +1,19 @@
+import "./Bar.css";
 import { Link } from "react-router-dom";
 
 function Bar() {
 	return (
-		<div>
-			<Link to="/" className="App-link">
+		<div className="Bar">
+			<Link to="/" className="Bar-link">
 				Bar Of Liz
 			</Link>
-			<Link to="/CocktailDb" className="App-link">
+			<Link to="/CocktailDb" className="Bar-link">
 				Bar CocktailDB
 			</Link>
-			<Link to="/random" className="App-link">
+			<Link to="/random" className="Bar-link">
 				Bar Random
 			</Link>
-			<Link to="/You" className="App-link">
+			<Link to="/You" className="Bar-link">
 				Bar Of You
 			</Link>
 		</div>
