@@ -1,6 +1,6 @@
 import "./App.css";
 import "./Cocktail.css";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import NavBar from "./components/Navbar/NavBar";
 import Bar from "./components/Navbar/Bar";
 import MyRoutes from "./router/MyRoutes";
