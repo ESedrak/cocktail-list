@@ -11,6 +11,7 @@ function Signup() {
 		passwordRef,
 		passwordConfirmRef,
 		error,
+		loading,
 		setError,
 		setLoading,
 	} = useAccount();

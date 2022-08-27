@@ -5,7 +5,7 @@ import headerDetails from "../../library/headerDetails";
 import useAccount from "../../hooks/useAccount";
 
 function UpdateProfile() {
-	const { currentUser, updatePassword, updateEmail } = useAuth();
+	const { currentUser, updatePassword, updateUserEmail } = useAuth();
 	const {
 		emailRef,
 		passwordRef,
@@ -29,7 +29,7 @@ function UpdateProfile() {
 		setError("");
 
 		if (emailRef.current.value !== currentUser.email) {
-			promises.push(updateEmail(emailRef.current.value));
+			promises.push(updateUserEmail(emailRef.current.value));
 		}
 
 		if (passwordRef.current.value) {
@@ -57,11 +57,15 @@ function UpdateProfile() {
 			<form onSubmit={handleSubmit}>
 				<div>
 					<label>Email Address</label>
-					<input type="email" />
+					<input type="email" ref={emailRef} />
 				</div>
 				<div>
 					<label>Password</label>
-					<input type="password" placeholder="Leave blank to keep the same" />
+					<input
+						type="password"
+						ref={passwordRef}
+						placeholder="Leave blank to keep the same"
+					/>
 				</div>
 				<div>
 					<label>Confirm Password</label>

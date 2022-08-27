@@ -5,6 +5,8 @@ import {
 	sendPasswordResetEmail,
 	signInWithEmailAndPassword,
 	signOut,
+	updateEmail,
+	updatePassword,
 } from "firebase/auth";
 import { auth } from "../firebase";
 
@@ -22,7 +24,7 @@ export function AuthContextProvider({ children }) {
 		return signInWithEmailAndPassword(auth, email, password);
 	}
 
-	function logout(email, password) {
+	function logout() {
 		return signOut(auth);
 	}
 
@@ -30,8 +32,8 @@ export function AuthContextProvider({ children }) {
 		return sendPasswordResetEmail(auth);
 	}
 
-	function updateEmail(email) {
-		return currentUser.updateEmail(email);
+	function updateUserEmail(email) {
+		return updateEmail(currentUser, email);
 	}
 
 	function updatePassword(password) {
@@ -55,7 +57,7 @@ export function AuthContextProvider({ children }) {
 		signin,
 		logout,
 		resetPassword,
-		updateEmail,
+		updateUserEmail,
 		updatePassword,
 	};
 
