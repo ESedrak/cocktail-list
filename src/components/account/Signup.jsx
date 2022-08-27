@@ -1,16 +1,19 @@
-import { useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
+import useSignup from "../../hooks/account/useSignup";
 import headerDetails from "../../library/headerDetails";
 import Header from "../Header/Header";
 
 function Signup() {
-	const emailRef = useRef();
-	const passwordRef = useRef();
-	const passwordConfirmRef = useRef();
 	const { signup } = useAuth();
-	const [error, setError] = useState("");
-	const [loading, setLoading] = useState();
+	const {
+		emailRef,
+		passwordRef,
+		passwordConfirmRef,
+		error,
+		setError,
+		setLoading,
+	} = useSignup();
 
 	const navigate = useNavigate();
 
