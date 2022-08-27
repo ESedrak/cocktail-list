@@ -1,16 +1,19 @@
-import { useRef, useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 import Header from "../Header/Header";
 import headerDetails from "../../library/headerDetails";
+import useUpdateProfile from "../../hooks/account/useUpdateProfile";
 
 function UpdateProfile() {
-	const emailRef = useRef();
-	const passwordRef = useRef();
-	const passwordConfirmRef = useRef();
 	const { currentUser, updatePassword, updateEmail } = useAuth();
-	const [error, setError] = useState("");
-	const [loading, setLoading] = useState();
+	const {
+		emailRef,
+		passwordRef,
+		passwordConfirmRef,
+		error,
+		setError,
+		setLoading,
+	} = useUpdateProfile();
 
 	const navigate = useNavigate();
 
