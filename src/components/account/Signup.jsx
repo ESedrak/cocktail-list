@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
-import useSignup from "../../hooks/account/useSignup";
+import useAccount from "../../hooks/useAccount";
 import headerDetails from "../../library/headerDetails";
 import Header from "../Header/Header";
 
@@ -13,7 +13,7 @@ function Signup() {
 		error,
 		setError,
 		setLoading,
-	} = useSignup();
+	} = useAccount();
 
 	const navigate = useNavigate();
 

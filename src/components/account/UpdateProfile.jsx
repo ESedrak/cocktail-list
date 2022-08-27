@@ -2,7 +2,7 @@ import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 import Header from "../Header/Header";
 import headerDetails from "../../library/headerDetails";
-import useUpdateProfile from "../../hooks/account/useUpdateProfile";
+import useAccount from "../../hooks/useAccount";
 
 function UpdateProfile() {
 	const { currentUser, updatePassword, updateEmail } = useAuth();
@@ -13,7 +13,7 @@ function UpdateProfile() {
 		error,
 		setError,
 		setLoading,
-	} = useUpdateProfile();
+	} = useAccount();
 
 	const navigate = useNavigate();
 

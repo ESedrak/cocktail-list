@@ -1,9 +1,9 @@
-import { useState } from "react";
+import useAccount from "../../hooks/useAccount";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 
 function Dashboard() {
-	const [error, setError] = useState("");
+	const { error, setError } = useAccount();
 	const { currentUser, logout } = useAuth();
 	const navigate = useNavigate();
 

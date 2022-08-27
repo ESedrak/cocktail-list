@@ -1,12 +1,12 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
-import useSignin from "../../hooks/account/useSignin";
+import useAccount from "../../hooks/useAccount";
 import Header from "../Header/Header";
 import headerDetails from "../../library/headerDetails";
 
 function Signin() {
 	const { signin } = useAuth();
-	const { emailRef, passwordRef, error, setError, setLoading } = useSignin();
+	const { emailRef, passwordRef, error, setError, setLoading } = useAccount();
 
 	const navigate = useNavigate();
 

@@ -1,13 +1,12 @@
 import { Link } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
-import useForgotPassword from "../../hooks/account/useForgotPassword";
+import useAccount from "../../hooks/useAccount";
 import headerDetails from "../../library/headerDetails";
 import Header from "../Header/Header";
 
 function ForgotPassword() {
 	const { resetPassword } = useAuth();
-	const { emailRef, error, setError, setLoading, setMessage } =
-		useForgotPassword();
+	const { emailRef, error, setError, setLoading, setMessage } = useAccount();
 
 	async function handleSubmit(e) {
 		e.preventDefault();
