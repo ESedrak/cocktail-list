@@ -36,8 +36,8 @@ export function AuthContextProvider({ children }) {
 		return updateEmail(currentUser, email);
 	}
 
-	function updatePassword(password) {
-		return currentUser.updatePassword(password);
+	function updateUserPassword(password) {
+		return updatePassword(currentUser, password);
 	}
 
 	useEffect(() => {
@@ -58,7 +58,7 @@ export function AuthContextProvider({ children }) {
 		logout,
 		resetPassword,
 		updateUserEmail,
-		updatePassword,
+		updateUserPassword,
 	};
 
 	return (

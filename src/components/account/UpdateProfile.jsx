@@ -5,7 +5,7 @@ import headerDetails from "../../library/headerDetails";
 import useAccount from "../../hooks/useAccount";
 
 function UpdateProfile() {
-	const { currentUser, updatePassword, updateUserEmail } = useAuth();
+	const { currentUser, updateUserPassword, updateUserEmail } = useAuth();
 	const {
 		emailRef,
 		passwordRef,
@@ -33,7 +33,7 @@ function UpdateProfile() {
 		}
 
 		if (passwordRef.current.value) {
-			promises.push(updatePassword(passwordRef.current.value));
+			promises.push(updateUserPassword(passwordRef.current.value));
 		}
 
 		Promise.all(promises)
