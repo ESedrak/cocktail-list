@@ -29,7 +29,7 @@ export function AuthContextProvider({ children }) {
 	}
 
 	function resetPassword(email) {
-		return sendPasswordResetEmail(auth);
+		return sendPasswordResetEmail(auth, email);
 	}
 
 	function updateUserEmail(email) {
