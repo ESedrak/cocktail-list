@@ -10,7 +10,8 @@ function App() {
 		<div className="App">
 			<Router>
 				<header className="App-header">
-					<NavBar />
+					{/* TODO: FIX Navbar design before using it */}
+					{/* <NavBar /> */}
 					<h1>Cocktails</h1>
 					<Bar />
 					<hr />
